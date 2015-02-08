@@ -23,7 +23,6 @@
   "dependencies": {
     "adventure": "^2.10.0",
     "semver": "^4.2.0",
-    "st": "^0.5.2",
     "which": "^1.0.8"
   }
 }
