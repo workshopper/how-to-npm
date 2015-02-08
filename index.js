@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-if (require.main !== module) {
-  console.error('how-to-npm should only be run as a bin script')
-  return
-}
-
 var adventure = require('adventure')
 var shop = module.exports = adventure({
   name: 'how-to-npm',
@@ -14,6 +9,8 @@ var shop = module.exports = adventure({
 
 var fs = require('fs')
 var path = require('path')
+var rimraf = require('rimraf')
+var mkdirp = require('mkdirp')
 
 var problems = fs.readdirSync(path.resolve(__dirname, 'problems'))
 problems.filter(function (problem) {
@@ -29,4 +26,37 @@ problems.filter(function (problem) {
   })
 })
 
-shop.execute(process.argv.slice(2))
+shop.execute = function (args) {
+  // Reset a bit harder, since we save other stuff in there.
+  if (args[0] === 'reset') {
+    rimraf.sync(this.datadir)
+    mkdirp.sync(this.datadir)
+  }
+
+  return shop.constructor.prototype.execute.apply(this, arguments)
+}
+
+// Copy the registry-assets if they're not already there.
+try {
+  var assetsStat = fs.statSync(shop.datadir + '/registry')
+  if (!assetsStat.isDirectory()) throw 'enotdir'
+} catch (er) {
+  rimraf.sync(shop.datadir + '/registry')
+  cpr(path.resolve(__dirname, 'lib', 'registry-assets'),
+      path.resolve(shop.datadir, 'registry'))
+}
+
+function cpr (from, to) {
+  var st = fs.statSync(from)
+  if (st.isDirectory()) {
+    mkdirp.sync(to)
+    fs.readdirSync(from).forEach(function (file) {
+      cpr(path.resolve(from, file), path.resolve(to, file))
+    })
+  } else {
+    fs.writeFileSync(to, fs.readFileSync(from))
+  }
+}
+
+if (require.main === module)
+  shop.execute(process.argv.slice(2))
