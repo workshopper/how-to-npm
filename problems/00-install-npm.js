@@ -9,7 +9,6 @@ Run `$ADVENTURE_COMMAND verify` to make sure npm is installed, and up to date.
 var exec = require('child_process').exec
 var node = process.execPath
 var which = require('which')
-var http = require('http')
 var semver = require('semver')
 exports.verify = function (args, cb) {
   console.log('verifying that npm is installed...')
@@ -33,7 +32,7 @@ exports.verify = function (args, cb) {
 
     console.log('You have version %s installed.  Great!', v)
 
-    exec(npm + ' view npm version', function (code, stdout, stderr) {
+    exec(npm + ' view npm version --registry=https://registry.npmjs.org', function (code, stdout, stderr) {
       var latest = ('' + stdout).trim()
       if (code) {
         console.log('Uh oh!  npm had a problem! %j', code)
