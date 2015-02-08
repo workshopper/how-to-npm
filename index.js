@@ -29,6 +29,7 @@ problems.filter(function (problem) {
 shop.execute = function (args) {
   // Reset a bit harder, since we save other stuff in there.
   if (args[0] === 'reset') {
+    require('./lib/registry.js').kill()
     rimraf.sync(this.datadir)
     mkdirp.sync(this.datadir)
   }

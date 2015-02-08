@@ -3,13 +3,10 @@ var reg = require('../lib/registry.js')
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
-var datadir = shop.datadir
-// verify we're in the right folder
-var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
 
 exports.problem = function () {
   if (!shop.cwd())
-    return
+    return ''
 
   reg.run('publish')
 
@@ -71,6 +68,8 @@ other developers on your team.  (Scheduling meetings is pretty tricky.)
 
 Run `how-to-npm` to go on to the next adventure!
 */}.toString().split('\n').slice(1,-1).join('\n').replace(/%NAME%/g, name))
+    reg.kill()
+
     return cb(true)
   })
 }

@@ -3,12 +3,11 @@ var reg = require('../lib/registry.js')
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
-var datadir = shop.datadir
 
 exports.problem = function () {
   var cwd = shop.cwd()
   if (!cwd)
-    return
+    return ''
 
   var pkg = require(cwd + '/package.json')
   var id = pkg.name + '@' + pkg.version

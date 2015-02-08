@@ -5,6 +5,9 @@ var fs = require('fs')
 var path = require('path')
 
 exports.problem = function () {
+  if (!shop.cwd())
+    return ''
+
   // capture the current version in the datadir
 
   return function () { /*

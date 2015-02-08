@@ -1,6 +1,12 @@
 var reg = require('../lib/registry.js')
+var shop = require('../')
+var fs = require('fs')
+var path = require('path')
 
 exports.problem = function () {
+  if (!shop.cwd())
+    return ''
+
   reg.run("install-a-module")
 
   return function () { /*
@@ -20,15 +26,8 @@ Let's start out by installing the "once" module.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
-var shop = require('../')
-var fs = require('fs')
-var path = require('path')
-
 exports.verify = function (args, cb) {
-  var datadir = shop.datadir
-  // verify we're in the right folder
   var cwd = shop.cwd()
-
   if (!cwd)
     return cb(false)
 

@@ -5,10 +5,9 @@ var fs = require('fs')
 var path = require('path')
 
 exports.problem = function () {
-  var datadir = shop.datadir
   var cwd = process.cwd()
   if (!cwd)
-    return
+    return ''
 
   return function () {/*
 Now you've installed something, and used `npm ls` to show what's going on.
@@ -40,7 +39,6 @@ Once that's done, run `how-to-npm verify` to check your work.
 }
 
 exports.verify = function (args, cb) {
-  var datadir = shop.datadir
   var cwd = shop.cwd()
   if (!cwd)
     return cb(false)

@@ -1,6 +1,12 @@
 var reg = require('../lib/registry.js')
+var shop = require('../')
+var fs = require('fs')
+var path = require('path')
 
 exports.problem = function () {
+  if (!shop.cwd())
+    return ''
+
   reg.run('login')
 
   return function () { /*
@@ -20,10 +26,6 @@ To create your account, run `npm adduser`
 Try it now, and open the door to ever-greater module fun times!
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
-
-var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.verify = function (args, cb) {
   if (!shop.cwd())

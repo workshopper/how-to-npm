@@ -1,8 +1,12 @@
 var reg = require('../lib/registry.js')
-
-var shop = require('../index.js')
+var shop = require('../')
+var fs = require('fs')
+var path = require('path')
 
 exports.problem = function () {
+  if (!shop.cwd())
+    return ''
+
   reg.run("install-a-module")
   return function () {/*
 npm isn't just for installing stuff.  It also shows you what you
@@ -16,12 +20,8 @@ or `how-to-npm verify NOT OK` if there was a problem.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
-var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.verify = function (args, cb) {
-  var datadir = shop.datadir
   // verify we're in the right folder
   var cwd = shop.cwd()
   if (!cwd)
