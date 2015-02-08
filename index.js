@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 if (require.main !== module) {
   console.error('how-to-npm should only be run as a bin script')
   return
