@@ -1,0 +1,29 @@
+{
+  "name": "how-to-npm",
+  "version": "0.0.0",
+  "description": "A module to teach you how to module.",
+  "main": "index.js",
+  "bin": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/how-to-npm"
+  },
+  "keywords": [
+    "workshop",
+    "adventure",
+    "tutorial",
+    "tutor",
+    "npm"
+  ],
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npm/how-to-npm/issues"
+  },
+  "dependencies": {
+    "adventure": "^2.10.0",
+    "semver": "^4.2.0",
+    "st": "^0.5.2",
+    "which": "^1.0.8"
+  }
+}
