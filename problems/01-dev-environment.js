@@ -82,7 +82,9 @@ exports.verify = function (args, cb) {
   fs.writeFileSync(path.resolve(datadir, 'cwd'), cwd)
 
   // Write the .npmrc file telling it to always use our local registry.
-  var conf = fs.readFileSync(path.resolve(__dirname, '..', 'workshop-npmrc'))
+  var conf = fs.readFileSync(path.resolve(__dirname, '..', 'workshop-npmrc'), 'utf8')
+  conf = conf.replace(/%USERCONFIG%/g, path.resolve(datadir, 'npmrc'))
+
   fs.writeFileSync(path.resolve(cwd, '.npmrc'), conf)
 
   return cb(true)

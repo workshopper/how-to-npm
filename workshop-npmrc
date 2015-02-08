@@ -1,1 +1,2 @@
 registry = http://localhost:15443/
+userconfig = %USERCONFIG%
