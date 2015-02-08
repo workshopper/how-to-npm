@@ -42,6 +42,28 @@ exports.verify = function (args, cb) {
     return cb(false)
   }
 
+  if (/^extracredit$/i.test(args[0] + args[1])) {
+    try {
+      fs.readFileSync(path.resolve(cwd, '.git', 'config'))
+      console.log('EXTRA CREDIT!  Nicely done.\n')
+    } catch (er) {
+      console.log('Well, you got everything except the git part.\n'+
+                  'The convention is one git repo per module, so\n'+
+                  'you usually ought to run `git init` at the root\n'+
+                  'of your project.\n'+
+                  'Remove the .git folder from wherever you were,\n'+
+                  'and run `git init` in ' + cwd)
+      return cb(false)
+    }
+  } else {
+    console.log('For extra credit, try also setting up this dir as\n'+
+                'a git repository.\n\n'+
+                'The convention is to have a single git repo for each\n'+
+                'module or project.  Use the `git init` command to set\n'+
+                'up your working dir as a git project.\n\n'+
+                'Then, run `how-to-npm verify extra credit`\n\n')
+  }
+
   console.log(
     'Congratulations!\n' +
     'You created an npm package!\n' +
