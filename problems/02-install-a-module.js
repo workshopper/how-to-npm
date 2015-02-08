@@ -1,0 +1,55 @@
+var reg = require('../lib/registry.js')
+
+exports.problem = function () {
+  reg.run("install-a-module")
+
+  return function () { /*
+The first thing that most people do with npm is install a dependency.
+
+Dependencies are fetched from the registry, and unpacked in the `node_modules`
+folder.
+
+To install a module, use the `npm install <modulename>` command.
+
+The registry that we're using for this tutorial is a tiny version of
+the one at https://registry.npmjs.org.  So you might find that it only has
+a small number of things.
+
+Let's start out by installing the "once" module.
+
+*/}.toString().split('\n').slice(1,-1).join('\n')
+}
+
+var shop = require('../')
+var fs = require('fs')
+var path = require('path')
+
+exports.verify = function (args, cb) {
+  var datadir = shop.datadir
+  // verify we're in the right folder
+  var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
+
+  if (cwd !== process.cwd()) {
+    console.log('Uh oh!\n'+
+                'It looks like you are in the wrong folder.\n'+
+                'Please cd into ' + cwd +'\n'+
+                'and then try again')
+    return cb(false)
+  }
+
+  try {
+    var once = require(cwd + '/node_modules/once')
+  } catch (er) {
+    console.log('Uh oh!  Looks like it didn\'t install right.\n'+
+                'The error I got was: \n' +
+                (er.stack || er.message) + '\n' +
+                'Make sure you use the `npm install once` command\n' +
+                'to install the `once` module.')
+    return cb(false)
+  }
+
+  console.log('Congratulations! You installed it.')
+  reg.kill()
+
+  return cb(true)
+}
