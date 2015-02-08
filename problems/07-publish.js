@@ -8,6 +8,9 @@ var datadir = shop.datadir
 var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
 
 exports.problem = function () {
+  if (!shop.cwd())
+    return
+
   reg.run('publish')
 
   return function () { /*

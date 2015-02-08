@@ -27,15 +27,10 @@ var path = require('path')
 exports.verify = function (args, cb) {
   var datadir = shop.datadir
   // verify we're in the right folder
-  var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
+  var cwd = shop.cwd()
 
-  if (cwd !== process.cwd()) {
-    console.log('Uh oh!\n'+
-                'It looks like you are in the wrong folder.\n'+
-                'Please cd into ' + cwd +'\n'+
-                'and then try again')
+  if (!cwd)
     return cb(false)
-  }
 
   try {
     var once = require(cwd + '/node_modules/once')

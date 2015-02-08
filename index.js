@@ -58,5 +58,28 @@ function cpr (from, to) {
   }
 }
 
+shop.cwd = function () {
+  var datadir = shop.datadir
+  // verify we're in the right folder
+  try {
+    var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
+    var pkg = require(cwd + '/package.json')
+  } catch (er) {
+    console.log('Looks like you are not ready for this one yet!\n' +
+                'Go back to the `01 Dev Environment` lesson to set up\n' +
+                'your working directory.')
+    return false
+  }
+
+  if (cwd === process.cwd())
+    return cwd
+
+  console.log('Uh oh!\n'+
+              'It looks like you are in the wrong folder.\n'+
+              'Please cd into ' + cwd +'\n'+
+              'and then try again')
+  return false
+}
+
 if (require.main === module)
   shop.execute(process.argv.slice(2))

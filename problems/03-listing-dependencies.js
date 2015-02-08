@@ -1,5 +1,7 @@
 var reg = require('../lib/registry.js')
 
+var shop = require('../index.js')
+
 exports.problem = function () {
   reg.run("install-a-module")
   return function () {/*
@@ -21,15 +23,9 @@ var path = require('path')
 exports.verify = function (args, cb) {
   var datadir = shop.datadir
   // verify we're in the right folder
-  var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
-
-  if (cwd !== process.cwd()) {
-    console.log('Uh oh!\n'+
-                'It looks like you are in the wrong folder.\n'+
-                'Please cd into ' + cwd +'\n'+
-                'and then try again')
-    return cb(false)
-  }
+  var cwd = shop.cwd()
+  if (!cwd)
+    return false
 
   // see if there was a problem or not
   var deps = require(cwd + '/package.json').dependencies

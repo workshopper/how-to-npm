@@ -6,14 +6,9 @@ var path = require('path')
 
 exports.problem = function () {
   var datadir = shop.datadir
-  try {
-    var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
-    var pj = require(cwd + '/package.json')
-  } catch (er) {
-    return 'Looks like you are not ready for this one yet!\n' +
-      'Go back to the `01 Dev Environment` lesson to set up\n' +
-      'your working directory.'
-  }
+  var cwd = process.cwd()
+  if (!cwd)
+    return
 
   return function () {/*
 Now you've installed something, and used `npm ls` to show what's going on.
@@ -46,15 +41,9 @@ Once that's done, run `how-to-npm verify` to check your work.
 
 exports.verify = function (args, cb) {
   var datadir = shop.datadir
-  var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
-
-  if (cwd !== process.cwd()) {
-    console.log('Uh oh!\n'+
-                'It looks like you are in the wrong folder.\n'+
-                'Please cd into ' + cwd +'\n'+
-                'and then try again')
+  var cwd = shop.cwd()
+  if (!cwd)
     return cb(false)
-  }
 
   var pj = require(cwd + '/package.json')
 

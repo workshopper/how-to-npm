@@ -26,18 +26,8 @@ var fs = require('fs')
 var path = require('path')
 
 exports.verify = function (args, cb) {
-  //TODO: DRY this up.  It's getting rather tedious.
-  var datadir = shop.datadir
-  // verify we're in the right folder
-  var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
-
-  if (cwd !== process.cwd()) {
-    console.log('Uh oh!\n'+
-                'It looks like you are in the wrong folder.\n'+
-                'Please cd into ' + cwd +'\n'+
-                'and then try again')
+  if (!shop.cwd())
     return cb(false)
-  }
 
   // test who we are with whoami
   var exec = require('child_process').exec

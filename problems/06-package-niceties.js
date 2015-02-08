@@ -4,10 +4,12 @@ var shop = require('../')
 var fs = require('fs')
 var path = require('path')
 var datadir = shop.datadir
-// verify we're in the right folder
-var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
 
 exports.problem = function () {
+  var cwd = shop.cwd()
+  if (!cwd)
+    return
+
   var pkg = require(cwd + '/package.json')
   var id = pkg.name + '@' + pkg.version
 
@@ -36,15 +38,9 @@ exports.verify = function (args, cb) {
   //TODO: DRY this up.  It's getting rather tedious.
   var datadir = shop.datadir
   // verify we're in the right folder
-  var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
-
-  if (cwd !== process.cwd()) {
-    console.log('Uh oh!\n'+
-                'It looks like you are in the wrong folder.\n'+
-                'Please cd into ' + cwd +'\n'+
-                'and then try again')
+  var cwd = shop.cwd()
+  if (!cwd)
     return cb(false)
-  }
 
   // make sure we get no warnings 
   var exec = require('child_process').exec
