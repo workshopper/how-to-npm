@@ -3,9 +3,6 @@ var reg = require('../lib/registry.js')
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
-var datadir = shop.datadir
-// verify we're in the right folder
-var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
 
 exports.problem = function () {
   reg.run('update')
@@ -22,7 +19,7 @@ Can you guess what command that might be?
 
 Update all your deps to the latest version possible, and then
 run `how-to-npm verify` to pick up your delicious green banner.
-*/}.toString().split('\n').slice(1,-1).join('\n').replace(/%ID%/g, id)
+*/}.toString().split('\n').slice(1,-1).join('\n')
 }
 
 exports.verify = function (args, cb) {

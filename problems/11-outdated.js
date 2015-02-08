@@ -3,9 +3,6 @@ var reg = require('../lib/registry.js')
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
-var datadir = shop.datadir
-// verify we're in the right folder
-var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
 
 exports.problem = function () {
   reg.run('outdated')
@@ -21,7 +18,7 @@ combination of a name and a version, we can detect compatible releases
 programmatically with the `npm outdated` command.
 
 ...
-*/}.toString().split('\n').slice(1,-1).join('\n').replace(/%ID%/g, id)
+*/}.toString().split('\n').slice(1,-1).join('\n')
 }
 
 exports.verify = function (args, cb) {

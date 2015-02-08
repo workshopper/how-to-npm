@@ -3,9 +3,6 @@ var reg = require('../lib/registry.js')
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
-var datadir = shop.datadir
-// verify we're in the right folder
-var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
 
 exports.problem = function () {
   return function () { /*
@@ -25,7 +22,7 @@ these distribution tags with the `dist-tag` function.
 Run `npm help dist-tag` to learn more about it.
 
 Try changing the dist-tag on your package.
-*/}.toString().split('\n').slice(1,-1).join('\n').replace(/%ID%/g, id)
+*/}.toString().split('\n').slice(1,-1).join('\n')
 }
 
 exports.verify = function (args, cb) {

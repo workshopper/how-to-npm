@@ -3,9 +3,6 @@ var reg = require('../lib/registry.js')
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
-var datadir = shop.datadir
-// verify we're in the right folder
-var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
 
 exports.problem = function () {
   // Capture the set of deps
@@ -24,7 +21,7 @@ use `--save` when removing packages, to also remove them from your
 package.json file.
 
 When you've removed a dependency, type `how-to-npm verify` to move on.
-*/}.toString().split('\n').slice(1,-1).join('\n').replace(/%ID%/g, id)
+*/}.toString().split('\n').slice(1,-1).join('\n')
 }
 
 exports.verify = function (args, cb) {
