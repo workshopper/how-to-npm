@@ -3,22 +3,90 @@ var reg = require('../lib/registry.js')
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
+var semver = require('semver')
 
 exports.problem = function () {
   if (!shop.cwd())
     return ''
 
   // capture the current version in the datadir
+  var pkg = require(shop.cwd() + '/package.json')
+  var ver = semver.clean(pkg.version)
+  if (!ver) {
+    return 'Looks like your package.json has an invalid version!\n' +
+      'Use `npm help semver` to learn more about version numbers\n' +
+      'Your current version number is: ' + pkg.version
+  }
+
+  var oldVer
+  var verfile = shop.datadir + '/version'
+  try {
+    oldVer = fs.readFileSync(verfile, 'utf8')
+  } catch (er) {
+    oldVer = ver
+    fs.writeFileSync(verfile, oldVer, 'utf8')
+  }
 
   return function () { /*
-A discussion of SemVer.
+Every package in npm has a version number associated with it.  As
+you release updates to your package, these updates get an updated
+version number.
 
-Use the `npm version` command to update your package version.
+Version numbers in npm follow a standard called "SemVer".  This stands
+for "Semantic Version".  The specification for this standard can be
+found at http://semver.org.
 
-Do this for each change.
+The tl;dr version is that a version is a set of three numbers,
+separated by periods.  The first number is the "major version".  The
+second number is the "minor version".  And the third number is the
+"patch version".  The major version gets updated when there is a breaking
+change.  The minor version gets updated when there is a change that adds
+functionality, but doesn't break anything.  And the patch version is
+updated whenever anything is changed in any way, including bug fixes that
+don't affect the public API.
+
+npm has a special command called `npm version` which will update your
+package.json file for you, and also commit the change to git if your
+project is a git repository.  You can learn more at `npm help version`.
+Or, if you don't trust the machines, you can open up your package.json
+file by hand, and put some new numbers in the "version" field.
+
+The npm registry won't let you publish a new release of your package
+without updating the version number!  Ever!  So, get used to the idea of
+bumping the version whenever you want to publish, even if the change is
+really minor.
+
+Don't worry, there's a lot of integers, we probably won't run out.
+
+Update your version number now, and then `how-to-npm verify` to check it.
+
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
 exports.verify = function (args, cb) {
-  console.log('TODO: make sure that the version changed')
+  if (!shop.cwd())
+    return cb(false)
+
+  var verfile = shop.datadir + '/version'
+  var oldVer = fs.readFileSync(verfile, 'utf8')
+  var pkg = require(shop.cwd() + '/package.json')
+  var ver = semver.clean(pkg.version)
+  if (!ver) {
+    console.log('Looks like your package.json has an invalid version!\n' +
+      'Use `npm help semver` to learn more about version numbers\n' +
+      'Your current version number is: ' + pkg.version)
+    return cb(false)
+  }
+
+  if (ver === oldVer) {
+    console.log('Uh oh!\n' +
+                'The version is still ' + oldVer + '\n' +
+                'Check `npm help version` for a handy util to do this.')
+    return cb(false)
+  }
+
+  console.log('Great job!\n' +
+              'Run `how-to-npm` for the next exciting challenge!')
+
+  return cb(true)
 }
