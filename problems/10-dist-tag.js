@@ -8,7 +8,7 @@ exports.problem = function () {
   if (!shop.cwd())
     return ''
 
-  reg.run('dist-tags')
+  reg.run('dist-tag')
   return function () { /*
 Every published package on npm has a `dist-tags` entry on it which
 maps strings like "latest" to version numbers like "1.2.48".
