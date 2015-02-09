@@ -47,6 +47,7 @@ try {
       path.resolve(shop.datadir, 'registry'))
 }
 
+shop.cpr = cpr
 function cpr (from, to) {
   var st = fs.statSync(from)
   if (st.isDirectory()) {
