@@ -5,6 +5,10 @@ var fs = require('fs')
 var path = require('path')
 
 exports.problem = function () {
+  if (!shop.cwd())
+    return ''
+
+  reg.run('dist-tags')
   return function () { /*
 Every published package on npm has a `dist-tags` entry on it which
 maps strings like "latest" to version numbers like "1.2.48".
