@@ -25,11 +25,36 @@ these distribution tags with the `dist-tag` function.
 
 Run `npm help dist-tag` to learn more about it.
 
-Try changing the dist-tag on your package.
+Try adding a dist-tag on your package.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
 exports.verify = function (args, cb) {
-  console.log('TODO: make sure that the dist-tag worked.')
-  console.log('probably need to publish another version, I guess?')
+  var cwd = shop.cwd()
+  if (!cwd)
+    return cb(false)
+
+  var pkg = require(cwd + '/package.json')
+  var name = pkg.name
+
+  var body = require(shop.datadir + '/registry/' + name + '/body.json')
+  var dt = body['dist-tags']
+  var tags = Object.keys(dt)
+  if (tags.length === 1) {
+    console.log('Uh oh, looks like you still only have a single dist-tag.')
+    console.log('Use `npm help dist-tag` to learn how to add another one.')
+    return cb(false)
+  }
+
+  console.log(function () {/*
+Congratulations!  You've added a dist-tag!
+
+This is a handy way to manage releases.  For example, the npm project
+itself publishes each new version as 'next' (instead of 'latest') so
+that beta users can test it out before it becomes the default.
+
+Run `how-to-npm` to move on to the next exercise.
+*/}.toString().split('\n').slice(1,-1).join('\n'))
+  reg.kill()
+  return cb(true)
 }
