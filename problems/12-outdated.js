@@ -5,6 +5,17 @@ var fs = require('fs')
 var path = require('path')
 
 exports.problem = function () {
+  if (!shop.cwd())
+    return ''
+
+  // If it hasn't already been done, add a new version of once.
+  var once = require(shop.datadir + '/registry/once/body.json')
+  if (once['dist-tags'].latest === '1.3.0') {
+    // publish an update
+    shop.cpr(path.resolve(__dirname, '..', 'lib', 'registry-assets-update'),
+             path.resolve(shop.datadir, 'registry'))
+  }
+
   reg.run('outdated')
 
   return function () { /*
@@ -17,10 +28,34 @@ our dependencies with a version range, and each release is a unique
 combination of a name and a version, we can detect compatible releases
 programmatically with the `npm outdated` command.
 
-...
+To pass this challenge, run `how-to-npm verify PKG` where `PKG`
+is the name of the package that is out of date.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
 exports.verify = function (args, cb) {
-  console.log('TODO: find some outdated stuff')
+  if (!shop.cwd())
+    return cb(false)
+
+  var arg = args.join('').toLowerCase()
+  if (arg === 'once') {
+    console.log(function () {/*
+That's absolutely right!  The `once` package has had an update while we
+weren't looking.
+
+In the next lesson, we'll learn how to update packages that are outdated.
+*/}.toString().split('\n').slice(1,-1).join('\n'))
+    reg.kill()
+    return cb(true)
+  }
+
+  if (!arg || arg === 'pkg') {
+    console.log('Run `how-to-npm verify PKG` but replace `PKG` with the name\n' +
+                'of the package that is outdated')
+  } else if (arg !== 'once') {
+    console.log('Nope, it\'s not %s.  Try again!', arg)
+  }
+
+  return cb(false)
+
 }
