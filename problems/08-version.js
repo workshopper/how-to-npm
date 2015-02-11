@@ -47,6 +47,7 @@ The tl;dr version is that for a version like this:
 npm has a special command called `npm version` which will update your
 package.json file for you, and also commit the change to git if your
 project is a git repository.  You can learn more at `npm help version`.
+
 Or, if you don't trust the machines, you can open up your package.json
 file by hand, and put some new numbers in the "version" field.
 
