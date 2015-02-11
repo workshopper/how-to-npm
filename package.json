@@ -19,6 +19,14 @@
   "bugs": {
     "url": "https://github.com/npm/how-to-npm/issues"
   },
+  "bundleDependencies": [
+    "adventure",
+    "concat-stream",
+    "mkdirp",
+    "rimraf",
+    "semver",
+    "which"
+  ],
   "dependencies": {
     "adventure": "^2.10.0",
     "concat-stream": "^1.4.7",
