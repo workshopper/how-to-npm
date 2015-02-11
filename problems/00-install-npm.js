@@ -1,9 +1,27 @@
 // Old-sk00l multi-line strings
 exports.problem = function () { /*
+Hello, and welcome to the npm adventure workshop!  I am going to be
+asking you to do various things with npm so that you can get started
+with it easily.
 
+Some helpful commands:
 
-Run `$ADVENTURE_COMMAND verify` to make sure npm is installed, and up to date.
+npm help ............ Get help with npm
+how-to-npm print .... Re-display the current exercise
+how-to-npm verify ... Verify that you have finished an exercise
+how-to-npm solution . Show the solution for the current exercise
+
+The first thing we're going to do is make sure that your npm
+version is up to date.
+
+Run `how-to-npm verify` once that is done.
+
+(This is the only part of the workshop that requires network access.
+If the network is busted, and you want to skip this one, you can run
+`how-to-npm verify skip` to skip it.)
 */}.toString().split('\n').slice(1,-1).join('\n')
+
+exports.solution = '[sudo] npm install npm -g'
 
 
 var exec = require('child_process').exec
@@ -11,6 +29,14 @@ var node = process.execPath
 var which = require('which')
 var semver = require('semver')
 exports.verify = function (args, cb) {
+  if (args.join('').toLowerCase() === 'skip') {
+    console.log('Ok, if you say so...\n'+
+                'You can always install the latest and greatest npm using\n'+
+                '`npm install npm -g`.  You may need to run that with `sudo`\n'+
+                'or as an Administrator.')
+    return cb(true)
+  }
+
   console.log('verifying that npm is installed...')
   var npm
 
