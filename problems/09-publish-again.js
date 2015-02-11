@@ -19,9 +19,11 @@ confusing for all the robots running the treadmills that power the npm
 registry.  But, now that we changed the version number in the last
 exercise, you can publish the package again.
 
-Go for it!
+Go for it!  Then get your prize with `how-to-npm verify`
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
+
+//exports.solution = 'npm publish'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd())

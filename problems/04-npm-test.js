@@ -24,8 +24,8 @@ order to help remind you to do this, npm puts a "always failing" test
 in there by default.
 
 First, create a file called `test.js`.  It doesn't have to do anything,
-really.  (This is npm class, not TDD class.)  But it has to exit without
-throwing an error, or else the test fails.
+really.  (This is npm class, not testing class.)  But it has to exit
+without throwing an error, or else the test fails.
 
 Then, edit your `package.json` file to make your scripts section look like
 this instead:
@@ -37,6 +37,10 @@ this instead:
 Once that's done, run `how-to-npm verify` to check your work.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
+
+//exports.solution = function () {/*
+//sed -i '' -e 's/echo .*1"$/echo ok ; exit 0"/' package.json
+//*/}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()

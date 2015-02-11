@@ -8,11 +8,22 @@ development environment.
 
 First, make a new directory and `cd` into it.
 
-Then, run `npm init` to create a package.json file.
+Then, run `npm init` to create a package.json file.  (For extra credit, set
+it up as a git repo as well.)
 
 Run `$ADVENTURE_COMMAND verify` once you're done.  All the other commands
 you run in this tutorial should be done in that folder.
 */}.toString().split('\n').slice(1,-1).join('\n')
+
+//exports.solution = function () {/*
+//mkdir test
+//cd test
+//npm init
+//# fill in all the prompts
+//
+//# Extra Credit:
+//git init
+//*/}.toString().split('\n').slice(1,-1).join('\n')
 
 var shop = require('../')
 var fs = require('fs')
@@ -66,12 +77,9 @@ exports.verify = function (args, cb) {
 
   console.log(
     'Congratulations!\n' +
-    'You created an npm package!\n' +
-    'Here\'s what it looks like:\n' +
-    '\n' +
-    '  ' + JSON.stringify(pkg, null, 2).split('\n').join('\n  ') +'\n'+
+    'You created an npm package!  View the package.json file to see it.\n' +
     '\n'+
-    'From here on out, make sure to run the workshop in this dir \n'+
+    'From here on out, make sure to run the workshop in this dir\n'+
     '\n'+
     'You might notice that a `.npmrc` file will show up in there.\n' +
     'That normaly would not be required, but the workshop uses it\n' +

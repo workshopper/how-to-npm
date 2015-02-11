@@ -24,8 +24,11 @@ To see who you're logged in as, run `npm whoami`
 To create your account, run `npm adduser`
 
 Try it now, and open the door to ever-greater module fun times!
+Then run `how-to-npm verify`
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
+
+//exports.solution = 'npm adduser'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd())

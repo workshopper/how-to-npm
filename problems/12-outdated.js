@@ -33,6 +33,8 @@ is the name of the package that is out of date.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
+//exports.solution = 'npm outdated; how-to-npm verify once'
+
 exports.verify = function (args, cb) {
   if (!shop.cwd())
     return cb(false)

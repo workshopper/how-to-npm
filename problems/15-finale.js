@@ -19,6 +19,8 @@ adventure.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
+//exports.solution = 'npm xmas'
+
 exports.verify = function (args, cb) {
   if (!shop.cwd())
     return cb(false)

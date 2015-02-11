@@ -25,8 +25,12 @@ Try it now.  There's not much too it.
 (Make sure you're still in the right project directory, though.  If you
 publish something by mistake, you can remove it, but there's no guarantee
 that no one saw it in the meantime.)
+
+Then run `how-to-npm verify` when you're done.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
+
+//exports.solution = 'npm publish'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd())

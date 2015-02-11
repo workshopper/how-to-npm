@@ -36,14 +36,13 @@ Version numbers in npm follow a standard called "SemVer".  This stands
 for "Semantic Version".  The specification for this standard can be
 found at http://semver.org.
 
-The tl;dr version is that a version is a set of three numbers,
-separated by periods.  The first number is the "major version".  The
-second number is the "minor version".  And the third number is the
-"patch version".  The major version gets updated when there is a breaking
-change.  The minor version gets updated when there is a change that adds
-functionality, but doesn't break anything.  And the patch version is
-updated whenever anything is changed in any way, including bug fixes that
-don't affect the public API.
+The tl;dr version is that for a version like this:
+
+  1.2.3
+  ^ ^ ^
+  | | `-- Patch version. Update for every change.
+  | `---- Minor version. Update for API additions.
+  `------ Major version. Update for breaking API changes.
 
 npm has a special command called `npm version` which will update your
 package.json file for you, and also commit the change to git if your
@@ -62,6 +61,8 @@ Update your version number now, and then `how-to-npm verify` to check it.
 
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
+
+//exports.solution = 'npm version patch'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd())

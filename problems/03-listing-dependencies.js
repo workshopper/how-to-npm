@@ -20,6 +20,13 @@ or `how-to-npm verify NOT OK` if there was a problem.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
+//exports.solution = function () {/*
+//npm ls
+//how-to-npm verify NOT OK
+//npm install once --save
+//npm ls
+//how-to-npm verify OK
+//*/}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
   // verify we're in the right folder
@@ -85,6 +92,8 @@ Try running `npm install once --save` to install the module, and also
 update your package.json file at the same time.
 
 (Another option is to just edit package.json yourself in a text editor)
+
+Then run `how-to-npm verify OK` once you've fixed the problem.
       */}.toString().split('\n').slice(1,-1).join('\n')
     )
     // skip calling the cb, so we can keep working on it.

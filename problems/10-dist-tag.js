@@ -29,6 +29,8 @@ Try adding a dist-tag on your package.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
+//exports.solution = 'npm dist-tag add test@1.0.0 old'
+
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()
   if (!cwd)

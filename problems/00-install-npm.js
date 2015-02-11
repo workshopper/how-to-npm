@@ -21,7 +21,7 @@ If the network is busted, and you want to skip this one, you can run
 `how-to-npm verify skip` to skip it.)
 */}.toString().split('\n').slice(1,-1).join('\n')
 
-exports.solution = '[sudo] npm install npm -g'
+// exports.solution = '[sudo] npm install npm -g'
 
 
 var exec = require('child_process').exec

@@ -27,6 +27,8 @@ Run `$ADVENTURE_COMMAND verify` once you're done.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
+//exports.solution = 'npm install once'
+
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()
   if (!cwd)

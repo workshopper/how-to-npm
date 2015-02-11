@@ -25,6 +25,8 @@ run `how-to-npm verify` to pick up your delicious green banner.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
+//exports.solution = 'npm install once'
+
 exports.verify = function (args, cb) {
   if (!shop.cwd())
     return cb(false)

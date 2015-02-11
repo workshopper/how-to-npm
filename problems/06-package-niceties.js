@@ -29,9 +29,17 @@ First, create a README.md file, with a bit of words in it.
 Then, add a "repository" field in your package.json file, with a url
 where people can access the code.
 
+You can edit your package.json file by hand, or run `npm init` again.
+
 Run `how-to-npm verify` when you're done.
 */}.toString().split('\n').slice(1,-1).join('\n').replace(/%ID%/g, id)
 }
+
+//exports.solution = function () {/*
+//echo 'some docs' > README.md
+//sed -i '' -e 's#^}#,"repository":"git://git.git","description":"foo"}#' package.json
+//*/}.toString().split('\n').slice(1,-1).join('\n')
+
 
 exports.verify = function (args, cb) {
   //TODO: DRY this up.  It's getting rather tedious.

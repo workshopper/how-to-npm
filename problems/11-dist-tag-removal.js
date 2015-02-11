@@ -25,6 +25,11 @@ Run `npm help dist-tag` to learn more about the command.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
+//exports.solution = function () {/*
+//npm dist-tags add test@1.0.0 latest
+//npm dist-tags rm test old
+//*/}.toString().split('\n').slice(1,-1).join('\n')
+
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()
   if (!cwd)
