@@ -23,6 +23,7 @@ a small number of things.
 
 Let's start out by installing the "once" module.
 
+Run `$ADVENTURE_COMMAND verify` once you're done.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
