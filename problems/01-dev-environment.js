@@ -8,7 +8,9 @@ development environment.
 
 First, make a new directory and `cd` into it.
 
-Then, run `npm init` to create a package.json file.
+Then, run `npm init` to create a package.json file. You will be prompted
+to answer a number of questions. You can just press enter to accept the
+default for each question.
 
 Run `$ADVENTURE_COMMAND verify` once you're done.  All the other commands
 you run in this tutorial should be done in that folder.
@@ -22,7 +24,7 @@ exports.verify = function (args, cb) {
   var datadir = shop.datadir
   var cwd = process.cwd()
   if (path.resolve(cwd, 'problems', path.basename(__filename)) === path.resolve(__filename)) {
-    console.log('It looks like you are in the root of the workshopper\n' +
+    console.log('It looks like you are in the root of the workshopper.\n' +
                 'That is not wise.  Please make a new dir, and use that.')
     return cb(false)
   }
