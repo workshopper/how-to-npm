@@ -57,6 +57,7 @@ exports.verify = function (args, cb) {
     }
 
     console.log('You have version %s installed.  Great!', v)
+    console.log('Now let\'s see what the latest version is... wait for it...')
 
     exec(npm + ' view npm version --registry=https://registry.npmjs.org', function (code, stdout, stderr) {
       var latest = ('' + stdout).trim()
