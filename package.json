@@ -34,5 +34,6 @@
     "rimraf": "^2.2.8",
     "semver": "^4.2.0",
     "which": "^1.0.8"
-  }
+  },
+  "preferGlobal": true
 }
