@@ -13,7 +13,7 @@ If you have a way to put stuff there, then naturally, you'll one
 day need a way to delete them.
 
 Enter the `npm rm` command (aka `npm uninstall` if you prefer to
-type tings out long-hand).
+type things out long-hand).
 
 Remove all the deps!  But, make sure that you don't keep depending on them.
 
