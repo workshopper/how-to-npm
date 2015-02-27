@@ -15,7 +15,8 @@ var mkdirp = require('mkdirp')
 var problems = fs.readdirSync(path.resolve(__dirname, 'problems'))
 problems.filter(function (problem) {
   return problem.match(/^[^.].*\.js$/)
-}).forEach(function (problem) {
+});
+problems.sort().forEach(function (problem) {
   var name = problem.replace(/\.js$/, '').split('-').map(function (p) {
     if (p === 'npm')
       return p
