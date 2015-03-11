@@ -26,8 +26,8 @@ Run `npm help dist-tag` to learn more about the command.
 }
 
 //exports.solution = function () {/*
-//npm dist-tags add test@1.0.0 latest
-//npm dist-tags rm test old
+//npm dist-tag add test@1.0.0 latest
+//npm dist-tag rm test old
 //*/}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
@@ -63,7 +63,7 @@ exports.verify = function (args, cb) {
     console.log('Oops!  Your "latest" tag still points at the most recent\n' +
                 'release, %s.\n' +
                 'Point that somewhere else, and re-run `how-to-npm verify`\n'+
-                'Use `npm help dist-tags` to learn more about how to do it.',
+                'Use `npm help dist-tag` to learn more about how to do it.',
                 mostRecentVersion)
     return cb(false)
   }
