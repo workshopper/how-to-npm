@@ -24,7 +24,7 @@ something like this:
 Before we can share this work of art with the world, we need to make
 it a bit more polished so that people know how to use it.
 
-First, create a README.md file, with a bit of words in it.
+First, create a README.md file, with a few words in it.
 
 Then, add a "repository" field in your package.json file, with a url
 where people can access the code.
