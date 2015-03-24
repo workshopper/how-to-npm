@@ -51,7 +51,7 @@ exports.verify = function (args, cb) {
 
   // make sure we get no warnings 
   var exec = require('child_process').exec
-  var npm = require('which').sync('npm')
+  var npm = 'npm'
   exec(npm + ' i', function (er, stdout, stderr) {
     if (er) {
       process.stdout.write(stdout)
