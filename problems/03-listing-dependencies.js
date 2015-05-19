@@ -23,7 +23,7 @@ or `how-to-npm verify NOT OK` if there was a problem.
 //exports.solution = function () {/*
 //npm ls
 //how-to-npm verify NOT OK
-//npm install once --save
+//npm install @isaacs/once --save
 //npm ls
 //how-to-npm verify OK
 //*/}.toString().split('\n').slice(1,-1).join('\n')
@@ -37,11 +37,11 @@ exports.verify = function (args, cb) {
   // see if there was a problem or not
   var deps = require(cwd + '/package.json').dependencies
   try {
-    var once = require(cwd + '/node_modules/once/package.json')
+    var once = require(cwd + '/node_modules/@isaacs/once/package.json')
   } catch (er) {}
   var semver = require('semver')
   var ok
-  if (!once || !deps || !deps.once || !semver.satisfies(once.version, deps.once))
+  if (!once || !deps || !deps["@isaacs/once"] || !semver.satisfies(once.version, deps["@isaacs/once"]))
     ok = false
   else
     ok = true
@@ -77,7 +77,7 @@ exports.verify = function (args, cb) {
 Indeed, not all is well here in dep-land.
 
 Your dependencies should be listed in the package.json file in an
-object called 'dependencies'.  However, when we installed 'once',
+object called 'dependencies'.  However, when we installed '@isaacs/once',
 we didn't update the package.json file to list out this dependency.
 
 So, it shows up as 'extraneous', warning us that we have something
@@ -88,7 +88,7 @@ when installing dependencies.  You might not want to do this with
 things that you're just trying out, but when you decide on something,
 you can use this flag to update your package.json file easily.
 
-Try running `npm install once --save` to install the module, and also
+Try running `npm install @isaacs/once --save` to install the module, and also
 update your package.json file at the same time.
 
 (Another option is to just edit package.json yourself in a text editor)
