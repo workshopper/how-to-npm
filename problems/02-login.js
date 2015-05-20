@@ -10,8 +10,8 @@ exports.problem = function () {
   reg.run('login')
 
   return function () { /*
-As much fun as it is to install modules, npm is best when you
-can be a part of it.  That starts with creating an account.
+npm is best when you can be a part of it.  That starts with
+creating an account.
 
 Because this is just a tutorial adventure, remember, we're not
 *actually* creating an account anywhere.  However, when you run
