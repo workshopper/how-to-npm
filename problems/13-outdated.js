@@ -8,9 +8,9 @@ exports.problem = function () {
   if (!shop.cwd())
     return ''
 
-  // If it hasn't already been done, add a new version of once.
-  var once = require(shop.datadir + '/registry/once/body.json')
-  if (once['dist-tags'].latest === '1.3.0') {
+  // If it hasn't already been done, add a new version of @linclark/pkg.
+  var pkg = require(shop.datadir + '/registry/@linclark/pkg/body.json')
+  if (pkg['dist-tags'].latest === '1.0.2') {
     // publish an update
     shop.cpr(path.resolve(__dirname, '..', 'lib', 'registry-assets-update'),
              path.resolve(shop.datadir, 'registry'))
@@ -33,16 +33,16 @@ is the name of the package that is out of date.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
-//exports.solution = 'npm outdated; how-to-npm verify once'
+//exports.solution = 'npm outdated; how-to-npm verify @linclark/pkg'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd())
     return cb(false)
 
   var arg = args.join('').toLowerCase()
-  if (arg === 'once') {
+  if (arg === '@linclark/pkg') {
     console.log(function () {/*
-That's absolutely right!  The `once` package has had an update while we
+That's absolutely right!  The `@linclark/pkg` package has had an update while we
 weren't looking.
 
 In the next lesson, we'll learn how to update packages that are outdated.
@@ -54,7 +54,7 @@ In the next lesson, we'll learn how to update packages that are outdated.
   if (!arg || arg === 'pkg') {
     console.log('Run `how-to-npm verify PKG` but replace `PKG` with the name\n' +
                 'of the package that is outdated')
-  } else if (arg !== 'once') {
+  } else if (arg !== '@linclark/pkg') {
     console.log('Nope, it\'s not %s.  Try again!', arg)
   }
 
