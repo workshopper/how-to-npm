@@ -65,7 +65,6 @@ shop.cwd = function () {
   // verify we're in the right folder
   try {
     var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
-    var pkg = require(cwd + '/package.json')
   } catch (er) {
     console.log('Looks like you are not ready for this one yet!\n' +
                 'Go back to the `01 Dev Environment` lesson to set up\n' +
