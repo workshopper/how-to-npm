@@ -25,7 +25,7 @@ When you've removed your dependencies, type `how-to-npm verify` to move on.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
-//exports.solution = 'npm rm once --save'
+//exports.solution = 'npm rm @linclark/pkg --save'
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()
