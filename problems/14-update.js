@@ -25,14 +25,14 @@ run `how-to-npm verify` to pick up your delicious green banner.
 */}.toString().split('\n').slice(1,-1).join('\n')
 }
 
-//exports.solution = 'npm install once'
+//exports.solution = 'npm install @linclark/pkg'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd())
     return cb(false)
 
-  var once = require(shop.cwd() + '/node_modules/once/package.json')
-  if (once.version !== '1.3.1') {
+  var pkg = require(shop.cwd() + '/node_modules/@linclark/pkg/package.json')
+  if (pkg.version !== '1.0.3') {
     console.log('Oops!  You are still using the outdated version!')
     return cb(false)
   }
