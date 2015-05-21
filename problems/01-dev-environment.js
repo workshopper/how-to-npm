@@ -15,6 +15,7 @@ you run in this tutorial should be done in that folder.
 //exports.solution = function () {/*
 //mkdir test
 //cd test
+//*/}.toString().split('\n').slice(1,-1).join('\n')
 
 var shop = require('../')
 var fs = require('fs')
