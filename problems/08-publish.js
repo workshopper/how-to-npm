@@ -20,7 +20,7 @@ npm users to publish their modules and share them with the world.
 
 Packages get into the registry by using the `npm publish` command.
 
-Try it now.  There's not much too it.
+Try it now.  There's not much to it.
 
 (Make sure you're still in the right project directory, though.  If you
 publish something by mistake, you can remove it, but there's no guarantee
@@ -47,6 +47,7 @@ exports.verify = function (args, cb) {
                   'It looks like you didn\'t successfully publish the ' +
                   name + '\n' +
                   'package.  Try again!\n')
+      return cb(false)
     }
 
     console.log(function () {/*
