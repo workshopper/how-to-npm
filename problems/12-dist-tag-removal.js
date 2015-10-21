@@ -13,7 +13,7 @@ exports.problem = function () {
 Now that you've added a dist-tag or two, let's clean things up.
 
 The only dist-tag you CAN'T ever remove is "latest".  That's because
-every package installs it's "latest" tag by default, so that tag has
+every package installs its "latest" tag by default, so that tag has
 some special semantics.
 
 You CAN point "latest" to a different version, or delete other tags.
