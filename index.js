@@ -39,7 +39,11 @@ shop.execute = function (args) {
 
 // Copy the registry-assets if they're not already there.
 try {
-  var assetsStat = fs.statSync(shop.datadir + '/registry')
+  var registryPath = shop.datadir + '/registry';
+  if (!fs.existsSync(registryPath)){
+    fs.mkdirSync(registryPath);
+  }
+  var assetsStat = fs.statSync(registryPath)
   if (!assetsStat.isDirectory()) throw 'enotdir'
 } catch (er) {
   rimraf.sync(shop.datadir + '/registry')
