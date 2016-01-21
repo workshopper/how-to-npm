@@ -39,7 +39,7 @@ exports.verify = function (args, cb) {
   var pkg = require(process.cwd() + '/package.json')
   var name = pkg.name
   var exec = require('child_process').exec
-  var npm = require('which').sync('npm')
+  var npm = '"' + require('which').sync('npm') + '"'
   exec(npm + ' --color=always view ' + name, function (er, stdout, stderr) {
     if (er) {
       process.stderr.write(stderr)
