@@ -43,7 +43,7 @@ exports.verify = function (args, cb) {
     'From here on out, make sure to run the workshop in this dir\n'+
     '\n'+
     'You might notice that a `.npmrc` file will show up in there.\n' +
-    'That normaly would not be required, but the workshop uses it\n' +
+    'That normally would not be required, but the workshop uses it\n' +
     'to mock out the parts that would normally talk to the internet.'
   )
 
