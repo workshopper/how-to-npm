@@ -2,7 +2,10 @@
 
 A module to teach you how to module.
 
-For using How-to-Npm you have to install nodejs.Install it from <a href='https://nodejs.org/en/'>here</a>
+## PREREQUISITES
+
+To use this project, you'll need NodeJS. Visit http://www.nodejs.org to 
+download and learn more!
 
 ## USAGE
 
