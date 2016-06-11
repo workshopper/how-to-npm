@@ -10,3 +10,4 @@
 - [mirandaio](https://github.com/mirandaio)
 - [emilabraham](https://github.com/emilabraham)
 - [johnbrett](https://github.com/johnbrett)
+- [petert82](https://github.com/petert82)
