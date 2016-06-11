@@ -14,3 +14,11 @@ how-to-npm
 This will walk you through the basics of setting up a working
 environment, installing dependencies, logging into npm, publishing a
 module, and so on, all from the safety of your own laptop.
+
+## OPEN OPEN SOURCE
+
+This is an [open open source project]. Individuals making significant
+and valuable contributions are given commit-access to the project to
+contribute as they see fit.
+
+[open open source project]: http://openopensource.org/
