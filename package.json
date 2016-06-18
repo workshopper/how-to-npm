@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/npm/how-to-npm"
   },
+  "scripts": {
+    "test": "standard"
+  },
   "keywords": [
     "workshop",
     "adventure",
@@ -35,5 +38,8 @@
     "semver": "^4.2.0",
     "which": "^1.0.8"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "standard": "^7.1.2"
+  }
 }

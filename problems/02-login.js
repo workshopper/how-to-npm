@@ -1,11 +1,8 @@
 var reg = require('../lib/registry.js')
 var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
+  if (!shop.cwd()) return ''
 
   reg.run('login')
 
@@ -25,14 +22,13 @@ To create your account, run `npm adduser`
 
 Try it now, and open the door to ever-greater module fun times!
 Then run `how-to-npm verify`
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = 'npm adduser'
+// exports.solution = 'npm adduser'
 
 exports.verify = function (args, cb) {
-  if (!shop.cwd())
-    return cb(false)
+  if (!shop.cwd()) return cb(false)
 
   // test who we are with whoami
   var exec = require('child_process').exec
@@ -48,18 +44,18 @@ exports.verify = function (args, cb) {
     }
 
     stdout = (stdout + '').trim()
-    if (stdout.match(/Not authed.  Run 'npm adduser'/)) {
-      console.log('Hm... I don\'t see a login here\n'+
+    if (stdout.match(/Not authed. {2}Run 'npm adduser'/)) {
+      console.log('Hm... I don\'t see a login here\n' +
                   'Did you run `npm adduser` to create the account?')
       return cb(false)
     }
 
     console.log('Congratulations, %s!', stdout)
-    console.log('You are the proud owner of an imaginary new npm account!\n'+
-                'Use it wisely.  Never in anger.  Always for the Good.\n'+
+    console.log('You are the proud owner of an imaginary new npm account!\n' +
+                'Use it wisely.  Never in anger.  Always for the Good.\n' +
                 '\n' +
-                'With this sweet power comes much responsibility, which is\n'+
-                'sufficiently different from Spiderman\'s thing that Marvel\n'+
+                'With this sweet power comes much responsibility, which is\n' +
+                'sufficiently different from Spiderman\'s thing that Marvel\n' +
                 'hopefully won\'t sue us.\n\nExcelsior!')
 
     reg.kill()

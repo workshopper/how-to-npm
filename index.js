@@ -17,8 +17,7 @@ problems.filter(function (problem) {
   return problem.match(/^[^.].*\.js$/)
 }).forEach(function (problem) {
   var name = problem.replace(/\.js$/, '').split('-').map(function (p) {
-    if (p === 'npm')
-      return p
+    if (p === 'npm') return p
     return p.charAt(0).toUpperCase() + p.slice(1)
   }).join(' ')
   shop.add(name, function () {
@@ -40,7 +39,7 @@ shop.execute = function (args) {
 // Copy the registry-assets if they're not already there.
 try {
   var assetsStat = fs.statSync(shop.datadir + '/registry')
-  if (!assetsStat.isDirectory()) throw 'enotdir'
+  if (!assetsStat.isDirectory()) throw Error('enotdir')
 } catch (er) {
   rimraf.sync(shop.datadir + '/registry')
   cpr(path.resolve(__dirname, 'lib', 'registry-assets'),
@@ -72,15 +71,13 @@ shop.cwd = function () {
     return false
   }
 
-  if (cwd === process.cwd())
-    return cwd
+  if (cwd === process.cwd()) return cwd
 
-  console.log('Uh oh!\n'+
-              'It looks like you are in the wrong folder.\n'+
-              'Please cd into ' + cwd +'\n'+
+  console.log('Uh oh!\n' +
+              'It looks like you are in the wrong folder.\n' +
+              'Please cd into ' + cwd + '\n' +
               'and then try again')
   return false
 }
 
-if (require.main === module)
-  shop.execute(process.argv.slice(2))
+if (require.main === module) shop.execute(process.argv.slice(2))
