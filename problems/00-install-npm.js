@@ -40,6 +40,7 @@ exports.verify = function (args, cb) {
 
   try {
     npm = which.sync('npm')
+    npm = 'npm'
   } catch (er) {
     console.error('It looks like npm is not installed.')
     return cb(false)
