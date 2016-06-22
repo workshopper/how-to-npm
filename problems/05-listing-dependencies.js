@@ -1,14 +1,11 @@
 var reg = require('../lib/registry.js')
 var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
+  if (!shop.cwd()) return ''
 
-  reg.run("install-a-module")
-  return function () {/*
+  reg.run('install-a-module')
+  return function () { /*
 npm isn't just for installing stuff.  It also shows you what you
 have installed (your dependencies).
 
@@ -19,22 +16,21 @@ any problems npm will alert you by returning an "!ERR" message.
 
 If everything looks ok, then run `how-to-npm verify OK`, or
 `how-to-npm verify NOT OK` if npm does report a problem".
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = function () {/*
-//npm ls
-//how-to-npm verify NOT OK
-//npm install @linclark/pkg --save
-//npm ls
-//how-to-npm verify OK
-//*/}.toString().split('\n').slice(1,-1).join('\n')
+// exports.solution = function () {/*
+// npm ls
+// how-to-npm verify NOT OK
+// npm install @linclark/pkg --save
+// npm ls
+// how-to-npm verify OK
+// */}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
   // verify we're in the right folder
   var cwd = shop.cwd()
-  if (!cwd)
-    return false
+  if (!cwd) return false
 
   // see if there was a problem or not
   var deps = require(cwd + '/package.json').dependencies
@@ -43,22 +39,21 @@ exports.verify = function (args, cb) {
   } catch (er) {}
   var semver = require('semver')
   var ok
-  if (!pkg || !deps || !deps["@linclark/pkg"] || !semver.satisfies(pkg.version, deps["@linclark/pkg"]))
+  if (!pkg || !deps || !deps['@linclark/pkg'] || !semver.satisfies(pkg.version, deps['@linclark/pkg'])) {
     ok = false
-  else
+  } else {
     ok = true
+  }
 
   var claim = args.join('').toUpperCase().trim()
 
   if (claim !== 'OK' && claim !== 'NOTOK') {
     console.log('Please run:\n' +
-                '`how-to-npm verify OK` if everything is ok,\n'+
+                '`how-to-npm verify OK` if everything is ok,\n' +
                 'or:\n' +
                 '`how-to-npm verify NOT OK` otherwise.')
     return cb(false)
   }
-
-
 
   if (claim === 'OK' && !ok) {
     console.log('Sorry, no.  Everything is not ok!\n' +
@@ -70,12 +65,12 @@ exports.verify = function (args, cb) {
                 'but your package.json and node_modules folder are fine.')
     return cb(false)
   } else if (ok) {
-    console.log('Looks like you fixed the problem.  Fantastic!\n'+
+    console.log('Looks like you fixed the problem.  Fantastic!\n' +
                 'Note that `npm ls` is a lot calmer now.')
     reg.kill()
     return cb(true)
   } else {
-    console.log(function () {/*
+    console.log(function () { /*
 Indeed, not all is well here in dep-land.
 
 Your dependencies should be listed in the package.json file in an
@@ -96,11 +91,9 @@ update your package.json file at the same time.
 (Another option is to just edit package.json yourself in a text editor)
 
 Then run `how-to-npm verify OK` once you've fixed the problem.
-      */}.toString().split('\n').slice(1,-1).join('\n')
+    */ }.toString().split('\n').slice(1, -1).join('\n')
     )
     // skip calling the cb, so we can keep working on it.
     return
   }
-
-  throw new Error('should not ever get here')
 }

@@ -1,15 +1,10 @@
-var reg = require('../lib/registry.js')
-
 var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.problem = function () {
   var cwd = process.cwd()
-  if (!cwd)
-    return ''
+  if (!cwd) return ''
 
-  return function () {/*
+  return function () { /*
 Now you've installed something, and used `npm ls` to show what's going on.
 
 If you look at the package.json file, it has this rather odd bit in it:
@@ -42,17 +37,16 @@ Additional info: If you wanted to actually run any tests you'd written in
 
 The docs for npm's scripts property can be found here:
 https://docs.npmjs.com/misc/scripts
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = function () {/*
-//sed -i '' -e 's/echo .*1"$/echo ok ; exit 0"/' package.json
-//*/}.toString().split('\n').slice(1,-1).join('\n')
+// exports.solution = function () {/*
+// sed -i '' -e 's/echo .*1"$/echo ok ; exit 0"/' package.json
+// */}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()
-  if (!cwd)
-    return cb(false)
+  if (!cwd) return cb(false)
 
   var pj = require(cwd + '/package.json')
 
@@ -73,12 +67,12 @@ exports.verify = function (args, cb) {
     console.log('\n\n...done!')
 
     if (er) {
-      console.log('Uh oh!  The test failed!\n'+
+      console.log('Uh oh!  The test failed!\n' +
                   'Try creating a test that actually works.')
       return cb(false)
     }
 
-    console.log('Congratulations!  You wrote a test that passes!\n'+
+    console.log('Congratulations!  You wrote a test that passes!\n' +
                 'Writing a test that is actually GOOD is left for another time.')
     return cb(true)
   })

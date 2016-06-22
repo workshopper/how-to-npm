@@ -1,12 +1,9 @@
 var reg = require('../lib/registry.js')
 
 var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
+  if (!shop.cwd()) return ''
 
   reg.run('dist-tag')
   return function () { /*
@@ -22,18 +19,17 @@ Let's delete all the tags that we can, and also point "latest" at
 something other than the most recent release.
 
 Run `npm help dist-tag` to learn more about the command.
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = function () {/*
-//npm dist-tag add test@1.0.0 latest
-//npm dist-tag rm test old
-//*/}.toString().split('\n').slice(1,-1).join('\n')
+// exports.solution = function () {/*
+// npm dist-tag add test@1.0.0 latest
+// npm dist-tag rm test old
+// */}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()
-  if (!cwd)
-    return cb(false)
+  if (!cwd) return cb(false)
 
   var pkg = require(cwd + '/package.json')
   var name = pkg.name
@@ -51,8 +47,7 @@ exports.verify = function (args, cb) {
   var mostRecentTime = ''
   var mostRecentVersion
   for (var v in time) {
-    if (!body.versions[v])
-      continue
+    if (!body.versions[v]) continue
     if (time[v] > mostRecentTime) {
       mostRecentTime = time[v]
       mostRecentVersion = v
@@ -62,17 +57,17 @@ exports.verify = function (args, cb) {
   if (dt.latest === mostRecentVersion) {
     console.log('Oops!  Your "latest" tag still points at the most recent\n' +
                 'release, %s.\n' +
-                'Point that somewhere else, and re-run `how-to-npm verify`\n'+
+                'Point that somewhere else, and re-run `how-to-npm verify`\n' +
                 'Use `npm help dist-tag` to learn more about how to do it.',
                 mostRecentVersion)
     return cb(false)
   }
 
-  console.log(function () {/*
+  console.log(function () { /*
 Congratulations!  You're a dist-tagging pro!
 
 Run `how-to-npm` to move on to the next exercise.
-*/}.toString().split('\n').slice(1,-1).join('\n'))
+  */ }.toString().split('\n').slice(1, -1).join('\n'))
   reg.kill()
   return cb(true)
 }

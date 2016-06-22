@@ -1,13 +1,9 @@
-var reg = require('../lib/registry.js')
-
 var shop = require('../')
 var fs = require('fs')
-var path = require('path')
 var semver = require('semver')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
+  if (!shop.cwd()) return ''
 
   // capture the current version in the datadir
   var pkg = require(shop.cwd() + '/package.json')
@@ -60,14 +56,13 @@ Don't worry, there's a lot of integers, we probably won't run out.
 
 Update your version number now, and then `how-to-npm verify` to check it.
 
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = 'npm version patch'
+// exports.solution = 'npm version patch'
 
 exports.verify = function (args, cb) {
-  if (!shop.cwd())
-    return cb(false)
+  if (!shop.cwd()) return cb(false)
 
   var verfile = shop.datadir + '/version'
   var oldVer = fs.readFileSync(verfile, 'utf8')

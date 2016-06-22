@@ -1,12 +1,10 @@
 var reg = require('../lib/registry.js')
 
 var shop = require('../')
-var fs = require('fs')
 var path = require('path')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
+  if (!shop.cwd()) return ''
 
   // If it hasn't already been done, add a new version of @linclark/pkg.
   var pkg = require(shop.datadir + '/registry/@linclark/pkg/body.json')
@@ -30,23 +28,22 @@ programmatically with the `npm outdated` command.
 
 To pass this challenge, run `how-to-npm verify PKG` where `PKG`
 is the name of the package that is out of date.
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = 'npm outdated; how-to-npm verify @linclark/pkg'
+// exports.solution = 'npm outdated; how-to-npm verify @linclark/pkg'
 
 exports.verify = function (args, cb) {
-  if (!shop.cwd())
-    return cb(false)
+  if (!shop.cwd()) return cb(false)
 
   var arg = args.join('').toLowerCase()
   if (arg === '@linclark/pkg') {
-    console.log(function () {/*
+    console.log(function () { /*
 That's absolutely right!  The `@linclark/pkg` package has had an update while we
 weren't looking.
 
 In the next lesson, we'll learn how to update packages that are outdated.
-*/}.toString().split('\n').slice(1,-1).join('\n'))
+    */ }.toString().split('\n').slice(1, -1).join('\n'))
     reg.kill()
     return cb(true)
   }
@@ -59,5 +56,4 @@ In the next lesson, we'll learn how to update packages that are outdated.
   }
 
   return cb(false)
-
 }

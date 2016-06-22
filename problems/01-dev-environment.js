@@ -14,12 +14,12 @@ default for each question.
 
 Run `$ADVENTURE_COMMAND verify` once you're done.  All the other commands
 you run in this tutorial should be done in that folder.
-*/}.toString().split('\n').slice(1,-1).join('\n')
+*/ }.toString().split('\n').slice(1, -1).join('\n')
 
-//exports.solution = function () {/*
-//mkdir test
-//cd test
-//*/}.toString().split('\n').slice(1,-1).join('\n')
+// exports.solution = function () {/*
+// mkdir test
+// cd test
+// */}.toString().split('\n').slice(1,-1).join('\n')
 
 var shop = require('../')
 var fs = require('fs')
@@ -43,9 +43,9 @@ exports.verify = function (args, cb) {
   console.log(
     'Congratulations!\n' +
     'You have a development environment.\n' +
-    '\n'+
-    'From here on out, make sure to run the workshop in this dir\n'+
-    '\n'+
+    '\n' +
+    'From here on out, make sure to run the workshop in this dir\n' +
+    '\n' +
     'You might notice that a `.npmrc` file will show up in there.\n' +
     'That normally would not be required, but the workshop uses it\n' +
     'to mock out the parts that would normally talk to the internet.'

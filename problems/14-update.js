@@ -1,12 +1,9 @@
 var reg = require('../lib/registry.js')
 
 var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
+  if (!shop.cwd()) return ''
 
   reg.run('update')
 
@@ -22,14 +19,13 @@ Can you guess what command that might be?  (`npm help` might help you)
 
 Update all your deps to the latest version possible, and then
 run `how-to-npm verify` to pick up your delicious green banner.
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = 'npm install @linclark/pkg'
+// exports.solution = 'npm install @linclark/pkg'
 
 exports.verify = function (args, cb) {
-  if (!shop.cwd())
-    return cb(false)
+  if (!shop.cwd()) return cb(false)
 
   var pkg = require(shop.cwd() + '/node_modules/@linclark/pkg/package.json')
   if (pkg.version !== '1.0.3') {

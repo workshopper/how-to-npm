@@ -1,13 +1,9 @@
 var reg = require('../lib/registry.js')
 
 var shop = require('../')
-var fs = require('fs')
-var path = require('path')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
-
+  if (!shop.cwd()) return ''
 
   return function () { /*
 
@@ -16,14 +12,13 @@ introduction.  If you've finished all the other exercises, then run
 `how-to-npm verify` to learn about the next steps beyond this little
 adventure.
 
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = 'npm xmas'
+// exports.solution = 'npm xmas'
 
 exports.verify = function (args, cb) {
-  if (!shop.cwd())
-    return cb(false)
+  if (!shop.cwd()) return cb(false)
 
   var total = shop._adventures.length
   var completed = shop.state.completed.length
@@ -35,7 +30,7 @@ exports.verify = function (args, cb) {
     return cb(false)
   }
 
-  console.log(function () {/*
+  console.log(function () { /*
 There is SO MUCH MORE that npm can do.  Some of the things that we didn't
 have time to cover in this modest little workshop include:
 
@@ -50,7 +45,7 @@ Your adventure is awaiting you at https://www.npmjs.com/
 
 See you on the internet!
 
-*/}.toString().split('\n').slice(1,-1).join('\n'))
+  */ }.toString().split('\n').slice(1, -1).join('\n'))
 
   reg.kill()
   return cb(true)

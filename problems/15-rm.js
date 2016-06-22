@@ -1,12 +1,9 @@
-var reg = require('../lib/registry.js')
-
 var shop = require('../')
 var fs = require('fs')
 var path = require('path')
 
 exports.problem = function () {
-  if (!shop.cwd())
-    return ''
+  if (!shop.cwd()) return ''
 
   return function () { /*
 If you have a way to put stuff there, then naturally, you'll one
@@ -22,21 +19,20 @@ use `--save` when removing packages, to also remove them from your
 package.json file.
 
 When you've removed your dependencies, type `how-to-npm verify` to move on.
-*/}.toString().split('\n').slice(1,-1).join('\n')
+  */ }.toString().split('\n').slice(1, -1).join('\n')
 }
 
-//exports.solution = 'npm rm @linclark/pkg --save'
+// exports.solution = 'npm rm @linclark/pkg --save'
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()
-  if (!cwd)
-    return cb(false)
+  if (!cwd) return cb(false)
 
   var pkg = require(cwd + '/package.json')
   var deps = Object.keys(pkg.dependencies || {})
   var nm
   try {
-    var nm = fs.readdirSync(path.resolve(cwd, 'node_modules'))
+    nm = fs.readdirSync(path.resolve(cwd, 'node_modules'))
     nm = nm.filter(function (n) {
       return !/^\./.test(n)
     })
@@ -54,12 +50,12 @@ exports.verify = function (args, cb) {
     return cb(false)
   }
 
-  console.log(function () {/*
+  console.log(function () { /*
 Awesome!  You have removed the packages from your node_modules folder,
 and also updated your package.json file to reflect that you're no longer
 depending on them.
 
 Well done.
-*/}.toString().split('\n').slice(1,-1).join('\n'))
+  */ }.toString().split('\n').slice(1, -1).join('\n'))
   return cb(true)
 }
