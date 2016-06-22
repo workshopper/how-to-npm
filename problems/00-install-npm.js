@@ -28,6 +28,8 @@ var exec = require('child_process').exec
 var node = process.execPath
 var which = require('which')
 var semver = require('semver')
+var os = require('os');
+
 exports.verify = function (args, cb) {
   if (args.join('').toLowerCase() === 'skip') {
     console.log('Ok, if you say so...\n'+
@@ -48,6 +50,10 @@ exports.verify = function (args, cb) {
   }
 
   // figure out what version we have
+    //if on windows, quote the path to npm
+    if (os.type() === 'Windows_NT') {
+        npm = '"' + npm + '"';
+    }
   exec(npm +' --version', function (code, stdout, stderr) {
     var v = ('' + stdout).trim()
     if (code) {
