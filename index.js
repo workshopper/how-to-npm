@@ -21,6 +21,7 @@ var shop = module.exports = adventure({
     bg: 'white',
     fg: 'red'
   },
+  version: require('./package.json').version,
   commands: [{
     name: 'reset-registry',
     handler: function (workshopper) {
@@ -63,6 +64,13 @@ function cpclean (item) {
   } catch (er) {
     rimraf.sync(to)
     cpr(from, to)
+  }
+
+  try {
+    var versionStat = fs.readFileSync(shop.datadir + '/version', 'utf8')
+    if (versionStat !== shop.options.version) throw Error('eold')
+  } catch (e) {
+    fs.writeFileSync(shop.datadir + '/version', shop.options.version)
   }
 }
 
