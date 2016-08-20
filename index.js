@@ -4,7 +4,8 @@ var adventure = require('adventure')
 var shop = module.exports = adventure({
   name: 'how-to-npm',
   bg: 'white',
-  fg: 'red'
+  fg: 'red',
+  version: require('./package.json').version
 })
 
 var fs = require('fs')
@@ -40,10 +41,15 @@ shop.execute = function (args) {
 try {
   var assetsStat = fs.statSync(shop.datadir + '/registry')
   if (!assetsStat.isDirectory()) throw Error('enotdir')
+  var versionStat = fs.readFileSync(shop.datadir + '/version', 'utf8')
+  if (versionStat !== shop.options.version) {
+    throw Error('eold')
+  }
 } catch (er) {
   rimraf.sync(shop.datadir + '/registry')
   cpr(path.resolve(__dirname, 'lib', 'registry-assets'),
       path.resolve(shop.datadir, 'registry'))
+  fs.writeFileSync(shop.datadir + '/version', shop.options.version)
 }
 
 shop.cpr = cpr
