@@ -1,31 +1,12 @@
-var reg = require('../lib/registry.js')
+var path = require('path')
+var reg = require('../../lib/registry.js')
+var shop = require('../../')
 
-var shop = require('../')
-
-exports.problem = function () {
-  if (!shop.cwd()) return ''
-
-  reg.run('dist-tag')
-  return function () { /*
-Now that you've added a dist-tag or two, let's clean things up.
-
-The only dist-tag you CAN'T ever remove is "latest".  That's because
-every package installs its "latest" tag by default, so that tag has
-some special semantics.
-
-You CAN point "latest" to a different version, or delete other tags.
-
-Let's delete all the tags that we can, and also point "latest" at
-something other than the most recent release.
-
-Run `npm help dist-tag` to learn more about the command.
-  */ }.toString().split('\n').slice(1, -1).join('\n')
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
 }
-
-// exports.solution = function () {/*
-// npm dist-tag add test@1.0.0 latest
-// npm dist-tag rm test old
-// */}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()

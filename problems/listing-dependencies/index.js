@@ -1,31 +1,12 @@
-var reg = require('../lib/registry.js')
-var shop = require('../')
+var path = require('path')
+var reg = require('../../lib/registry.js')
+var shop = require('../../')
 
-exports.problem = function () {
-  if (!shop.cwd()) return ''
-
-  reg.run('install-a-module')
-  return function () { /*
-npm isn't just for installing stuff.  It also shows you what you
-have installed (your dependencies).
-
-You can do this using the `npm ls` command.
-
-Run this command in your working dir.  If there are
-any problems npm will alert you by returning an "!ERR" message.
-
-If everything looks ok, then run `how-to-npm verify OK`, or
-`how-to-npm verify NOT OK` if npm does report a problem".
-  */ }.toString().split('\n').slice(1, -1).join('\n')
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
 }
-
-// exports.solution = function () {/*
-// npm ls
-// how-to-npm verify NOT OK
-// npm install @linclark/pkg --save
-// npm ls
-// how-to-npm verify OK
-// */}.toString().split('\n').slice(1,-1).join('\n')
 
 exports.verify = function (args, cb) {
   // verify we're in the right folder

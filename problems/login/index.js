@@ -1,31 +1,12 @@
-var reg = require('../lib/registry.js')
-var shop = require('../')
+var path = require('path')
+var reg = require('../../lib/registry.js')
+var shop = require('../../')
 
-exports.problem = function () {
-  if (!shop.cwd()) return ''
-
-  reg.run('login')
-
-  return function () { /*
-npm is best when you can be a part of it.  That starts with
-creating an account.
-
-Because this is just a tutorial adventure, remember, we're not
-*actually* creating an account anywhere.  However, when you run
-this in the Real World, it'll create a real account, with a page
-on npmjs.com and the ability to publish packages that real live
-humans can install and enjoy.
-
-To see who you're logged in as, run `npm whoami`
-
-To create your account, run `npm adduser`
-
-Try it now, and open the door to ever-greater module fun times!
-Then run `how-to-npm verify`
-  */ }.toString().split('\n').slice(1, -1).join('\n')
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
 }
-
-// exports.solution = 'npm adduser'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd()) return cb(false)

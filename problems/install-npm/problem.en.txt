@@ -1,0 +1,19 @@
+Hello, and welcome to the npm adventure workshop!  I am going to be
+asking you to do various things with npm so that you can get started
+with it easily.
+
+Some helpful commands:
+
+npm help ............ Get help with npm
+how-to-npm print .... Re-display the current exercise
+how-to-npm verify ... Verify that you have finished an exercise
+how-to-npm solution . Show the solution for the current exercise
+
+The first thing we're going to do is make sure that your npm
+version is up to date.
+
+Run `$ADVENTURE_COMMAND verify` once that is done.
+
+(This is the only part of the workshop that requires network access.
+If the network is busted, and you want to skip this one, you can run
+`$ADVENTURE_COMMAND verify skip` to skip it.)

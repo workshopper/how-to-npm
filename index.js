@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 
-var adventure = require('adventure')
+var adventure = require('workshopper-adventure/adventure')
 var shop = module.exports = adventure({
   name: 'how-to-npm',
-  bg: 'white',
-  fg: 'red'
+  languages: ['en'],
+  appDir: __dirname,
+  menu: {
+    bg: 'white',
+    fg: 'red'
+  }
 })
 
 var fs = require('fs')
@@ -12,25 +16,19 @@ var path = require('path')
 var rimraf = require('rimraf')
 var mkdirp = require('mkdirp')
 
-var problems = fs.readdirSync(path.resolve(__dirname, 'problems'))
-problems.filter(function (problem) {
-  return problem.match(/^[^.].*\.js$/)
-}).forEach(function (problem) {
-  var name = problem.replace(/\.js$/, '').split('-').map(function (p) {
-    if (p === 'npm') return p
-    return p.charAt(0).toUpperCase() + p.slice(1)
-  }).join(' ')
-  shop.add(name, function () {
-    return require('./problems/' + problem)
-  })
-})
+var problems = require('./menu.json')
+problems.forEach(function (problem) {
+  var p = problem.toLowerCase().replace(/\s/g, '-')
+  var dir = path.join(__dirname, 'problems', p)
+  shop.add(problem, function () { return require(dir); })
+});
 
 shop.execute = function (args) {
   // Reset a bit harder, since we save other stuff in there.
   if (args[0] === 'reset') {
     require('./lib/registry.js').kill()
-    rimraf.sync(this.datadir)
-    mkdirp.sync(this.datadir)
+    rimraf.sync(this.dataDir)
+    mkdirp.sync(this.dataDir)
   }
 
   return shop.constructor.prototype.execute.apply(this, arguments)
@@ -38,12 +36,12 @@ shop.execute = function (args) {
 
 // Copy the registry-assets if they're not already there.
 try {
-  var assetsStat = fs.statSync(shop.datadir + '/registry')
+  var assetsStat = fs.statSync(shop.dataDir + '/registry')
   if (!assetsStat.isDirectory()) throw Error('enotdir')
 } catch (er) {
-  rimraf.sync(shop.datadir + '/registry')
+  rimraf.sync(shop.dataDir + '/registry')
   cpr(path.resolve(__dirname, 'lib', 'registry-assets'),
-      path.resolve(shop.datadir, 'registry'))
+      path.resolve(shop.dataDir, 'registry'))
 }
 
 shop.cpr = cpr
@@ -60,7 +58,7 @@ function cpr (from, to) {
 }
 
 shop.cwd = function () {
-  var datadir = shop.datadir
+  var dataDir = shop.dataDir
   // verify we're in the right folder
   try {
     var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()

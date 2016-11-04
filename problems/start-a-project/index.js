@@ -1,27 +1,12 @@
-// Old-sk00l multi-line strings
-exports.problem = function () { /*
-npm helps you build projects, but for npm to be able to do that, you need
-to tell npm a little bit about your project. You can tell npm about your
-project in a file called package.json.
-
-Run `npm init --scope=<username>`, and replace <username> with the user
-you created in the last lesson. This will create a package.json file.
-(For extra credit, set the project up with a git repo as well.)
-
-Run `$ADVENTURE_COMMAND verify` once you're done.
-*/ }.toString().split('\n').slice(1, -1).join('\n')
-
-// exports.solution = function () {/*
-// npm init
-// # fill in all the prompts
-//
-// # Extra Credit:
-// git init
-// */}.toString().split('\n').slice(1,-1).join('\n')
-
-var shop = require('../')
+var shop = require('../../')
 var fs = require('fs')
 var path = require('path')
+
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
+}
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()

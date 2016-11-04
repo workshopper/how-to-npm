@@ -1,26 +1,13 @@
-var reg = require('../lib/registry.js')
-
-var shop = require('../')
+var path = require('path')
 var semver = require('semver')
+var reg = require('../../lib/registry.js')
+var shop = require('../../')
 
-exports.problem = function () {
-  if (!shop.cwd()) return ''
-
-  reg.run('publish')
-  return function () { /*
-Publishing something once is fine.  But healthy packages get
-published again and again with new and exciting bug fixes.
-
-You can't re-use the same version number again, because that's hella
-confusing for all the robots running the treadmills that power the npm
-registry.  But, now that we changed the version number in the last
-exercise, you can publish the package again.
-
-Go for it!  Then get your prize with `how-to-npm verify`
-  */ }.toString().split('\n').slice(1, -1).join('\n')
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
 }
-
-// exports.solution = 'npm publish'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd()) return cb(false)

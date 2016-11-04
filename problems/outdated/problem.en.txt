@@ -1,0 +1,11 @@
+Now that we have some dependencies, and you've learned that your own
+packages can be updated repeatedly, the obvious question is: What do
+we do when someone *else* updates *their* package?
+
+The first step is to detect this.  Because of the way that we define
+our dependencies with a version range, and each release is a unique
+combination of a name and a version, we can detect compatible releases
+programmatically with the `npm outdated` command.
+
+To pass this challenge, run `$ADVENTURE_COMMAND verify PKG` where `PKG`
+is the name of the package that is out of date.

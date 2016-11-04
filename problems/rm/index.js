@@ -1,28 +1,12 @@
-var shop = require('../')
 var fs = require('fs')
 var path = require('path')
+var shop = require('../../')
 
-exports.problem = function () {
-  if (!shop.cwd()) return ''
-
-  return function () { /*
-If you have a way to put stuff there, then naturally, you'll one
-day need a way to delete them.
-
-Enter the `npm rm` command (aka `npm uninstall` if you prefer to
-type things out long-hand).
-
-Remove all the deps!  But, make sure that you don't keep depending on them.
-
-Just like you can use `--save` on installing packages, you can also
-use `--save` when removing packages, to also remove them from your
-package.json file.
-
-When you've removed your dependencies, type `how-to-npm verify` to move on.
-  */ }.toString().split('\n').slice(1, -1).join('\n')
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
 }
-
-// exports.solution = 'npm rm @linclark/pkg --save'
 
 exports.verify = function (args, cb) {
   var cwd = shop.cwd()

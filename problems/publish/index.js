@@ -1,33 +1,12 @@
-var reg = require('../lib/registry.js')
+var path = require('path')
+var reg = require('../../lib/registry.js')
+var shop = require('../../')
 
-var shop = require('../')
-
-exports.problem = function () {
-  if (!shop.cwd()) return ''
-
-  reg.run('publish')
-
-  return function () { /*
-What good is a package manager without packages?
-
-Not very good.
-
-Luckily, that is not a problem for npm, because it's very easy for all
-npm users to publish their modules and share them with the world.
-
-Packages get into the registry by using the `npm publish` command.
-
-Try it now. There's not much to it.
-
-(Make sure you're still in the right project directory, though.  If you
-publish something by mistake, you can remove it, but there's no guarantee
-that no one saw it in the meantime.)
-
-Then run `how-to-npm verify` when you're done.
-  */ }.toString().split('\n').slice(1, -1).join('\n')
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
 }
-
-// exports.solution = 'npm publish'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd()) return cb(false)

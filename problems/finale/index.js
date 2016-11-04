@@ -1,21 +1,11 @@
-var reg = require('../lib/registry.js')
+var reg = require('../../lib/registry.js')
+var shop = require('../../')
 
-var shop = require('../')
-
-exports.problem = function () {
-  if (!shop.cwd()) return ''
-
-  return function () { /*
-
-It's almost time to say goodbye.  But don't worry!  This is just an
-introduction.  If you've finished all the other exercises, then run
-`how-to-npm verify` to learn about the next steps beyond this little
-adventure.
-
-  */ }.toString().split('\n').slice(1, -1).join('\n')
+exports.init = function (workshopper) {
+  this.problem = {
+    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
+  }
 }
-
-// exports.solution = 'npm xmas'
 
 exports.verify = function (args, cb) {
   if (!shop.cwd()) return cb(false)

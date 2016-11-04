@@ -1,0 +1,15 @@
+npm is best when you can be a part of it.  That starts with
+creating an account.
+
+Because this is just a tutorial adventure, remember, we're not
+*actually* creating an account anywhere.  However, when you run
+this in the Real World, it'll create a real account, with a page
+on npmjs.com and the ability to publish packages that real live
+humans can install and enjoy.
+
+To see who you're logged in as, run `npm whoami`
+
+To create your account, run `npm adduser`
+
+Try it now, and open the door to ever-greater module fun times!
+Then run `$ADVENTURE_COMMAND verify`
