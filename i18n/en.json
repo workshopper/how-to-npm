@@ -1,0 +1,11 @@
+{
+	"install-npm": {
+		"verifying": "verifying that npm is installed...",
+		"missing": "It looks like npm is not installed.",
+		"npm-problem": "Uh oh!  npm had a problem!",
+		"version-verified": "You have version {{version}} installed.  Great!\nNow let's see what the latest version is... wait for it...",
+		"latest-version": "The latest npm is: {{version}}",
+		"upgrade": "You have version {{version}}, but the latest is {{latest}}\nRun `npm install npm -g` to upgrade it\n(You can also just skip this if you want)",
+		"success": "Congratulations!\nYou have a recent version of npm installed!"
+	}
+}
