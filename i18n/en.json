@@ -36,6 +36,11 @@
     "logged_out": "Hm... I don't see a login here\nDid you run `npm adduser` to create the account?",
     "success": "Congratulations, {{user}}!\nYou are the proud owner of an imaginary new npm account!\nUse it wisely.  Never in anger.  Always for the Good.\n\nWith this sweet power comes much responsibility, which is\nsufficiently different from Spiderman's thing that Marvel\nhopefully won't sue us.\n\nExcelsior!"
   },
+  "package-niceties": {
+    "problem": "Not quite!\nThere's still a problem to fix.",
+    "error": "Uh oh!\nIt looks like something went wrong",
+    "success": "Looking sharp!\nA package without a readme and some metadata is like a\nbunch of JavaScript without instructions or git repo links."
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
