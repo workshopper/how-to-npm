@@ -11,6 +11,7 @@
 	"dev-environment": {
 	  "err_workshopper": "It looks like you are in the root of the workshopper.",
 	  "err_home": "It looks like you are in your home directory.",
-	  "hint": "That is not wise.  Please make a new dir, and use that."
+	  "hint": "That is not wise.  Please make a new dir, and use that.",
+	  "no_package": "Seems like the `package.json` is missing. Did you run `npm init`?"
 	}
 }

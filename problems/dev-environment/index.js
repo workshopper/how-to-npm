@@ -26,6 +26,13 @@ exports.verify = function (args, cb) {
     return cb(false)
   }
 
+  try {
+    require(path.resolve(cwd, 'package.json'))
+  } catch (e) {
+    console.log(__('dev-environment.no_package', {error: e.stack}))
+    return cb(false)
+  }
+
   // Save the cwd so that we can ensure we're in the right place from now on
   fs.writeFileSync(path.resolve(datadir, 'cwd'), cwd)
 
