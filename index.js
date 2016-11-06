@@ -61,7 +61,7 @@ shop.cwd = function () {
   var dataDir = shop.dataDir
   // verify we're in the right folder
   try {
-    var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
+    var cwd = fs.readFileSync(path.resolve(dataDir, 'cwd'), 'utf8').trim()
   } catch (er) {
     console.log('Looks like you are not ready for this one yet!\n' +
                 'Go back to the `01 Dev Environment` lesson to set up\n' +
