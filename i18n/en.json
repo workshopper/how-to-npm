@@ -7,5 +7,10 @@
 		"latest-version": "The latest npm is: {{version}}",
 		"upgrade": "You have version {{version}}, but the latest is {{latest}}\nRun `npm install npm -g` to upgrade it\n(You can also just skip this if you want)",
 		"success": "Congratulations!\nYou have a recent version of npm installed!"
+	},
+	"dev-environment": {
+	  "err_workshopper": "It looks like you are in the root of the workshopper.",
+	  "err_home": "It looks like you are in your home directory.",
+	  "hint": "That is not wise.  Please make a new dir, and use that."
 	}
 }
