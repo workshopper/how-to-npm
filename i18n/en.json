@@ -44,6 +44,11 @@
   "publish": {
     "error": "Uh oh!\nIt looks like you didn't successfully publish the\n  {{name}}\npackage.  Try again!"
   },
+  "version": {
+    "invalid_semver": "Looks like your package.json has an invalid version!\nUse `npm help semver` to learn more about version numbers\nYour current version number is: {{version}}\n",
+    "old_version": "Uh oh!\nThe version is still {{version}}\nCheck `npm help version` for a handy util to do this.",
+    "success": "Great job!\nRun `how-to-npm` for the next exciting challenge!"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
