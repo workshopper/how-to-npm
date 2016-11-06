@@ -8,7 +8,17 @@ var shop = module.exports = adventure({
   menu: {
     bg: 'white',
     fg: 'red'
-  }
+  },
+  commands: [{
+    name: "reset-registry",
+    handler: function (workshopper) {
+      // Reset a bit harder, since we save other stuff in there.
+      require('./lib/registry.js').kill()
+      rimraf.sync(workshopper.dataDir)
+      mkdirp.sync(workshopper.dataDir)
+      console.log(workshopper.i18n.__('reset'))
+    }
+  }]
 })
 
 var fs = require('fs')
@@ -24,13 +34,6 @@ problems.forEach(function (problem) {
 });
 
 shop.execute = function (args) {
-  // Reset a bit harder, since we save other stuff in there.
-  if (args[0] === 'reset') {
-    require('./lib/registry.js').kill()
-    rimraf.sync(this.dataDir)
-    mkdirp.sync(this.dataDir)
-  }
-
   return shop.constructor.prototype.execute.apply(this, arguments)
 }
 

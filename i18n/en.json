@@ -13,5 +13,9 @@
 	  "err_home": "It looks like you are in your home directory.",
 	  "hint": "That is not wise.  Please make a new dir, and use that.",
 	  "no_package": "Seems like the `package.json` is missing. Did you run `npm init`?"
-	}
+  },
+  "menu": {
+    "reset-registry": "RESET REGISTRY"
+  },
+  "reset": "Successfully reset registry"
 }
