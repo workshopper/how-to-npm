@@ -41,6 +41,9 @@
     "error": "Uh oh!\nIt looks like something went wrong",
     "success": "Looking sharp!\nA package without a readme and some metadata is like a\nbunch of JavaScript without instructions or git repo links."
   },
+  "publish": {
+    "error": "Uh oh!\nIt looks like you didn't successfully publish the\n  {{name}}\npackage.  Try again!"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
