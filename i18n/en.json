@@ -31,6 +31,11 @@
     "error": "Uh oh!  The test failed!\nTry creating a test that actually works.",
     "success": "Congratulations!  You wrote a test that passes!\nWriting a test that is actually GOOD is left for another time."
   },
+  "login": {
+    "whoami_err": "Uh oh!\nIt looks like something went wrong",
+    "logged_out": "Hm... I don't see a login here\nDid you run `npm adduser` to create the account?",
+    "success": "Congratulations, {{user}}!\nYou are the proud owner of an imaginary new npm account!\nUse it wisely.  Never in anger.  Always for the Good.\n\nWith this sweet power comes much responsibility, which is\nsufficiently different from Spiderman's thing that Marvel\nhopefully won't sue us.\n\nExcelsior!"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
