@@ -18,6 +18,12 @@
     "error": "Uh oh!  Looks like it didn't install right.\nThe error I got was: \n{{{error}}}\nMake sure you use the `npm install @linclark/pkg` command\nto install the `@linclark/pkg` module.",
     "success": "Congratulations! You installed it."
   },
+  "listing-dependencies": {
+    "usage": "Please run:\n`how-to-npm verify OK` if everything is ok,\nor:\n`how-to-npm verify NOT OK` otherwise.",
+    "ok_not": "Sorry, no.  Everything is not ok!\nTry running `npm ls` and viewing the error.",
+    "not_ok_not": "Hmm...\nWell, there may indeed be a lot wrong with the world,\nbut your package.json and node_modules folder are fine.",
+    "success": "Looks like you fixed the problem.  Fantastic!\nNote that `npm ls` is a lot calmer now."
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
