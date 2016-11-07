@@ -73,6 +73,9 @@
     "dependencies_left": "Looks like there are some deps still hanging around",
     "package_json_left": "You removed the files, but not the entries in package.json"
   },
+  "finale": {
+    "todo": "It looks like you still have more work to do. Finish\nthe following exercises before you can start this:"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
