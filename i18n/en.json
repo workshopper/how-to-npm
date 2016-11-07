@@ -65,6 +65,10 @@
     "no_package": "Run `how-to-npm verify PKG` but replace `PKG` with the name\nof the package that is outdated",
     "wrong_package": "Nope, it's not {{{pkg}}}.  Try again!"
   },
+  "update": {
+    "outdated": "Oops!  You are still using the outdated version!",
+    "success": "Awesome!  You're up to date!\nRun `how-to-npm` to move on to the next exercise"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
