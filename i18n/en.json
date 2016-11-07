@@ -80,6 +80,24 @@
     "not_setup": "Looks like you are not ready for this one yet!\nGo back to the `01 Dev Environment` lesson to set up\nyour working directory.",
     "wrong_folder": "Uh oh!\nIt looks like you are in the wrong folder.\nPlease cd into {{cwd}}\nand then try again'"
   },
+  "exercise": {
+    "Install npm": "Install npm",
+    "Dev Environment": "Dev Environment",
+    "Install A Module": "Install A Module",
+    "Listing Dependencies": "Listing Dependencies",
+    "npm Test": "npm Test",
+    "Login": "Login",
+    "Package Niceties": "Package Niceties",
+    "Publish": "Publish",
+    "Version": "Version",
+    "Publish Again": "Publish Again",
+    "Dist Tag": "Dist Tag",
+    "Dist Tag Removal": "Dist Tag Removal",
+    "Outdated": "Outdated",
+    "Update": "Update",
+    "Rm": "Rm",
+    "Finale": "Finale"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
