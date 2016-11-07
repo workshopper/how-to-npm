@@ -1,4 +1,3 @@
-var reg = require('../../lib/registry.js')
 var shop = require('../../')
 
 exports.init = function (workshopper) {
@@ -37,6 +36,5 @@ See you on the internet!
 
   */ }.toString().split('\n').slice(1, -1).join('\n'))
 
-  reg.kill()
   return cb(true)
 }
