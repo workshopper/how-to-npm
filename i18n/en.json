@@ -76,6 +76,10 @@
   "finale": {
     "todo": "It looks like you still have more work to do. Finish\nthe following exercises before you can start this:"
   },
+  "error": {
+    "not_setup": "Looks like you are not ready for this one yet!\nGo back to the `01 Dev Environment` lesson to set up\nyour working directory.",
+    "wrong_folder": "Uh oh!\nIt looks like you are in the wrong folder.\nPlease cd into {{cwd}}\nand then try again'"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },

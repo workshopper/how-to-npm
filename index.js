@@ -76,18 +76,13 @@ shop.cwd = function () {
   try {
     var cwd = fs.readFileSync(path.resolve(dataDir, 'cwd'), 'utf8').trim()
   } catch (er) {
-    console.log('Looks like you are not ready for this one yet!\n' +
-                'Go back to the `01 Dev Environment` lesson to set up\n' +
-                'your working directory.')
+    console.log(shop.i18n.__('error.not_setup'))
     return false
   }
 
   if (cwd === process.cwd()) return cwd
 
-  console.log('Uh oh!\n' +
-              'It looks like you are in the wrong folder.\n' +
-              'Please cd into ' + cwd + '\n' +
-              'and then try again')
+  console.log(shop.i18n.__('error.wrong_folder', {cwd: cwd}))
   return false
 }
 
