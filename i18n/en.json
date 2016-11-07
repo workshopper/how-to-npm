@@ -57,6 +57,10 @@
   "dist-tag": {
     "success": "Uh oh, looks like you still only have a single dist-tag.\nUse `npm help dist-tag` to learn how to add another one."
   },
+  "dist-tag-removal": {
+    "too_many": "Uh oh, looks like you have some extra dist-tags there.\nUse `npm help dist-tag` to learn how to remove them.",
+    "version_mismatch": "Oops!  Your \"latest\" tag still points at the most recent\nrelease, {{version}}.\nPoint that somewhere else, and re-run `how-to-npm verify`\n\nUse `npm help dist-tag` to learn more about how to do it."
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
