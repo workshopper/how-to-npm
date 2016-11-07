@@ -69,6 +69,10 @@
     "outdated": "Oops!  You are still using the outdated version!",
     "success": "Awesome!  You're up to date!\nRun `how-to-npm` to move on to the next exercise"
   },
+  "rm": {
+    "dependencies_left": "Looks like there are some deps still hanging around",
+    "package_json_left": "You removed the files, but not the entries in package.json"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },
