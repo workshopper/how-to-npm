@@ -1,16 +1,22 @@
 var path = require('path')
 var reg = require('../../lib/registry.js')
 var shop = require('../../')
+var fs = require('fs')
+
+exports.problem = {
+  file: path.join(__dirname, 'problem.{lang}.txt')
+}
 
 exports.init = function (workshopper) {
-  this.problem = {
-    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
-  }
+  this.__ = workshopper.i18n.__
+  this.lang = workshopper.i18n.lang
+  reg.run('install-a-module')
 }
 
 exports.verify = function (args, cb) {
   // verify we're in the right folder
   var cwd = shop.cwd()
+  var __ = this.__
   if (!cwd) return false
 
   // see if there was a problem or not
@@ -29,51 +35,23 @@ exports.verify = function (args, cb) {
   var claim = args.join('').toUpperCase().trim()
 
   if (claim !== 'OK' && claim !== 'NOTOK') {
-    console.log('Please run:\n' +
-                '`how-to-npm verify OK` if everything is ok,\n' +
-                'or:\n' +
-                '`how-to-npm verify NOT OK` otherwise.')
+    console.log(__('listing-dependencies.usage'))
     return cb(false)
   }
 
   if (claim === 'OK' && !ok) {
-    console.log('Sorry, no.  Everything is not ok!\n' +
-                'Try running `npm ls` and viewing the error.')
+    console.log(__('listing-dependencies.ok_not'))
     return cb(false)
   } else if (claim === 'NOTOK' && ok) {
-    console.log('Hmm...\n' +
-                'Well, there may indeed be a lot wrong with the world,\n' +
-                'but your package.json and node_modules folder are fine.')
+    console.log(__('listing-dependencies.not_ok_not'))
     return cb(false)
   } else if (ok) {
-    console.log('Looks like you fixed the problem.  Fantastic!\n' +
-                'Note that `npm ls` is a lot calmer now.')
+    console.log(__('listing-dependencies.success'))
     reg.kill()
     return cb(true)
   } else {
-    console.log(function () { /*
-Indeed, not all is well here in dep-land.
 
-Your dependencies should be listed in the package.json file in an
-object called 'dependencies'.  However, when we installed '@linclark/pkg',
-we didn't update the package.json file to list out this dependency.
-
-So, it shows up as 'extraneous', warning us that we have something
-there that we haven't listed as a dependency.
-
-The easiest way to avoid this situation is to use the `--save` flag
-when installing dependencies.  You might not want to do this with
-things that you're just trying out, but when you decide on something,
-you can use this flag to update your package.json file easily.
-
-Try running `npm install @linclark/pkg --save` to install the module, and also
-update your package.json file at the same time.
-
-(Another option is to just edit package.json yourself in a text editor)
-
-Then run `how-to-npm verify OK` once you've fixed the problem.
-    */ }.toString().split('\n').slice(1, -1).join('\n')
-    )
+    console.log(fs.readFileSync(path.join(__dirname, 'continue.' + this.lang() + '.txt'), 'utf8'))
     // skip calling the cb, so we can keep working on it.
     return
   }

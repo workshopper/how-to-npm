@@ -1,11 +1,16 @@
 var path = require('path')
 var reg = require('../../lib/registry.js')
 var shop = require('../../')
+var fs = require('fs')
+
+exports.problem = {
+  file: path.join(__dirname, 'problem.{lang}.txt')
+}
 
 exports.init = function (workshopper) {
-  this.problem = {
-    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
-  }
+  this.__ = workshopper.i18n.__
+  this.lang = workshopper.i18n.lang
+  reg.run('publish')
 }
 
 exports.verify = function (args, cb) {
@@ -15,39 +20,18 @@ exports.verify = function (args, cb) {
   var name = pkg.name
   var exec = require('child_process').exec
   var npm = '"' + require('which').sync('npm') + '"'
+  var __ = this.__
   exec(npm + ' --color=always view ' + name, function (er, stdout, stderr) {
     if (er) {
       process.stderr.write(stderr)
-      console.log('Uh oh!\n' +
-                  'It looks like you didn\'t successfully publish the ' +
-                  name + '\n' +
-                  'package.  Try again!\n')
+
+      console.log('\n\n' + __('publish.error', {name: name}) + '\n')
+      return cb(false)
     }
 
-    console.log(function () { /*
-In order to view your package content, I just ran this command:
-
-  npm view %NAME%
-
-Run that command yourself to see what it prints out.
-
-The `npm view` command is a great way to view package details,
-to see what you just published, and to check if a name is already taken.
-
-Now that you've published your first package here in make-believe npm
-workshop land, go out and write a real thing to share with real humans!
-
-You don't have to just share code for other people, though.  There are
-also benefits to breaking up your code into small manageable pieces, even
-if you are only using them all yourself.
-
-You can imagine that your future self and your past self are the two
-other developers on your team.  (Scheduling meetings is pretty tricky.)
-
-Run `how-to-npm` to go on to the next adventure!
-    */ }.toString().split('\n').slice(1, -1).join('\n').replace(/%NAME%/g, name))
+    console.log('\n' + fs.readFileSync(path.join(__dirname, 'success.' + this.lang() + '.txt'), 'utf8').replace(/%NAME%/g, name))
     reg.kill()
 
     return cb(true)
-  })
+  }.bind(this))
 }

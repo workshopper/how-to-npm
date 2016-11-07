@@ -1,0 +1,8 @@
+Congratulations!
+You have a development environment.
+
+From here on out, make sure to run the workshop in this dir
+
+You might notice that a `.npmrc` file will show up in there.
+That normally would not be required, but the workshop uses it
+to mock out the parts that would normally talk to the internet.

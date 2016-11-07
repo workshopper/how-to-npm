@@ -1,16 +1,19 @@
 var path = require('path')
 var shop = require('../../')
 
+exports.problem = {
+  file: path.join(__dirname, 'problem.{lang}.txt')
+}
+
 exports.init = function (workshopper) {
-  this.problem = {
-    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
-  }
+  this.__ = workshopper.i18n.__
 }
 
 exports.verify = function (args, cb) {
   // verify we're in the right folder
   var cwd = shop.cwd()
   if (!cwd) return cb(false)
+  var __ = this.__
 
   // make sure we get no warnings
   var exec = require('child_process').exec
@@ -20,22 +23,21 @@ exports.verify = function (args, cb) {
       process.stdout.write(stdout)
       process.stderr.write(stderr)
 
-      console.log('\nUh oh!\n' +
-                  'It looks like something went wrong')
+      console.log('\n' + __('package-niceties.error'))
       return cb(false)
     }
 
+    var pj = require(cwd + '/package.json')
+
     stderr = (stderr + '').trim()
-    if (stderr.match(/npm WARN package\.json/)) {
-      console.log('\nNot quite!\n' +
-                  'There\'s still a problem to fix.\n\n' +
+    var reg = new RegExp('npm WARN (package\.json|' + pj.name + ')')
+    if (reg.test(stderr)) {
+      console.log('\n' + __('package-niceties.problem') + '\n\n' +
                   stderr + '\n')
       return cb(false)
     }
 
-    console.log('Looking sharp!\n' +
-                'A package without a readme and some metadata is like a\n' +
-                'bunch of JavaScript without instructions or git repo links.')
+    console.log(__('package-niceties.success'))
     return cb(true)
   })
 }
