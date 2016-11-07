@@ -49,6 +49,11 @@
     "old_version": "Uh oh!\nThe version is still {{version}}\nCheck `npm help version` for a handy util to do this.",
     "success": "Great job!\nRun `how-to-npm` for the next exciting challenge!"
   },
+  "publish-again": {
+    "not_republished": "Whoops!\nLooks like you did not publish the package again\nTry running `npm publish` and then verifying again.",
+    "current_missing": "Hmm... I see that you published more than once, but\nthe current version ({{version}}) is not in the set.\nHere's what I see in there:\n{{{found}}}\nTry publishing again!",
+    "success": "Wow!  You are well on your way to becoming a regular\nTJames \"Substack\" Halidaychuk!  There's no stopping you!\nRun `how-to-npm` to go to the next step."
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },

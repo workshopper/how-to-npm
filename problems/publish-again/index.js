@@ -3,17 +3,22 @@ var semver = require('semver')
 var reg = require('../../lib/registry.js')
 var shop = require('../../')
 
+exports.problem = {
+  file: path.join(__dirname, 'problem.{lang}.txt')
+}
+
 exports.init = function (workshopper) {
-  this.problem = {
-    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
-  }
+  this.__ = workshopper.i18n.__
+  this.lang = workshopper.i18n.lang
+  reg.run('publish')
 }
 
 exports.verify = function (args, cb) {
   if (!shop.cwd()) return cb(false)
 
-  var pkg = require(shop.cwd() + '/package.json')
-  var data = require(shop.datadir + '/registry/' + pkg.name + '/body.json')
+  var __ = this.__
+  var pkg = require(path.join(shop.cwd(), 'package.json'))
+  var data = require(path.join(shop.datadir, 'registry', pkg.name, 'body.json'))
   var ver = semver.clean(pkg.version)
 
   // should be more than one entry in the time obj, and the current
@@ -23,25 +28,19 @@ exports.verify = function (args, cb) {
   })
 
   if (releases.length <= 1) {
-    console.log('Whoops!\n' +
-                'Looks like you did not publish the package again\n' +
-                'Try running `npm publish` and then verifying again.')
+    console.log(__('publish-again.not_republished'))
     return cb(false)
   }
 
   if (releases.indexOf(ver) === -1) {
-    console.log('Hmm... I see that you published more than once, but\n' +
-                'the current version (%s) is not in the set.\n' +
-                'Here\'s what I see in there:\n' +
-                '%s\n' +
-                'Try publishing again!',
-                ver, JSON.stringify(releases, null, 2))
+    console.log(__('publish-again.current_missing', {
+      version: ver,
+      found: JSON.stringify(releases, null, 2)
+    }))
     return cb(false)
   }
 
-  console.log('Wow!  You are well on your way to becoming a regular\n' +
-              'TJames "Substack" Halidaychuk!  There\'s no stopping you!\n' +
-              'Run `how-to-npm` to go to the next step.')
+  console.log(__('publish-again.success'))
   reg.kill()
   return cb(true)
 }
