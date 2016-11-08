@@ -49,6 +49,55 @@
     "old_version": "Uh oh!\nThe version is still {{version}}\nCheck `npm help version` for a handy util to do this.",
     "success": "Great job!\nRun `how-to-npm` for the next exciting challenge!"
   },
+  "publish-again": {
+    "not_republished": "Whoops!\nLooks like you did not publish the package again\nTry running `npm publish` and then verifying again.",
+    "current_missing": "Hmm... I see that you published more than once, but\nthe current version ({{version}}) is not in the set.\nHere's what I see in there:\n{{{found}}}\nTry publishing again!",
+    "success": "Wow!  You are well on your way to becoming a regular\nTJames \"Substack\" Halidaychuk!  There's no stopping you!\nRun `how-to-npm` to go to the next step."
+  },
+  "dist-tag": {
+    "success": "Uh oh, looks like you still only have a single dist-tag.\nUse `npm help dist-tag` to learn how to add another one."
+  },
+  "dist-tag-removal": {
+    "too_many": "Uh oh, looks like you have some extra dist-tags there.\nUse `npm help dist-tag` to learn how to remove them.",
+    "version_mismatch": "Oops!  Your \"latest\" tag still points at the most recent\nrelease, {{version}}.\nPoint that somewhere else, and re-run `how-to-npm verify`\n\nUse `npm help dist-tag` to learn more about how to do it."
+  },
+  "outdated": {
+    "no_package": "Run `how-to-npm verify PKG` but replace `PKG` with the name\nof the package that is outdated",
+    "wrong_package": "Nope, it's not {{{pkg}}}.  Try again!"
+  },
+  "update": {
+    "outdated": "Oops!  You are still using the outdated version!",
+    "success": "Awesome!  You're up to date!\nRun `how-to-npm` to move on to the next exercise"
+  },
+  "rm": {
+    "dependencies_left": "Looks like there are some deps still hanging around",
+    "package_json_left": "You removed the files, but not the entries in package.json"
+  },
+  "finale": {
+    "todo": "It looks like you still have more work to do. Finish\nthe following exercises before you can start this:"
+  },
+  "error": {
+    "not_setup": "Looks like you are not ready for this one yet!\nGo back to the `01 Dev Environment` lesson to set up\nyour working directory.",
+    "wrong_folder": "Uh oh!\nIt looks like you are in the wrong folder.\nPlease cd into {{cwd}}\nand then try again'"
+  },
+  "exercise": {
+    "Install npm": "Install npm",
+    "Dev Environment": "Dev Environment",
+    "Install A Module": "Install A Module",
+    "Listing Dependencies": "Listing Dependencies",
+    "npm Test": "npm Test",
+    "Login": "Login",
+    "Package Niceties": "Package Niceties",
+    "Publish": "Publish",
+    "Version": "Version",
+    "Publish Again": "Publish Again",
+    "Dist Tag": "Dist Tag",
+    "Dist Tag Removal": "Dist Tag Removal",
+    "Outdated": "Outdated",
+    "Update": "Update",
+    "Rm": "Rm",
+    "Finale": "Finale"
+  },
   "menu": {
     "reset-registry": "RESET REGISTRY"
   },

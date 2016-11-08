@@ -2,32 +2,31 @@ var path = require('path')
 var reg = require('../../lib/registry.js')
 var shop = require('../../')
 
+exports.problem = {
+  file: path.join(__dirname, 'problem.{lang}.txt')
+}
+
 exports.init = function (workshopper) {
-  this.problem = {
-    file: path.join(__dirname, 'problem.{workshopper.lang}.txt')
-  }
+  this.__ = workshopper.i18n.__
+  reg.run('outdated')
 }
 
 exports.verify = function (args, cb) {
   if (!shop.cwd()) return cb(false)
 
+  var __ = this.__
   var arg = args.join('').toLowerCase()
   if (arg === '@linclark/pkg') {
-    console.log(function () { /*
-That's absolutely right!  The `@linclark/pkg` package has had an update while we
-weren't looking.
-
-In the next lesson, we'll learn how to update packages that are outdated.
-    */ }.toString().split('\n').slice(1, -1).join('\n'))
     reg.kill()
-    return cb(true)
+    return cb(null, true, {
+      file: path.join(__dirname, 'success.{lang}.txt')
+    })
   }
 
   if (!arg || arg === 'pkg') {
-    console.log('Run `how-to-npm verify PKG` but replace `PKG` with the name\n' +
-                'of the package that is outdated')
+    console.log(__('outdated.no_package'))
   } else if (arg !== '@linclark/pkg') {
-    console.log('Nope, it\'s not %s.  Try again!', arg)
+    console.log(__('outdated.wrong_package', {pkg: arg}))
   }
 
   return cb(false)

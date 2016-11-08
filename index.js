@@ -38,14 +38,24 @@ shop.execute = function (args) {
 }
 
 // Copy the registry-assets if they're not already there.
-try {
-  var assetsStat = fs.statSync(shop.dataDir + '/registry')
-  if (!assetsStat.isDirectory()) throw Error('enotdir')
-} catch (er) {
-  rimraf.sync(shop.dataDir + '/registry')
-  cpr(path.resolve(__dirname, 'lib', 'registry-assets'),
-      path.resolve(shop.dataDir, 'registry'))
+
+var fromFolder = path.join(__dirname, 'assets')
+var toFolder = path.join(shop.dataDir)
+
+function cpclean (item) {
+  var from = path.join(fromFolder, item)
+  var to = path.join(toFolder, item)
+  try {
+    var assetsStat = fs.statSync(to)
+    if (!assetsStat.isDirectory()) throw Error('enotdir')
+  } catch (er) {
+    rimraf.sync(to)
+    cpr(from, to)
+  }
 }
+
+cpclean('registry')
+cpclean('registry-update')
 
 shop.cpr = cpr
 function cpr (from, to) {
@@ -66,18 +76,13 @@ shop.cwd = function () {
   try {
     var cwd = fs.readFileSync(path.resolve(dataDir, 'cwd'), 'utf8').trim()
   } catch (er) {
-    console.log('Looks like you are not ready for this one yet!\n' +
-                'Go back to the `01 Dev Environment` lesson to set up\n' +
-                'your working directory.')
+    console.log(shop.i18n.__('error.not_setup'))
     return false
   }
 
   if (cwd === process.cwd()) return cwd
 
-  console.log('Uh oh!\n' +
-              'It looks like you are in the wrong folder.\n' +
-              'Please cd into ' + cwd + '\n' +
-              'and then try again')
+  console.log(shop.i18n.__('error.wrong_folder', {cwd: cwd}))
   return false
 }
 

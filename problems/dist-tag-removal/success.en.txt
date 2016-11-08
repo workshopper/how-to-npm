@@ -1,0 +1,3 @@
+Congratulations!  You're a dist-tagging pro!
+
+Run `how-to-npm` to move on to the next exercise.
