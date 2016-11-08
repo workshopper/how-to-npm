@@ -1,0 +1,6 @@
+For extra credit, try also setting up this dir as a git repository.
+
+The convention is to have a single git repo for each module or project.
+Use the `git init` command to set up your working dir as a git project.
+
+Then, run `how-to-npm verify extra credit`

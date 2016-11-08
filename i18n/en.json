@@ -14,6 +14,16 @@
     "hint": "That is not wise.  Please make a new dir, and use that.",
     "no_package": "Seems like the `package.json` is missing. Did you run `npm init`?"
   },
+  "login": {
+    "whoami_err": "Uh oh!\nIt looks like something went wrong",
+    "logged_out": "Hm... I don't see a login here\nDid you run `npm adduser` to create the account?",
+    "success": "Congratulations, {{user}}!\nYou are the proud owner of an imaginary new npm account!\nUse it wisely.  Never in anger.  Always for the Good.\n\nWith this sweet power comes much responsibility, which is\nsufficiently different from Spiderman's thing that Marvel\nhopefully won't sue us.\n\nExcelsior!"
+  },
+  "start-a-project": {
+    "no_package": "No package.json found.\nPlease run `npm init` in your working directory.",
+    "success": "Congratulations!\nYou created a project!  View the package.json file to see it.",
+    "extra_credit": "EXTRA CREDIT!  Nicely done."
+  },
   "install-a-module": {
     "error": "Uh oh!  Looks like it didn't install right.\nThe error I got was: \n{{{error}}}\nMake sure you use the `npm install @linclark/pkg` command\nto install the `@linclark/pkg` module.",
     "success": "Congratulations! You installed it."
@@ -30,11 +40,6 @@
     "running_done": "...done!",
     "error": "Uh oh!  The test failed!\nTry creating a test that actually works.",
     "success": "Congratulations!  You wrote a test that passes!\nWriting a test that is actually GOOD is left for another time."
-  },
-  "login": {
-    "whoami_err": "Uh oh!\nIt looks like something went wrong",
-    "logged_out": "Hm... I don't see a login here\nDid you run `npm adduser` to create the account?",
-    "success": "Congratulations, {{user}}!\nYou are the proud owner of an imaginary new npm account!\nUse it wisely.  Never in anger.  Always for the Good.\n\nWith this sweet power comes much responsibility, which is\nsufficiently different from Spiderman's thing that Marvel\nhopefully won't sue us.\n\nExcelsior!"
   },
   "package-niceties": {
     "problem": "Not quite!\nThere's still a problem to fix.",
@@ -81,22 +86,23 @@
     "wrong_folder": "Uh oh!\nIt looks like you are in the wrong folder.\nPlease cd into {{cwd}}\nand then try again'"
   },
   "exercise": {
-    "Install npm": "Install npm",
-    "Dev Environment": "Dev Environment",
-    "Install A Module": "Install A Module",
-    "Listing Dependencies": "Listing Dependencies",
-    "npm Test": "npm Test",
-    "Login": "Login",
-    "Package Niceties": "Package Niceties",
-    "Publish": "Publish",
-    "Version": "Version",
-    "Publish Again": "Publish Again",
-    "Dist Tag": "Dist Tag",
-    "Dist Tag Removal": "Dist Tag Removal",
-    "Outdated": "Outdated",
-    "Update": "Update",
-    "Rm": "Rm",
-    "Finale": "Finale"
+    "00 Install npm": "00 Install npm",
+    "01 Dev Environment": "01 Dev Environment",
+    "02 Login": "02 Login",
+    "03 Start A Project": "03 Start A Project",
+    "04 Install A Module": "04 Install A Module",
+    "05 Listing Dependencies": "05 Listing Dependencies",
+    "06 npm Test": "06 npm Test",
+    "07 Package Niceties": "07 Package Niceties",
+    "08 Publish": "08 Publish",
+    "09 Version": "09 Version",
+    "10 Publish Again": "10 Publish Again",
+    "11 Dist Tag": "11 Dist Tag",
+    "12 Dist Tag Removal": "12 Dist Tag Removal",
+    "13 Outdated": "13 Outdated",
+    "14 Update": "14 Update",
+    "15 Rm": "15 Rm",
+    "16 Finale": "16 Finale"
   },
   "menu": {
     "reset-registry": "RESET REGISTRY"

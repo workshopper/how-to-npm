@@ -1,0 +1,5 @@
+Well, you got everything except the git part.
+The convention is one git repo per module, so you usually ought
+to run `git init` at the root of your project.
+
+Remove the .git folder from wherever you were, and run `git init` in
