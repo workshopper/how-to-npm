@@ -15,7 +15,7 @@ exports.verify = function (args, cb) {
   var __ = this.__
   var completed = shop.appStorage.get('completed')
   var leftOver = shop.exercises.filter(function (specifier) {
-    return completed.indexOf(specifier) === -1 && specifier !== 'Finale'
+    return completed.indexOf(specifier) === -1 && specifier !== '16 Finale'
   })
 
   // the 1 remaining would be this one, of course
