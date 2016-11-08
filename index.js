@@ -55,7 +55,6 @@ function cpclean (item) {
 }
 
 cpclean('registry')
-cpclean('registry-update')
 
 shop.cpr = cpr
 function cpr (from, to) {
