@@ -50,7 +50,6 @@ exports.verify = function (args, cb) {
     reg.kill()
     return cb(true)
   } else {
-
     console.log(fs.readFileSync(path.join(__dirname, 'continue.' + this.lang() + '.txt'), 'utf8'))
     // skip calling the cb, so we can keep working on it.
     return

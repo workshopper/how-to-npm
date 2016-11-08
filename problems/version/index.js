@@ -19,7 +19,6 @@ exports.verify = function (args, cb) {
   var pkg = require(shop.cwd() + '/package.json')
   var ver = semver.clean(pkg.version)
   var oldVer
-  var verfile = shop.datadir + '/version'
   try {
     oldVer = fs.readFileSync(verfile, 'utf8')
   } catch (er) {

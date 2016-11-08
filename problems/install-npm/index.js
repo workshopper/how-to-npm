@@ -24,12 +24,11 @@ exports.verify = function (args, cb) {
   var npm
 
   try {
-    npm = "\"" + which.sync('npm') + "\""
+    npm = '"' + which.sync('npm') + '"'
   } catch (er) {
     console.log(__('install-npm.missing'))
     return cb(false)
   }
-
 
   // figure out what version we have
   exec(npm + ' --version', function (code, stdout, stderr) {

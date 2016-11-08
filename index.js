@@ -10,7 +10,7 @@ var shop = module.exports = adventure({
     fg: 'red'
   },
   commands: [{
-    name: "reset-registry",
+    name: 'reset-registry',
     handler: function (workshopper) {
       // Reset a bit harder, since we save other stuff in there.
       require('./lib/registry.js').kill()
@@ -30,8 +30,8 @@ var problems = require('./menu.json')
 problems.forEach(function (problem) {
   var p = problem.toLowerCase().replace(/\s/g, '-')
   var dir = path.join(__dirname, 'problems', p)
-  shop.add(problem, function () { return require(dir); })
-});
+  shop.add(problem, function () { return require(dir) })
+})
 
 shop.execute = function (args) {
   return shop.constructor.prototype.execute.apply(this, arguments)

@@ -30,7 +30,7 @@ exports.verify = function (args, cb) {
     var pj = require(cwd + '/package.json')
 
     stderr = (stderr + '').trim()
-    var reg = new RegExp('npm WARN (package\.json|' + pj.name + ')')
+    var reg = new RegExp('npm WARN (package.json|' + pj.name + ')')
     if (reg.test(stderr)) {
       console.log('\n' + __('package-niceties.problem') + '\n\n' +
                   stderr + '\n')

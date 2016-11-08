@@ -21,8 +21,7 @@ exports.verify = function (args, cb) {
   exec(npm + ' whoami', function (er, stdout, stderr) {
     var text = (stdout + '').trim() + '\n' + ((stderr || '') + '').trim()
 
-    if (text.match(/Not authed. {2}Run 'npm adduser'/)
-        || text.match(/ENEEDAUTH/)) {
+    if (text.match(/Not authed. {2}Run 'npm adduser'/) || text.match(/ENEEDAUTH/)) {
       console.log(__('login.logged_out'))
       return cb(false)
     }
