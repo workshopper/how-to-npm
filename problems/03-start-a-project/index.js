@@ -38,6 +38,5 @@ exports.verify = function (args, cb) {
 
   console.log(__('start-a-project.success'))
 
-
   return cb(true)
 }
