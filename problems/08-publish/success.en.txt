@@ -1,0 +1,20 @@
+In order to view your package content, I just ran this command:
+
+  npm view %NAME%
+
+Run that command yourself to see what it prints out.
+
+The `npm view` command is a great way to view package details,
+to see what you just published, and to check if a name is already taken.
+
+Now that you've published your first package here in make-believe npm
+workshop land, go out and write a real thing to share with real humans!
+
+You don't have to just share code for other people, though.  There are
+also benefits to breaking up your code into small manageable pieces, even
+if you are only using them all yourself.
+
+You can imagine that your future self and your past self are the two
+other developers on your team.  (Scheduling meetings is pretty tricky.)
+
+Run `how-to-npm` to go on to the next adventure!

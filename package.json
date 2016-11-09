@@ -23,7 +23,7 @@
     "url": "https://github.com/npm/how-to-npm/issues"
   },
   "bundleDependencies": [
-    "adventure",
+    "workshopper-adventure",
     "concat-stream",
     "mkdirp",
     "rimraf",
@@ -31,12 +31,12 @@
     "which"
   ],
   "dependencies": {
-    "adventure": "^2.10.0",
     "concat-stream": "^1.4.7",
     "mkdirp": "^0.5.0",
     "rimraf": "^2.2.8",
     "semver": "^4.2.0",
-    "which": "^1.0.8"
+    "which": "^1.0.8",
+    "workshopper-adventure": "^5.0.3"
   },
   "preferGlobal": true,
   "devDependencies": {

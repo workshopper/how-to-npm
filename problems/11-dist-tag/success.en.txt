@@ -1,0 +1,7 @@
+Congratulations!  You've added a dist-tag!
+
+This is a handy way to manage releases.  For example, the npm project
+itself publishes each new version as 'next' (instead of 'latest') so
+that beta users can test it out before it becomes the default.
+
+Run `how-to-npm` to move on to the next exercise.

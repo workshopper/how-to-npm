@@ -1,0 +1,4 @@
+That's absolutely right!  The `@linclark/pkg` package has had an update while 
+we weren't looking.
+
+In the next lesson, we'll learn how to update packages that are outdated.

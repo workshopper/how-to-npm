@@ -1,0 +1,13 @@
+If you have a way to put stuff there, then naturally, you'll one
+day need a way to delete them.
+
+Enter the `npm rm` command (aka `npm uninstall` if you prefer to
+type things out long-hand).
+
+Remove all the deps!  But, make sure that you don't keep depending on them.
+
+Just like you can use `--save` on installing packages, you can also
+use `--save` when removing packages, to also remove them from your
+package.json file.
+
+When you've removed your dependencies, type `$ADVENTURE_COMMAND verify` to move on.

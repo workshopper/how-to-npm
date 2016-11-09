@@ -1,10 +1,24 @@
 #!/usr/bin/env node
 
-var adventure = require('adventure')
+var adventure = require('workshopper-adventure/adventure')
 var shop = module.exports = adventure({
   name: 'how-to-npm',
-  bg: 'white',
-  fg: 'red'
+  languages: ['en'],
+  appDir: __dirname,
+  menu: {
+    bg: 'white',
+    fg: 'red'
+  },
+  commands: [{
+    name: 'reset-registry',
+    handler: function (workshopper) {
+      // Reset a bit harder, since we save other stuff in there.
+      require('./lib/registry.js').kill()
+      rimraf.sync(workshopper.dataDir)
+      mkdirp.sync(workshopper.dataDir)
+      console.log(workshopper.i18n.__('reset'))
+    }
+  }]
 })
 
 var fs = require('fs')
@@ -12,39 +26,35 @@ var path = require('path')
 var rimraf = require('rimraf')
 var mkdirp = require('mkdirp')
 
-var problems = fs.readdirSync(path.resolve(__dirname, 'problems'))
-problems.filter(function (problem) {
-  return problem.match(/^[^.].*\.js$/)
-}).forEach(function (problem) {
-  var name = problem.replace(/\.js$/, '').split('-').map(function (p) {
-    if (p === 'npm') return p
-    return p.charAt(0).toUpperCase() + p.slice(1)
-  }).join(' ')
-  shop.add(name, function () {
-    return require('./problems/' + problem)
-  })
+var problems = require('./menu.json')
+problems.forEach(function (problem) {
+  var p = problem.toLowerCase().replace(/\s/g, '-')
+  var dir = path.join(__dirname, 'problems', p)
+  shop.add(problem, function () { return require(dir) })
 })
 
 shop.execute = function (args) {
-  // Reset a bit harder, since we save other stuff in there.
-  if (args[0] === 'reset') {
-    require('./lib/registry.js').kill()
-    rimraf.sync(this.datadir)
-    mkdirp.sync(this.datadir)
-  }
-
   return shop.constructor.prototype.execute.apply(this, arguments)
 }
 
 // Copy the registry-assets if they're not already there.
-try {
-  var assetsStat = fs.statSync(shop.datadir + '/registry')
-  if (!assetsStat.isDirectory()) throw Error('enotdir')
-} catch (er) {
-  rimraf.sync(shop.datadir + '/registry')
-  cpr(path.resolve(__dirname, 'lib', 'registry-assets'),
-      path.resolve(shop.datadir, 'registry'))
+
+var fromFolder = path.join(__dirname, 'assets')
+var toFolder = path.join(shop.dataDir)
+
+function cpclean (item) {
+  var from = path.join(fromFolder, item)
+  var to = path.join(toFolder, item)
+  try {
+    var assetsStat = fs.statSync(to)
+    if (!assetsStat.isDirectory()) throw Error('enotdir')
+  } catch (er) {
+    rimraf.sync(to)
+    cpr(from, to)
+  }
 }
+
+cpclean('registry')
 
 shop.cpr = cpr
 function cpr (from, to) {
@@ -60,23 +70,18 @@ function cpr (from, to) {
 }
 
 shop.cwd = function () {
-  var datadir = shop.datadir
+  var dataDir = shop.dataDir
   // verify we're in the right folder
   try {
-    var cwd = fs.readFileSync(path.resolve(datadir, 'cwd'), 'utf8').trim()
+    var cwd = fs.readFileSync(path.resolve(dataDir, 'cwd'), 'utf8').trim()
   } catch (er) {
-    console.log('Looks like you are not ready for this one yet!\n' +
-                'Go back to the `01 Dev Environment` lesson to set up\n' +
-                'your working directory.')
+    console.log(shop.i18n.__('error.not_setup'))
     return false
   }
 
   if (cwd === process.cwd()) return cwd
 
-  console.log('Uh oh!\n' +
-              'It looks like you are in the wrong folder.\n' +
-              'Please cd into ' + cwd + '\n' +
-              'and then try again')
+  console.log(shop.i18n.__('error.wrong_folder', {cwd: cwd}))
   return false
 }
 

@@ -1,0 +1,11 @@
+It's fine, of course, to explicitly check for outdated modules,
+and then run `npm install` to pull them in.
+
+However, if you want to be a bit more lazy about it, there's a special
+npm command that will UPDATE all of your deps to the max version you
+allow in your package.json.
+
+Can you guess what command that might be?  (`npm help` might help you)
+
+Update all your deps to the latest version possible, and then
+run `$ADVENTURE_COMMAND verify` to pick up your delicious green banner.

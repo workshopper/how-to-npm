@@ -1,0 +1,31 @@
+Every package in npm has a version number associated with it.  As
+you release updates to your package, these updates get an updated
+version number.
+
+Version numbers in npm follow a standard called "SemVer".  This stands
+for "Semantic Version".  The specification for this standard can be
+found at http://semver.org.
+
+The tl;dr version is that for a version like this:
+
+  1.2.3
+  ^ ^ ^
+  | | `-- Patch version. Update for every change.
+  | `---- Minor version. Update for API additions.
+  `------ Major version. Update for breaking API changes.
+
+npm has a special command called `npm version` which will update your
+package.json file for you, and also commit the change to git if your
+project is a git repository.  You can learn more at `npm help version`.
+
+Or, if you don't trust the machines, you can open up your package.json
+file by hand, and put some new numbers in the "version" field.
+
+The npm registry won't let you publish a new release of your package
+without updating the version number!  Ever!  So, get used to the idea of
+bumping the version whenever you want to publish, even if the change is
+really minor.
+
+Don't worry, there's a lot of integers, we probably won't run out.
+
+Update your version number now, and then `$ADVENTURE_COMMAND verify` to check it.
