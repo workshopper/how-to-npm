@@ -3,7 +3,7 @@
 var adventure = require('workshopper-adventure/adventure')
 var shop = module.exports = adventure({
   name: 'how-to-npm',
-  languages: ['en'],
+  languages: ['en', 'ja'],
   appDir: __dirname,
   menu: {
     bg: 'white',
