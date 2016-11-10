@@ -1,0 +1,111 @@
+{
+  "install-npm": {
+    "verifying": "npm がインストールされているか確認しています。",
+    "missing": "npm がインストールされていないようです。",
+    "npm-problem": "おっと！npm コマンドを実行したらエラーが発生してしまいました。",
+    "version-verified": "あなたは {{version}} をしています。 いいですね！\nでは、最新のバージョンを確認してみましょう。少々お待ちください...。",
+    "latest-version": "最新のバージョンは {{version}} です。",
+    "upgrade": "あなたは {{version}} をインストールしていますが、 最新版は {{latest}} です。\n`npm install npm -g` を実行して最新版をインストールしてください。\n(この課題をスキップしたい場合は、`how-to-npm verify skip` を実行して飛ばしてください。)",
+    "success": "おめでとうございます！\nあなたは最新版の npm をインストールしています。"
+  },
+  "dev-environment": {
+    "err_workshopper": "あなたはワークショッパーのルートディレクトリにいるようです。",
+    "err_home": "あなたはホームディレクトリにいるようです。",
+    "hint": "そこで作業するのは賢明ではありません。新しいディレクトリを作成し、それを使ってください。",
+    "no_package": "`package.json` が見つかりません。\n`npm init` を実行しましたか？"
+  },
+  "login": {
+    "whoami_err": "おっと！\n何かエラーがあるようです。",
+    "logged_out": "うーん... まだログインしてないようです。\nアカウントを作成するのに `npm adduser` を実行しましたか？",
+    "success": "{{user}} さん、おめでとうございます！\nあなたは擬似的にアカウントの作成を完了しました！\n賢明に使いましょう。怒りに身を任せてはいけません。良いことのために使いましょう。\n\nこの大いなる力には、責任が伴います。\nこの表現には元ネタがあるようですが、あまり気にしなくて大丈夫です。"
+  },
+  "start-a-project": {
+    "no_package": "package.json が見当たりません。\n`npm init` をプロジェクトのルートディレクトリで実行してください。",
+    "success": "おめでごうございます！\nプロジェクトの作成に成功しました！ package.json を確認してみてください。",
+    "extra_credit": "追加の課題も合格です！素晴らしい進捗です。"
+  },
+  "install-a-module": {
+    "error": "おっと、モジュールが正しくインストールできなかったようです。\n発生したエラー：\n{{{error}}}\n`@linclark/pkg` モジュールをインストールするために\n`npm install @linclark/pkg` と正しくコマンドを実行できているか確認してください。",
+    "success": "おめでとうございます！インストールが完了しました。"
+  },
+  "listing-dependencies": {
+    "usage": "問題がなければ：\n`how-to-npm verify OK`\nそうでなければ：\n`how-to-npm verify NOT OK`\nを実行してください",
+    "ok_not": "残念ながら、まだ問題があるようです。\n`npm ls` を実行して、エラーの内容を確認してみましょう。",
+    "not_ok_not": "えっと...\nその、 世の中うまくいかないこともありますが\n少なくともあなたの package.json と node_modules はいい感じですよ。",
+    "success": "問題を修正できたみたいですね。素晴らしいです！\nもう `npm ls` は静かになりましたね。"
+  },
+  "npm-test": {
+    "section_missing": "Oops!  You don't have a `scripts.test` section in your\npackage.json file.  Edit it, and try again.",
+    "running": "Running your test script...",
+    "running_done": "...done!",
+    "error": "Uh oh!  The test failed!\nTry creating a test that actually works.",
+    "success": "Congratulations!  You wrote a test that passes!\nWriting a test that is actually GOOD is left for another time."
+  },
+  "package-niceties": {
+    "problem": "Not quite!\nThere's still a problem to fix.",
+    "error": "Uh oh!\nIt looks like something went wrong",
+    "success": "Looking sharp!\nA package without a readme and some metadata is like a\nbunch of JavaScript without instructions or git repo links."
+  },
+  "publish": {
+    "error": "Uh oh!\nIt looks like you didn't successfully publish the\n  {{name}}\npackage.  Try again!"
+  },
+  "version": {
+    "invalid_semver": "Looks like your package.json has an invalid version!\nUse `npm help semver` to learn more about version numbers\nYour current version number is: {{version}}\n",
+    "old_version": "Uh oh!\nThe version is still {{version}}\nCheck `npm help version` for a handy util to do this.",
+    "success": "Great job!\nRun `how-to-npm` for the next exciting challenge!"
+  },
+  "publish-again": {
+    "not_republished": "Whoops!\nLooks like you did not publish the package again\nTry running `npm publish` and then verifying again.",
+    "current_missing": "Hmm... I see that you published more than once, but\nthe current version ({{version}}) is not in the set.\nHere's what I see in there:\n{{{found}}}\nTry publishing again!",
+    "success": "Wow!  You are well on your way to becoming a regular\nTJames \"Substack\" Halidaychuk!  There's no stopping you!\nRun `how-to-npm` to go to the next step."
+  },
+  "dist-tag": {
+    "success": "Uh oh, looks like you still only have a single dist-tag.\nUse `npm help dist-tag` to learn how to add another one."
+  },
+  "dist-tag-removal": {
+    "too_many": "Uh oh, looks like you have some extra dist-tags there.\nUse `npm help dist-tag` to learn how to remove them.",
+    "version_mismatch": "Oops!  Your \"latest\" tag still points at the most recent\nrelease, {{version}}.\nPoint that somewhere else, and re-run `how-to-npm verify`\n\nUse `npm help dist-tag` to learn more about how to do it."
+  },
+  "outdated": {
+    "no_package": "Run `how-to-npm verify PKG` but replace `PKG` with the name\nof the package that is outdated",
+    "wrong_package": "Nope, it's not {{{pkg}}}.  Try again!"
+  },
+  "update": {
+    "outdated": "Oops!  You are still using the outdated version!",
+    "success": "Awesome!  You're up to date!\nRun `how-to-npm` to move on to the next exercise"
+  },
+  "rm": {
+    "dependencies_left": "Looks like there are some deps still hanging around",
+    "package_json_left": "You removed the files, but not the entries in package.json"
+  },
+  "finale": {
+    "todo": "It looks like you still have more work to do. Finish\nthe following exercises before you can start this:"
+  },
+  "error": {
+    "not_setup": "Looks like you are not ready for this one yet!\nGo back to the `01 Dev Environment` lesson to set up\nyour working directory.",
+    "wrong_folder": "Uh oh!\nIt looks like you are in the wrong folder.\nPlease cd into {{cwd}}\nand then try again'"
+  },
+  "exercise": {
+    "00 Install npm": "00 npm をインストール",
+    "01 Dev Environment": "01 開発環境の準備",
+    "02 Login": "02 ログイン",
+    "03 Start A Project": "03 プロジェクトをはじめる",
+    "04 Install A Module": "04 モジュールをインストール",
+    "05 Listing Dependencies": "05 パッケージの一覧",
+    "06 npm Test": "06 テストを実行する",
+    "07 Package Niceties": "07 正しいパッケージ",
+    "08 Publish": "08 パッケージの公開",
+    "09 Version": "09 バージョンの管理",
+    "10 Publish Again": "10 パッケージの更新",
+    "11 Dist Tag": "11 タグの追加",
+    "12 Dist Tag Removal": "12 タグの削除",
+    "13 Outdated": "13 パッケージの鮮度",
+    "14 Update": "14 パッケージの更新",
+    "15 Rm": "15 パッケージの削除",
+    "16 Finale": "16 最後に"
+  },
+  "menu": {
+    "reset-registry": "ワークショップをやり直す"
+  },
+  "reset": "進捗をリセットしました"
+}
