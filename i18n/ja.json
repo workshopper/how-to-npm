@@ -35,16 +35,16 @@
     "success": "問題を修正できたみたいですね。素晴らしいです！\nもう `npm ls` は静かになりましたね。"
   },
   "npm-test": {
-    "section_missing": "おっと、あなたの package.json には `script.test` フィールドがありません。編集してもう一度トライしてみてください。",
+    "section_missing": "おっと、あなたの package.json には `script.test` フィールドがありません。\n編集してもう一度トライしてみてください。",
     "running": "あなたの test スクリプトを実行しています...。",
     "running_done": "...完了しました！",
     "error": "あぁ！テストが失敗しました。実際に動作するテストを指定してください。",
-    "success": "おめでとうございます！あなたの書いたテストは正しく動作しました。空いた時間でテストを書くのは非常に価値のある時間です。"
+    "success": "おめでとうございます！あなたの書いたテストは正しく動作しました。\n空いた時間でテストを書くのは非常に価値のある時間です。"
   },
   "package-niceties": {
-    "problem": "Not quite!\nThere's still a problem to fix.",
-    "error": "Uh oh!\nIt looks like something went wrong",
-    "success": "Looking sharp!\nA package without a readme and some metadata is like a\nbunch of JavaScript without instructions or git repo links."
+    "problem": "まだ編集が完了していないようです。",
+    "error": "おっと！なにかがエラーを起こしているようです。",
+    "success": "整いましたね！README や他のメタデータが欠けているパッケージは、使い方の説明や git リポジトリのリンクのない\n"
   },
   "publish": {
     "error": "Uh oh!\nIt looks like you didn't successfully publish the\n  {{name}}\npackage.  Try again!"
