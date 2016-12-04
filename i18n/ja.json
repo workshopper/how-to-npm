@@ -50,9 +50,9 @@
     "error": "おっと！\nあなたの {{name}} パッケージは正しく公開されていないようです。\nもう一度トライしてみてください。"
   },
   "version": {
-    "invalid_semver": "Looks like your package.json has an invalid version!\nUse `npm help semver` to learn more about version numbers\nYour current version number is: {{version}}\n",
-    "old_version": "Uh oh!\nThe version is still {{version}}\nCheck `npm help version` for a handy util to do this.",
-    "success": "Great job!\nRun `how-to-npm` for the next exciting challenge!"
+    "invalid_semver": "バージョンのフォーマットが不正なようです。\n`npm help semver` を実行してバージョンフォーマットについて調べてみてください。\nあなたの現在のバージョン番号: {{version}}\n",
+    "old_version": "おっと！\nバージョンが {{version}} のままです。\n`npm help version` を実行してバージョンの更新方法を調べてみましょう。",
+    "success": "グッジョブ！\n`how-to-npm` を実行して次の課題に進みましょう。"
   },
   "publish-again": {
     "not_republished": "Whoops!\nLooks like you did not publish the package again\nTry running `npm publish` and then verifying again.",
