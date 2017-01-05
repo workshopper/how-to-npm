@@ -79,7 +79,7 @@
     "package_json_left": "ファイル自体は取り除けましたが, package.json 内のエントリーが残っているようです。"
   },
   "finale": {
-    "todo": "It looks like you still have more work to do. Finish\nthe following exercises before you can start this:"
+    "todo": "まだやることがあるみたいですよ。\nゴールする前に、以下の課題にもトライしてみて下さい："
   },
   "error": {
     "not_setup": "Looks like you are not ready for this one yet!\nGo back to the `01 Dev Environment` lesson to set up\nyour working directory.",
