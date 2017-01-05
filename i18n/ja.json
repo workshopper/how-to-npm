@@ -67,8 +67,8 @@
     "version_mismatch": "おっと、\"latest\" がまだ最新のリリースを指したままのようです。\n Version: {{version}}.\n'最新以外のものを指すようにしてから 'how-to-npm verify` を再度実行してください。\n\n`npm help dist-tag` を実行すると、タグの削除方法を学べます。"
   },
   "outdated": {
-    "no_package": "Run `how-to-npm verify PKG` but replace `PKG` with the name\nof the package that is outdated",
-    "wrong_package": "Nope, it's not {{{pkg}}}.  Try again!"
+    "no_package": "`how-to-npm verify PKG` を実行してください。ただし、`PKG` を\n古くなってしまったパッケージ名と置き換えて。",
+    "wrong_package": "違います。{{{pkg}}} ではありません。もう一度！"
   },
   "update": {
     "outdated": "Oops!  You are still using the outdated version!",
