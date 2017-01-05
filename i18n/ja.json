@@ -63,8 +63,8 @@
     "success": "おっと、配布用のタグがまだ一つしかないようです。\n`npm help dist-tag` を使用して、どうやってタグを追加するのか調べてみて下さい。"
   },
   "dist-tag-removal": {
-    "too_many": "Uh oh, looks like you have some extra dist-tags there.\nUse `npm help dist-tag` to learn how to remove them.",
-    "version_mismatch": "Oops!  Your \"latest\" tag still points at the most recent\nrelease, {{version}}.\nPoint that somewhere else, and re-run `how-to-npm verify`\n\nUse `npm help dist-tag` to learn more about how to do it."
+    "too_many": "まだ余計な配布用のタグがあるようです。\n`npm help dist-tag` を使って、タグを消す方法を確認してみてください。",
+    "version_mismatch": "おっと、\"latest\" がまだ最新のリリースを指したままのようです。\n Version: {{version}}.\n'最新以外のものを指すようにしてから 'how-to-npm verify` を再度実行してください。\n\n`npm help dist-tag` を実行すると、タグの削除方法を学べます。"
   },
   "outdated": {
     "no_package": "Run `how-to-npm verify PKG` but replace `PKG` with the name\nof the package that is outdated",
