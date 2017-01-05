@@ -60,7 +60,7 @@
     "success": "わお！これであなたも未来の\nTJames \"Substack\" Halidaychuk ですね！もう誰もあなたを止められない\n`how-to-npm` を実行して次の課題にいきましょう。"
   },
   "dist-tag": {
-    "success": "Uh oh, looks like you still only have a single dist-tag.\nUse `npm help dist-tag` to learn how to add another one."
+    "success": "おっと、配布用のタグがまだ一つしかないようです。\n`npm help dist-tag` を使用して、どうやってタグを追加するのか調べてみて下さい。"
   },
   "dist-tag-removal": {
     "too_many": "Uh oh, looks like you have some extra dist-tags there.\nUse `npm help dist-tag` to learn how to remove them.",
