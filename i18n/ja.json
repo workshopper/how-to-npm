@@ -75,8 +75,8 @@
     "success": "すばらしい。最新版にできました。\n`how-to-npm` を実行して次の課題に進んでください。"
   },
   "rm": {
-    "dependencies_left": "Looks like there are some deps still hanging around",
-    "package_json_left": "You removed the files, but not the entries in package.json"
+    "dependencies_left": "依存パッケージがまだ残っているようです。",
+    "package_json_left": "ファイル自体は取り除けましたが, package.json 内のエントリーが残っているようです。"
   },
   "finale": {
     "todo": "It looks like you still have more work to do. Finish\nthe following exercises before you can start this:"
