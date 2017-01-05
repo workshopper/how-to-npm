@@ -71,8 +71,8 @@
     "wrong_package": "違います。{{{pkg}}} ではありません。もう一度！"
   },
   "update": {
-    "outdated": "Oops!  You are still using the outdated version!",
-    "success": "Awesome!  You're up to date!\nRun `how-to-npm` to move on to the next exercise"
+    "outdated": "おっと、まだ古いバージョンを使っていますね。",
+    "success": "すばらしい。最新版にできました。\n`how-to-npm` を実行して次の課題に進んでください。"
   },
   "rm": {
     "dependencies_left": "Looks like there are some deps still hanging around",
