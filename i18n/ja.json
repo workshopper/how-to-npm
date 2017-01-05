@@ -82,8 +82,8 @@
     "todo": "まだやることがあるみたいですよ。\nゴールする前に、以下の課題にもトライしてみて下さい："
   },
   "error": {
-    "not_setup": "Looks like you are not ready for this one yet!\nGo back to the `01 Dev Environment` lesson to set up\nyour working directory.",
-    "wrong_folder": "Uh oh!\nIt looks like you are in the wrong folder.\nPlease cd into {{cwd}}\nand then try again'"
+    "not_setup": "まだこの準備が整っていないようですね！\n最初の `01 Dev Environment` に戻って環境構築をしてみて下さい。",
+    "wrong_folder": "間違ったディレクトリにいるようです。\n{{cwd}} に移動してもう一度トライしてみてください。"
   },
   "exercise": {
     "00 Install npm": "00 npm をインストール",
