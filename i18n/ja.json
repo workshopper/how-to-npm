@@ -1,0 +1,111 @@
+{
+  "install-npm": {
+    "verifying": "npm がインストールされているか確認しています。",
+    "missing": "npm がインストールされていないようです。",
+    "npm-problem": "おっと！npm コマンドを実行したらエラーが発生してしまいました。",
+    "version-verified": "あなたは {{version}} をしています。 いいですね！\nでは、最新のバージョンを確認してみましょう。少々お待ちください...。",
+    "latest-version": "最新のバージョンは {{version}} です。",
+    "upgrade": "あなたは {{version}} をインストールしていますが、 最新版は {{latest}} です。\n`npm install npm -g` を実行して最新版をインストールしてください。\n(この課題をスキップしたい場合は、`how-to-npm verify skip` を実行してください。)",
+    "success": "おめでとうございます！\nあなたは最新版の npm をインストールしています。"
+  },
+  "dev-environment": {
+    "err_workshopper": "あなたはワークショッパーのルートディレクトリにいるようです。",
+    "err_home": "あなたはホームディレクトリにいるようです。",
+    "hint": "そこで作業するのは賢明ではありません。新しいディレクトリを作成し、それを使ってください。",
+    "no_package": "`package.json` が見つかりません。\n`npm init` を実行しましたか？"
+  },
+  "login": {
+    "whoami_err": "おっと！\n何かエラーがあるようです。",
+    "logged_out": "うーん... まだログインしてないようです。\nアカウントを作成するのに `npm adduser` を実行しましたか？",
+    "success": "{{user}} さん、おめでとうございます！\nあなたは擬似的にアカウントの作成を完了しました！\n賢明に使いましょう。怒りに身を任せてはいけません。良いことのために使いましょう。\n\nこの大いなる力には、責任が伴います。\nこの表現には元ネタがあるようですが、あまり気にしなくて大丈夫です。"
+  },
+  "start-a-project": {
+    "no_package": "package.json が見当たりません。\n`npm init` をプロジェクトのルートディレクトリで実行してください。",
+    "success": "おめでとうございます！\nプロジェクトの作成に成功しました！ package.json を確認してみてください。",
+    "extra_credit": "追加の課題も合格です！素晴らしい進捗です。"
+  },
+  "install-a-module": {
+    "error": "おっと、モジュールが正しくインストールできなかったようです。\n発生したエラー：\n{{{error}}}\n`@linclark/pkg` モジュールをインストールするために\n`npm install @linclark/pkg` と正しくコマンドを実行できているか確認してください。",
+    "success": "おめでとうございます！インストールが完了しました。"
+  },
+  "listing-dependencies": {
+    "usage": "問題がなければ：\n`how-to-npm verify OK`\nそうでなければ：\n`how-to-npm verify NOT OK`\nを実行してください。",
+    "ok_not": "残念ながら、まだ問題があるようです。\n`npm ls` を実行して、エラーの内容を確認してみましょう。",
+    "not_ok_not": "えっと...\nその、 世の中うまくいかないこともありますが\n少なくともあなたの package.json と node_modules はいい感じですよ。",
+    "success": "問題を修正できたみたいですね。素晴らしいです！\nもう `npm ls` は静かになりましたね。"
+  },
+  "npm-test": {
+    "section_missing": "おっと、あなたの package.json には `script.test` フィールドがありません。\n編集してもう一度トライしてみてください。",
+    "running": "あなたの test スクリプトを実行しています...。",
+    "running_done": "...完了しました！",
+    "error": "あぁ！テストが失敗しました。実際に動作するテストを指定してください。",
+    "success": "おめでとうございます！あなたの書いたテストは正しく動作しました。\n空いた時間でテストを書くのは非常に価値のある時間です。"
+  },
+  "package-niceties": {
+    "problem": "まだ編集が完了していないようです。",
+    "error": "おっと！なにかがエラーを起こしているようです。",
+    "success": "整いましたね！README や他のメタデータが欠けているパッケージは、使い方の説明や git リポジトリのリンクのない\n大量の JavaScript のようなものです。"
+  },
+  "publish": {
+    "error": "おっと！\nあなたの {{name}} パッケージは正しく公開されていないようです。\nもう一度トライしてみてください。"
+  },
+  "version": {
+    "invalid_semver": "バージョンのフォーマットが不正なようです。\n`npm help semver` を実行してバージョンフォーマットについて調べてみてください。\nあなたの現在のバージョン番号: {{version}}\n",
+    "old_version": "おっと！\nバージョンが {{version}} のままです。\n`npm help version` を実行してバージョンの更新方法を調べてみましょう。",
+    "success": "グッジョブ！\n`how-to-npm` を実行して次の課題に進みましょう。"
+  },
+  "publish-again": {
+    "not_republished": "おーっと！\nパッケージの更新を公開していないようですね。\n`npm publish` を実行して再度確認してみてください。",
+    "current_missing": "うーん... あなたは2回以上更新したようですが、\n現在のバージョンである ({{version}}) はまだ公開されていないようですね。\nこちらが確認した公開されているバージョン一覧はこちらです:\n{{{found}}}\n改めて公開してみてください！",
+    "success": "わお！これであなたも未来の\nTJames \"Substack\" Halidaychuk ですね！もう誰もあなたを止められない\n`how-to-npm` を実行して次の課題にいきましょう。"
+  },
+  "dist-tag": {
+    "success": "おっと、配布用のタグがまだ一つしかないようです。\n`npm help dist-tag` を使用して、どうやってタグを追加するのか調べてみて下さい。"
+  },
+  "dist-tag-removal": {
+    "too_many": "まだ余計な配布用のタグがあるようです。\n`npm help dist-tag` を使って、タグを消す方法を確認してみてください。",
+    "version_mismatch": "おっと、\"latest\" がまだ最新のリリースを指したままのようです。\n Version: {{version}}.\n'最新以外のものを指すようにしてから 'how-to-npm verify` を再度実行してください。\n\n`npm help dist-tag` を実行すると、タグの削除方法を学べます。"
+  },
+  "outdated": {
+    "no_package": "`how-to-npm verify PKG` を実行してください。ただし、`PKG` を\n古くなってしまったパッケージ名と置き換えて。",
+    "wrong_package": "違います。{{{pkg}}} ではありません。もう一度！"
+  },
+  "update": {
+    "outdated": "おっと、まだ古いバージョンを使っていますね。",
+    "success": "すばらしい。最新版にできました。\n`how-to-npm` を実行して次の課題に進んでください。"
+  },
+  "rm": {
+    "dependencies_left": "依存パッケージがまだ残っているようです。",
+    "package_json_left": "ファイル自体は取り除けましたが, package.json 内のエントリーが残っているようです。"
+  },
+  "finale": {
+    "todo": "まだやることがあるみたいですよ。\nゴールする前に、以下の課題にもトライしてみて下さい："
+  },
+  "error": {
+    "not_setup": "まだこの準備が整っていないようですね！\n最初の `01 Dev Environment` に戻って環境構築をしてみて下さい。",
+    "wrong_folder": "間違ったディレクトリにいるようです。\n{{cwd}} に移動してもう一度トライしてみてください。"
+  },
+  "exercise": {
+    "00 Install npm": "00 npm をインストール",
+    "01 Dev Environment": "01 開発環境の準備",
+    "02 Login": "02 ログイン",
+    "03 Start A Project": "03 プロジェクトをはじめる",
+    "04 Install A Module": "04 モジュールをインストール",
+    "05 Listing Dependencies": "05 パッケージの一覧",
+    "06 npm Test": "06 テストを実行する",
+    "07 Package Niceties": "07 正しいパッケージ",
+    "08 Publish": "08 パッケージの公開",
+    "09 Version": "09 バージョンの管理",
+    "10 Publish Again": "10 パッケージの更新",
+    "11 Dist Tag": "11 タグの追加",
+    "12 Dist Tag Removal": "12 タグの削除",
+    "13 Outdated": "13 パッケージの鮮度",
+    "14 Update": "14 パッケージの更新",
+    "15 Rm": "15 パッケージの削除",
+    "16 Finale": "16 最後に"
+  },
+  "menu": {
+    "reset-registry": "ワークショップをやり直す"
+  },
+  "reset": "進捗をリセットしました"
+}

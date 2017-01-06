@@ -1,0 +1,20 @@
+さて、私たちは package.json を作成しましたが、そのファイルはユーザーが必要とする
+一般的な項目がいくつかかけています。例えば `npm install` と実行すると、以下のような
+メッセージが表示されるでしょう。
+
+    npm WARN package.json %ID% No description
+    npm WARN package.json %ID% No repository field.
+    npm WARN package.json %ID% No README data
+
+あなたの芸術的な作品を世界に向けて共有する前に、作品を少しだけ整えて見ましょう。そうすることで、
+ユーザーはあなたの作品の使い方を知ることができます。
+
+最初に簡単な説明を README.md というファイルを作って書いてみましょう。
+
+次に `repository` というフィールドを package.json に追加し、ユーザーがコードに
+アクセスできる URL を指定してみましょう。
+
+手元のエディタで package.json を編集しても良いですし、`npm init` を再度実行してフィールド
+の情報を更新することもできます。
+
+完了したら `$ADVENTURE_COMMAND verify` を実行してください。
