@@ -5,7 +5,7 @@
   "bin": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/how-to-npm"
+    "url": "https://github.com/workshopper/how-to-npm"
   },
   "scripts": {
     "test": "standard"
@@ -20,7 +20,7 @@
   "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/npm/how-to-npm/issues"
+    "url": "https://github.com/workshopper/how-to-npm/issues"
   },
   "bundleDependencies": [
     "workshopper-adventure",
