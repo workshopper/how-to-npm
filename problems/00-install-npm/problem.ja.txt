@@ -15,4 +15,4 @@ how-to-npm solution . 課題の正解を表示する
 
 (このワークショップを通じて、インターネットの接続を必要とするのはこの課題だけです。
 もしネットワークに通じない状況におり、この課題をスキップしたいときは
-`$ADVENTURE_COMMAND verify skip` を実行して飛ばしてください。)
+`$ADVENTURE_COMMAND verify skip` を実行してください。)

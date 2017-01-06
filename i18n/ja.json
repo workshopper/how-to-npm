@@ -5,7 +5,7 @@
     "npm-problem": "おっと！npm コマンドを実行したらエラーが発生してしまいました。",
     "version-verified": "あなたは {{version}} をしています。 いいですね！\nでは、最新のバージョンを確認してみましょう。少々お待ちください...。",
     "latest-version": "最新のバージョンは {{version}} です。",
-    "upgrade": "あなたは {{version}} をインストールしていますが、 最新版は {{latest}} です。\n`npm install npm -g` を実行して最新版をインストールしてください。\n(この課題をスキップしたい場合は、`how-to-npm verify skip` を実行して飛ばしてください。)",
+    "upgrade": "あなたは {{version}} をインストールしていますが、 最新版は {{latest}} です。\n`npm install npm -g` を実行して最新版をインストールしてください。\n(この課題をスキップしたい場合は、`how-to-npm verify skip` を実行してください。)",
     "success": "おめでとうございます！\nあなたは最新版の npm をインストールしています。"
   },
   "dev-environment": {
@@ -21,7 +21,7 @@
   },
   "start-a-project": {
     "no_package": "package.json が見当たりません。\n`npm init` をプロジェクトのルートディレクトリで実行してください。",
-    "success": "おめでごうございます！\nプロジェクトの作成に成功しました！ package.json を確認してみてください。",
+    "success": "おめでとうございます！\nプロジェクトの作成に成功しました！ package.json を確認してみてください。",
     "extra_credit": "追加の課題も合格です！素晴らしい進捗です。"
   },
   "install-a-module": {
