@@ -1,10 +1,10 @@
-# how-to-npm
+# how-to-npm [![Build Status](https://travis-ci.org/workshopper/how-to-npm.svg?branch=master)](https://travis-ci.org/workshopper/how-to-npm)
 
 A module to teach you how to module.
 
 ## PREREQUISITES
 
-To use this project, you'll need NodeJS. Visit http://www.nodejs.org to 
+To use this project, you'll need NodeJS. Visit http://www.nodejs.org to
 download and learn more!
 
 ## USAGE
