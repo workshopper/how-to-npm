@@ -12,7 +12,7 @@ for a legacy version, or something), then you can manually manage
 these distribution tags with the `dist-tag` function.
 
 `npm dist-add <pkg>@<version> [<tag>]` will add a new tag.
-To find out the name of your current package/version type npm ls.
+To find out the name of your current package/version type `npm ls`.
 The first line of the output will be the package and version; e.g. user@1.0.1.
 To add a tag type in the name of the tag.
 
@@ -20,4 +20,5 @@ To add a tag type in the name of the tag.
 
 Run `npm help dist-tag` to learn more about it.
 
-Let's add a dist-tag on your package, and then `$ADVENTURE_COMMAND verify` to check it.
+Let's add a dist-tag on your package,
+and then `$ADVENTURE_COMMAND verify` to check it.
