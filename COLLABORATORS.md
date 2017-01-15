@@ -17,3 +17,4 @@
 - [cakenggt](https://github.com/cakenggt)
 - [erictleung](https://github.com/erictleung)
 - [llkats](https://github.com/llkats)
+- [johndeyrup](https://github.com/johndeyrup)
