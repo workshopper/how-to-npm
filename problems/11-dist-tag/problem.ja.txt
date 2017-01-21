@@ -13,12 +13,12 @@ npm に公開されたパッケージは、いずれも `dist-tags` (配布タ�
 バージョンに対するセキュリティーリリースなど)、`dist-tag` 機能を
 使うことで、手動でそれらの配布物のタグを管理できます。
 
-`npm dist-add <pkg> @ <version> [<tag>]` で新しいタグを追加することができます。
+`npm dist-tag add <pkg> @ <version> [<tag>]` で新しいタグを追加することができます。
 現在のパッケージ・バージョンの名前を調べるには `npm ls` を入力してください。
 出力の最初の行はパッケージとバージョンです(例えば user@1.0.1)。
 タグ名を追加するのは、このようになります。
 
-  npm dist-add user@1.0.1 beta
+  npm dist-tag add user@1.0.1 beta
 
 `npm help dist-tag` を実行すれば、もっと詳しく学べます。
 
