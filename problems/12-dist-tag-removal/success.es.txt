@@ -1,0 +1,4 @@
+¡Felicidades! Ahora sabes más sobre dist-tags que la mayoría de los
+usuarios de npm. 💪
+
+Vamos con `how-to-npm` a la próxima aventura.

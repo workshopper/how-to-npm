@@ -1,0 +1,12 @@
+Está bien, claro, directamente verificar si hay paquetes anticuados,
+y entonces usar `npm install paquete@vers` para traerlos al día.
+
+Pero, podemos ser un poco más vagos con esto. Hay un comando
+especial de npm que actualizará todas tus dependencias al número
+de versión más alto *permitido por el rango en package.json*.
+
+El comando es `npm update`. Puedes leer `npm help update` para
+ver más detalles.
+
+Actualiza todas tus dependencias a las versiones más recientes posibles,
+y ejecuta `$ADVENTURE_COMMAND verify` para terminar aquí.

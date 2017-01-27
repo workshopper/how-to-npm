@@ -1,0 +1,8 @@
+¡Muy bien!
+Ahora tienes un ambiente de desarrollo.
+
+De aquí en adelante asegúrate que ejecutas el workshop en este directorio.
+
+Tal vez has notado que hay un fichero `.npmrc` se ha aparecido ahí.
+Normalmente, este no sería requerido, pero el workshop lo usa para simular
+las partes que normalmente se conectarían al internet.

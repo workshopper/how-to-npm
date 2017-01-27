@@ -1,0 +1,16 @@
+Y para qué sirve un gestionador de paquetes sin paquetes?
+
+Pues te digo: para nada.
+
+Lo bueno es que eso no es un problema para npm, porque es muy
+fácil para todos los usuarios de npm publicar sus paquetes y
+compartirlos con el mundo entero.🌍🌎🌏
+
+Los paquetes se envían al registro con el comando `npm publish`.
+
+Pruébalo! No es nada complicado.💚
+
+(¡Asegúrate que todavía estás en el directorio de tu proyecto! So publicas algo por accidente, lo puedes quitar,
+pero no hay garantía que nadie lo haya visto en el proceso.)
+
+Entonces, haz `$ADVENTURE_COMMAND verify` y ya!

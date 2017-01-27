@@ -1,0 +1,35 @@
+Así que ya has instalado algo, y usado `npm ls` para ver
+qué es lo que hizo.
+
+Si miras dentro del package.json, tiene esta parte medio extaña:
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+npm se puede usar como algo que se llama "task runner", o sea,
+un gestor de tareas. Esto se hace con la propiedas llamada "scripts".
+Casi todos los paquetes y proyectos tendrán una tarea de prueba
+que ejecuta para verificar que todo está funcionando bien. Para
+recordarte hacer esto, npm pone una prueba que "siempre falla" ahí
+cuando creas tu package.json.
+
+Para crear tu propia prueba, primero crea un fichero llamado `test.js`.
+Para los propósitos de este taller, puedes dejarlo en blanco, pero aquí
+es donde escribirías tus pruebas (esta es una clase de npm -- no de pruebas 🤓)
+La prueba tiene que terminar sin error, o si no npm entenderá que la prueba
+en sí falló.
+
+Entonces, edita tu `package.json` para que tu sección se vea así:
+
+  "scripts": {
+    "test": "node test.js"
+  },
+
+Cuando termines, y guardes el fichero, haz `$ADVENTURE_COMMAND verify`
+para verificar que lo hiciste bien.
+
+Adicionalmente: Si quieres ejecutar cualquier prueba que hayas escrito en
+`test.js`, simplemente puedes haces `npm test`, y npm hará lo que esperas.
+
+La documentación para `scripts` se encuentra en `npm help scripts`.

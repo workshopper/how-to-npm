@@ -1,0 +1,10 @@
+npm te ayuda a crear proyectos, pero para que npm pueda
+hacerlo, necesitas decirle algunas cosas sobre to proyecto.
+Esta información se contiene en un fichero llamado package.json.
+
+Haz `npm init --scope=<usuario>`, y reemplaza <usuario> con el nombre del
+usuario que creaste en la última lección (usa `npm whoami` si se te olvidó).
+Esto creará un package.json.
+(Opcionalmente, como bono, prepara el directorio como repositorio de git).
+
+Haz `$ADVENTURE_COMMAND verify` cuando termines.

@@ -1,0 +1,17 @@
+Ahora que tienes uno o dos dist-tags adicionales, vamos a limpiar
+las cosas un poco:
+
+La única etiqueta que NUNCA puedes remover es "latest". Eso es porque
+cada paquete instala "latest" si no le das una versión más específica.
+
+Lo que sí puedes hacer es cambiar "latest" para que se refiera a
+una versión diferente, o borrar otras etiquetas que esa.
+
+Usa `npm dist-tag rm <etiqueta>` para borrar todas las etiquetas que podamos, y
+además cambiar la referencia de "latest" para que sea alguna versión que no sea
+la más reciente.
+
+Puedes usar `npm dist-tag ls` para ver la lista de todos los dist-tags
+existentes.
+
+Haz `npm help dist-tag` para aprender más sobre el comando.

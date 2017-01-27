@@ -1,0 +1,9 @@
+¡Muy bien! Has añadido una etiqueta nueva, o "dist-tag".
+
+Esta es una manera muy útil de manejar diferentes líneas de lanzamiento.
+Por ejemplo, el proyecto npm en sí siempre publica versiones nuevas
+a un dist-tag llamado `next`, así que usuarios beta pueden tratarlo
+por algunas semanas antes de que el resto de los usuarios de npm
+lo instalen. Esto ayuda mucho a encontrar problemas críticos temprano.
+
+Ahora haz `how-to-npm` para continuar.

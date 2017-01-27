@@ -1,0 +1,11 @@
+Ya que tenemos algunas dependencias, y has aprendido que tus propios
+paquetes pueden ser cambiados una y otra vez, la pregunta obvia es esta:
+Que hacemos cuando *alguien más* ha cambiado *su* paquete?
+
+El primer paso es detectar esto. Debido a la manera que definimos nuestras
+dependencias con rangos de números, y como cada lanzamiento es una combinación
+única de nombre y versión, podemos detectar versiones nuevas con
+el comando `npm outdated`.
+
+Para completar este ejercicio, haz `$ADVENTURE_COMMAND verify PAQ`
+donde `PAQ` es el nombre del paquete que dice que tiene versión nueva.

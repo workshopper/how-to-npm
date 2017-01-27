@@ -1,0 +1,33 @@
+Cada paquete en npm tiene un número de versión asociado. Mientras
+vas publicando versiones nuevas, estas versiones reciben un
+número de versión nuevo y único.
+
+Las versiones de npm siguen un estándar llamado "SemVer". En inglés
+eso es "Semantic Versioning", o sea "versionamiento semántico".
+El texto del estándar se encuentra en http://semver.org.
+
+La explicación corta es así:
+
+  1.2.3
+  ^ ^ ^
+  | | `-- versión "patch" (parche). Cambia con cada versión nueva.
+  | `---- versión menor. Incrementa con cada rasgo nuevo.
+  `------ versión mayor. Incrementa cuando hay cambios de API incompatibles.
+
+npm tiene un comando especial llamado `npm version`, que puede manejar
+la versión en package.json por tii, y además acometer el cambio
+a git si lo estás usando. Para leer más sobre el tema,
+haz `npm help version`
+
+O, si no confías mucho de semejantes programas, puedes abrir
+tu package.json y editar el número en el campo llamado "version".
+
+¡El registro de npm no te dejará publicar una versión que haya
+sido publicada antes! ¡Nunca! Así que acostúmbrate a la idea de
+que incrementar la versión cada vez que vayas a publicar, aunque
+los cambios sean mínimos.
+
+No te preocupes. Resultan que exísten muchos números, así que probablemente
+no se te van a acabar.😉
+
+Incrementa tu número de versión ahora, y entonces haz `$ADVENTURE_COMMAND verify`.

@@ -1,0 +1,3 @@
+Ya es casi hora de decir adiós. Pero no te preocupes! Esto es sólo
+una introducción. Si ya acabaste todos los otros ejercicios, escribe
+`$ADVENTURE_COMMAND verify` para ver los próximos pasos para tomar.

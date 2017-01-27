@@ -1,0 +1,11 @@
+Publicando una vez está bien. Pero paquetes saludables se publican
+una y otra y otra vez, con cada mejora o cada arreglo.
+
+Como dije antes, no puedes reusar el mismo número de versión
+porque se confundirían demasiado los usuarios, y los programas
+que esperan que cada versión identifique algo único.
+
+Pero cambiamos el número en el ejercicio previo, así que puedes
+publicar el paquete de nuevo.🕺
+
+¡Dale! A ver si puedes. Para tu premio, haz `$ADVENTURE_COMMAND verify`.
