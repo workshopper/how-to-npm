@@ -1,0 +1,17 @@
+La primera cosa que la mayoría de las personas hacen con npm es
+instalar lo que se llama una "dependencia".
+
+Las dependencias se adquieren del registro de npm en el internet,
+y se desempacan a un directorio llamado `node_modules` en tu proyecto.
+
+Para instalar un paquete, usa `npm install <paquete>`.
+
+El registro principal de npm se encuentra en https://registry.npmjs.org pero
+la version que usaremos para este tutorial es un registro pequeñísimo y
+local que estamos usando para que no necesites el internet durante el
+workshop. Todo lo que haremos funcionará igual cuando esté usando el
+registro principal. 😉
+
+Vamos a tratar de instalar algo: El paquete `@linclark/pkg`.
+
+Haz `$ADVENTURE_COMMAND verify` cuando lo hayas instalado.

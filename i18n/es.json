@@ -1,0 +1,111 @@
+{
+  "install-npm": {
+    "verifying": "verificando que npm está instalado...",
+    "missing": "Parece que npm no está instalado.",
+    "npm-problem": "¡Ups! npm tuvo un problema!",
+    "version-verified": "Tienes la versión {{version}} instalada. ¡Bien!\nAhora veamos cuál es la versión más reciente... dame un momento...",
+    "latest-version": "La version más reciente de npm es: {{version}}.",
+    "upgrade": "Tu versión actual es {{version}}, pero la más reciente es {{latest}}.\nEjecuta `npm install npm -g` para traerla al día.\n(Puedes saltar este paso si quieres)",
+    "success": "¡Felicidades!\n¡Tienes una versión reciente de npm instalada!"
+  },
+  "dev-environment": {
+    "err_workshopper": "Parece que estás en la raíz del workshopper.",
+    "err_home": "Parece que estás en tu directorio de inicio.",
+    "hint": "Eso no es buena idea. Haz un directorio nuevo y usa eso.",
+    "no_package": "Parece que te falta un `package.json`. ¿Ejecutaste `npm init`?"
+  },
+  "login": {
+    "whoami_err": "¡Ups!\n¡Pasó algo mal!",
+    "logged_out": "Bueno... Yo no veo una cuenta activa aquí. ¿Usaste `npm adduser` para crear una cuenta nueva?",
+    "success": "¡Felicidades, {{user}}!\n¡Tienes ahora en tu posesión una cuenta nueva de npm!\nÚsala con sabiduría. Nunca con coraje. Siempre para el bien.\n\nPero en serio, espero que la disfrutes.💚"
+  },
+  "start-a-project": {
+    "no_package": "No encontré un package.json.\nPor favor ejecuta `npm init` en tu directorio actual.",
+    "success": "¡Felicidades! 🎉\nHas creado un proyecto! Abre el package.json para ver sus contenidos.",
+    "extra_credit": "¡BONO! Muy bien hecho.👏"
+  },
+  "install-a-module": {
+    "error": "¡Ups! Parece que no instaló bien.\nEl error que recibí fue: {{{error}}}\nAsegúrate que estás usando el comando `npm install @linclark/pkg`\npara instalar el paquete `@linclark/pkg`.",
+    "success": "¡Felicidades! Lo instalaste.👍"
+  },
+  "listing-dependencies": {
+    "usage": "Ejecuta:\n`how-to-npm verify OK` si todo está bien,\nó:\n`how-to-npm verify NOT OK` si no.",
+    "ok_not": "Lo siento, no. Todo no está bien. 😭\nTrata de ejecutar `npm ls` y lee el error.",
+    "not_ok_not": "Bueno...\nPues bien, parece que está muy mal el mundo de hoy en día,\npero tu package.json y tu directorio node_modules parecen que están bien.",
+    "success": "¡Vale, parece que arreglaste el problema!\nVéase lo calmado que está `npm ls` ahora. 😎"
+  },
+  "npm-test": {
+    "section_missing": "¡Ups! No tienes una sección `scripts.test` en tu package.json. Edítalo, y trata de nuevo.",
+    "running": "Ejecutando tu script de prueba, `test`...",
+    "running_done": "...¡y ya acabamos!",
+    "error": "¡Qué mal! ¡La prueba falló!\n Trata de crear una prueba que funcione de verdad.",
+    "success": "¡Enhorabuena! Escribiste una prueba que pasa!\nEl caso de como escribir pruebas buenas lo dejamos para otro momento."
+  },
+  "package-niceties": {
+    "problem": "¡Más o menos!\nTodavía hay un problema que arreglar.",
+    "error": "¡Qué mal!\nParece que algo falló.",
+    "success": "¡Oye, qué bien!\nUn paquete sin README y alguna metadata es como\nun montón de JavaScript sin instrucciones o enlaces a repositorios de git."
+  },
+  "publish": {
+    "error": "Mmm...\nMe parece que no lograste publicar el\npaquete {{name}}. ¡Inténtalo de nuevo!"
+  },
+  "version": {
+    "invalid_semver": "¡Parece que tu package.json tiene una versión inválida!\nUsa `npm help semver` para aprender más sobre números de versión.\nTu version actual es: {{version}}\n",
+    "old_version": "¡Uy que mal!\nLa version todavía sigue siendo {{version}}\nChequea `npm help version` para aprender sobre una herramienta que puede ayudar.",
+    "success": "¡Qué guay!\nEjecuta `how-to-npm` para el próximo reto."
+  },
+  "publish-again": {
+    "not_republished": "¡Ups!\nParece que no publicaste el paquete de nuevo.\nTrata `npm publish` y verifica de nuevo.",
+    "current_missing": "🤔... Veo que publicaste más de una vez, pero\nla versión corriente ({{version}}) no está en la lista.\nEsto es lo que veo:\n{{{found}}}\n¡Trata publicando de nuevo!",
+    "success": "¡Wow! Te quedó brutal. No hay quien te detenga.💪\nEjecuta `how-to-npm` para it al próximo paso."
+  },
+  "dist-tag": {
+    "success": "Oh no, parece que todavía tienes sólamente un dist-tag.\nUsa `npm help dist-tag` para aprender cómo añadir otro."
+  },
+  "dist-tag-removal": {
+    "too_many": "Parece que tienes unos dist-tags extras ahí.\nLee `npm help dist-tag` para aprender como removerlos.",
+    "version_mismatch": "🙃Tu dist-tag \"latest\" todavía apunta a la última versión, {{version}}.\nAsigna una versión diferente, y vuelve a ejecutar `how-to-npm verify`.\n\nUsa `npm help dist-tag` para ver más sobre como hacerlo."
+  },
+  "outdated": {
+    "no_package": "Haz `how-to-npm verify PKG` pero con `PKG` siendo el nombre\ndel paquete viejo.",
+    "wrong_package": "Nop, no es {{{pkg}}}. ¡Inténtalo de nuevo!"
+  },
+  "update": {
+    "outdated": "Qué mal. Todavía estás usando la versión vieja.",
+    "success": "¡Wepa! ¡Todo al día!\nHaz `how-to-npm` para ir al próximo ejercicio."
+  },
+  "rm": {
+    "dependencies_left": "Parece que tienes algunas dependencias por ahí todavía.",
+    "package_json_left": "Removiste los ficheros, pero no los campos en package.json."
+  },
+  "finale": {
+    "todo": "Parece que te faltan cosas que hacer todavía.\nTermina los siguientes ejercicios antes de empezar con este:"
+  },
+  "error": {
+    "not_setup": "¡Parece que te falta algo para poder hacer este!\nVuelve al primer ejercicio `01 Ambiente de Desarrollo` para\npreparar tu directorio de trabajo.",
+    "wrong_folder": "Parece que estás en el directorio incorrecto.\nHaz `cd {{cwd}}` y trata de nuevo."
+  },
+  "exercise": {
+    "00 Install npm": "00 Instala npm",
+    "01 Dev Environment": "01 Ambiente de Desarrollo",
+    "02 Login": "02 Login",
+    "03 Start A Project": "03 Empieza un Proyecto",
+    "04 Install A Module": "04 Instala un Paquete",
+    "05 Listing Dependencies": "05 Enumera las Dependencias",
+    "06 npm Test": "06 Pruebas con npm test",
+    "07 Package Niceties": "07 Chulerías de Paquetes",
+    "08 Publish": "08 Publica tu Propio Paquete",
+    "09 Version": "09 Versión",
+    "10 Publish Again": "10 Publícalo de Nuevo",
+    "11 Dist Tag": "11 Dist Tags",
+    "12 Dist Tag Removal": "12 Removiendo Dist Tags",
+    "13 Outdated": "13 Encuentra Paquetes Viejos",
+    "14 Update": "14 Trae Paquetes al Día",
+    "15 Rm": "15 Removiendo Paquetes",
+    "16 Finale": "16 Fin"
+  },
+  "menu": {
+    "reset-registry": "REINICIAR REGISTRO"
+  },
+  "reset": "Registro ha sido reiniciado."
+}

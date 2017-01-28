@@ -1,0 +1,7 @@
+Como bono, trata también de preparar este directorio con git.
+
+La práctica común es tener un solo repositorio de git para cada paquete.
+Usa `git init` para preparar tu directorio de desarrollo como un
+proyecto de git.
+
+Entonces, haz `how-to-npm verify extra credit`.

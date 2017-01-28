@@ -1,0 +1,7 @@
+Bueno, hiciste todo excepto la parte de git.
+La práctica común es un repositorio de git por paquete,
+así que en verdad deberías de hacer `git init` en la raíz
+de tu proyecto.
+
+Si iniciaste a git donde no era, remueve el directorio `.git`
+de ahí y usa `git init` de nuevo.

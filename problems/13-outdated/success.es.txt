@@ -1,0 +1,4 @@
+¡Correcto! El paquete `@linclark/pkg` lanzó una nueva version
+mientras no estábamos mirando.
+
+En la próxima lección, aprenderemos como traer esos paquetes al día.

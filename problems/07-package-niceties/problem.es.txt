@@ -1,0 +1,25 @@
+Así que hemos creado un package.json, pero todavía faltan un
+par de cosas que la gente normalmente espera. Si escribes `npm install`,
+verás algo así:
+
+    npm WARN package.json %ID% No description
+    npm WARN package.json %ID% No repository field.
+    npm WARN package.json %ID% No README data
+
+Antes de que podamos compartir nuestra maravilla de paquete,
+debemos pulirlo un poquito para que la gente sepa lo que hace
+y cómo usarlo.
+
+Primero, crea un fichero llamado `README.md`, con algunas
+palabras adentro. Lo que sea, que describa tu paquete.
+
+Entonces, añade una propiedad llamada "repository" dentro de
+tu package.json, con un enlace que vaya a donde existe tu
+repositorio. En nuestro caso, puedes poner lo que quieras,
+como `https://github.com/worskshopper/how-to-npm`. Este
+campo se usará para encontrar donde has guardado tu código.
+
+Puedes editar to package.json a mano, o ejecutar `npm init`
+de nuevo y llenar los campos de esa manera.
+
+Haz `$ADVENTURE_COMMAND verify` cuando termines.

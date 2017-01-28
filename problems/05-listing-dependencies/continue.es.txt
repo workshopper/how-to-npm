@@ -1,0 +1,21 @@
+Pues claro, no todo está bien en el mundo de las dependencias.
+
+Tus dependencias deberían estar en el package.json, dentro de un "objecto"
+llamado `dependencies`. Pero, cuando instalamos `@linclark/pkg`, no lo
+añadimos al package.json para guardar esta dependencia.
+
+Así que puedes ver que aparece como `extraneous` en el listado, alertándonos
+que tenemos algo en nuestro `node_modules` que no hemos todavía guardado como
+dependencia oficial de nuestro paquete.
+
+La forma más fácil de arreglar este problema es usando la opción `--save`
+cuando instalemos dependencias. Tal vez no lo querrás hacer si sólo las
+estás tratando, pero cuando decidas que tu paquete las requerirá, puedes
+usar esta opción para fácilmente ponerlas en tu package.json.
+
+Trata de hacer `npm install @linclark/pkg --save` para instalar el paquete,
+y para añadirlo a tu package.json a la misma vez.
+
+(Otra opcion, claramente, es simplemente editar to package.json)
+
+Cuando termines, haz `how-to-npm verify OK`.

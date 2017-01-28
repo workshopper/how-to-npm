@@ -1,0 +1,24 @@
+Para poder ver los contenidos de tu paquete, acabo de hacer:
+
+  npm view %NAME%
+
+¡Hazlo tú y ve los resultados por tu cuenta!
+
+El comando `npm view` es una excelente manera de ver detalles,
+de ver lo que ya has publicado, y para ver si un nombre de
+paquete ya está siendo usado (porque en el registro de npm,
+sólo puede haber un paquete con cierto nombre).
+
+Ya que has publicado tu primer paquete en el registro simulado,
+¡ve y escribe algo de verdad para compartir con seres humanos!
+
+¡Pero no te preocupes! No tienes que usar el registro para compartir
+tu código con otras personas. Hay ventajas cuando divides tu propio
+código en varios paquetes pequeños con propósito dedicado,
+aunque seas tú la única persona que los usa.
+
+Puedes imaginarte, entonces, que una versión futura de ti y tu ser
+pasado son dos desarroladores en el mismo equipo (aunque manejar
+reuniones se pone un poco complicado...)
+
+¡Ahora haz `how-to-npm` para ir a la próxima aventura!

@@ -1,0 +1,4 @@
+¡Guay! Has borrado todos los paquetes de tu node_modules, y además
+has borrado referencias a ellos de tu package.json.
+
+Muy bien.👏

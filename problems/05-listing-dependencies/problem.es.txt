@@ -1,0 +1,11 @@
+npm no es sólamente para instalar cosillas. Entre otras cosas,
+te enseña lo que ya tienes instalado localmente (es decir,
+tus dependencias).
+
+Puedes ver esta lista con el comando `npm ls`.
+
+Úsalo en tu directorio de desarrollo. Si hay algún problema,
+npm te alertará con un mensaje que empezará con `!ERR`.
+
+Si todo se ve bien, entonces haz `$ADVENTURE_COMMAND verify OK`,
+o si no, `$ADVENTURE_COMMAND verify NOT OK`.

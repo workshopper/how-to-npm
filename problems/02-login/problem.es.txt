@@ -1,0 +1,18 @@
+npm no es sólo una utilidad, si no que también es una comunidad. Así
+que es mejor cuando puedes ser parte de él. Eso comienza con la
+creación de una cuenta.
+
+Como esto es sólamente un tutorial, recuerda que no estamos *verdaderamente*
+creando una cuenta en ningún sitio. De la misma manera, cuando ejecutes esto
+en el Mundo Real™, creará la cuenta de verdad, con una página web en npmjs.com
+y la abilidad de publicar tus propios paquetes que otras personas verdaderas
+podrán instalar y disfrutar.
+
+Para ver el nombre del usuario que estás usando, usa `npm whoami`.
+
+Para crear tu cuenta nueva, usa `npm adduser`.
+
+¡Dale! Trátalo ahora y abre las puertas hacia la gloria y fama que viene con
+participar en la comunidad.
+
+Cuando termines, ejecuta `$ADVENTURE_COMMAND verify`.

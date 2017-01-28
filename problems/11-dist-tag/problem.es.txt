@@ -1,0 +1,28 @@
+Cada paquete publicado en npm tiene algo llamado `dist-tags` ("etiquetas de distribución")
+que se usa para convertir palabras regulares a versiones específicas.
+Por ejemplo, "latest" ("mas-reciente") puede convertirse a "1.2.48".
+
+En general, la versión "latest" es la que se instalará cuando
+haces `npm install paquete`. Cuando publicas, lo mismo pasa:
+el "dist-tag" con el que publicarás si no haces nada más será "latest".
+En general, esto es genial, porque la mayoría de las veces publicas
+cuando ya tu código está listo para tus usuarios.
+
+Pero resulta que si quieres publicar algo, y que *no* sea la versión
+que la mayoría de los usuarios van a instalar (por ejemplo, si
+es un lanzamiento de seguridad o una versión preliminar), puedes
+manejar tus etiquetas manualmente con el comando llamado "npm dist-tag".
+
+`npm dist-tag add <paquete>@<versión> [<etiqueta>]` añadirá una
+etiqueta nueva. Para averiguar el nombre de tu paquete/versión corriente,
+usa `npm ls .` La primera línea dirá el nombre y versión;
+por ejemplo, `mipaquete@1.0.1`.
+
+Para añadir la etiqueta, esribe el nombre que quieres usar:
+
+  npm dist-tag add user@1.0.1 beta
+
+Haz `npm help dist-tag` para aprender más.
+
+Añade ahora un dist-tag nuevo a tu paquete, y entonces haz
+`$ADVENTURE_COMMAND verify` para terminar el ejercicio.

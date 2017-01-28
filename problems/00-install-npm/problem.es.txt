@@ -1,0 +1,18 @@
+Hola, y bienvenidx a este workshop de aventura de npm! Voy a pedirte que hagas
+varias cosas con npm para que puedas empezar con él fácil y rápidamente.
+
+Algunos comandos útiles:
+
+npm help ............ Ayuda de npm (en inglés)
+how-to-npm print .... Vuelve a mostrar el ejercicio corriente.
+how-to-npm verify ... Verifica que has completado el ejercicio.
+how-to-npm solution . Muestra la solución para este ejercicio.
+
+Lo primero que vamos a hacer es asegurarnos que tu versión de
+npm está al día.
+
+Ejecuta `$ADVENTURE_COMMAND verify` una vez acabes con eso.
+
+(Esta es la única parte del workshop que requiere acceso al internet.
+Si no tienes acceso a ello y quieres saltar este problema, puedes
+ejecutar `$ADVENTURE_COMMAND verify skip` para saltarlo.)

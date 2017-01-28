@@ -1,0 +1,11 @@
+Si tienes que meterle cosas, pues naturalmente, algún día tendrás que sacarlas.
+
+Para eso está el comando `npm rm` (que también se conoce como `npm uninstall`).
+
+Borra todas las dependencias!
+
+Pero espera -- igual que puedes usar `--save` cuando instalas paquetes,
+igual puedes usar `--save` cuando los borras, que los borrará
+también de tu package.json.
+
+Cuando hayas borrado todas tus dependencias, dale a `$ADVENTURE_COMMAND verify` y seguimos.

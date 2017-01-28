@@ -1,0 +1,12 @@
+Hay TANTO MÁS que puede hacer npm. Algunas de las cosas que no pudimos
+cubrir en este simple tutorial incluyen:
+
+1. Dividiendo tu aplicación en múltiples paquetes.
+2. Compartiendo código privado con tu equipo usando "scopes"
+3. ¡Otros comandos divertidos, como `edit` y `bugs` y `explore`!
+
+Todavía puedes aprender más sobre todo lo que puede hacer npm.
+
+Tu aventura te espera en https://www.npmjs.com/
+
+¡Nos vemos en el internet!
