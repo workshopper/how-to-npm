@@ -19,3 +19,6 @@
 - [llkats](https://github.com/llkats)
 - [johndeyrup](https://github.com/johndeyrup)
 - [antosan](https://github.com/antosan)
+- [zkat](https://github.com/zkat)
+- [zucchinidev](https://github.com/zucchinidev)
+- [stefanmaric](https://github.com/stefanmaric)
