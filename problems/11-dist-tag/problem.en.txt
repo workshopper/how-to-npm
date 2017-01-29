@@ -13,10 +13,10 @@ these distribution tags with the `dist-tag` function.
 
 `npm dist-tag add <pkg>@<version> [<tag>]` will add a new tag.
 To find out the name of your current package/version type `npm ls`.
-The first line of the output will be the package and version; e.g. user@1.0.1.
+The first line of the output will be the package and version; e.g. pkg@1.0.1.
 To add a tag type in the name of the tag.
 
-  npm dist-tag add user@1.0.1 beta
+  npm dist-tag add pkg@1.0.1 beta
 
 Run `npm help dist-tag` to learn more about it.
 
