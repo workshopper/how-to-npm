@@ -20,7 +20,7 @@ por ejemplo, `mipaquete@1.0.1`.
 
 Para añadir la etiqueta, esribe el nombre que quieres usar:
 
-  npm dist-tag add user@1.0.1 beta
+  npm dist-tag add pkg@1.0.1 beta
 
 Haz `npm help dist-tag` para aprender más.
 
