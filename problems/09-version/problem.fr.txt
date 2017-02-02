@@ -23,10 +23,6 @@ Ou, si vous ne faites pas confiance aux machines, vous pouvez ouvrir votre
 fichier package.json à la main, et mettre quelques nouveaux numéros dans le
 champ "version".
 
-The npm registry won't let you publish a new release of your package
-without updating the version number!  Ever!  So, get used to the idea of
-bumping the version whenever you want to publish, even if the change is
-really minor.
 Le registre npm ne vous permettra pas de publier une nouvelle version
 de votre package sans mettre à jour le numéro de version! Jamais! Alors,
 habituez-vous à l'idée de modifier la version à chaque fois que vous voulez
