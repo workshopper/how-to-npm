@@ -1,0 +1,7 @@
+Pour bonus, essayez également de configurer ce répertoire comme dépôt git.
+
+La convention est d'avoir un seul git repo pour chaque module ou projet.
+Utilisez la commande `git init` pour configurer votre répertoire de
+travail comme un projet git.
+
+Ensuite, exécutez how-to-npm verify extra credit` vérifier le bonus.

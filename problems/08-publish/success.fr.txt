@@ -1,0 +1,22 @@
+Pour afficher le contenu de votre package, je viens de lancer cette commande:
+
+  npm view %NAME%
+
+Exécutez cette commande vous-même pour voir ce que cela affiche.
+
+La commande `npm view` est une excellente façon de voir les détails
+sur le package, pour voir ce que vous venez de publier, et pour
+vérifier si un nom est déjà pris.
+
+Maintenant que vous avez publié votre premier package ici dans le npm
+crée par l'atelier, sortez et écrivez une vraie chose à partager avec
+de vrais humains!
+
+Vous n'avez pas à partager le code pour d'autres personnes, cependant. Il y
+a un avantage à décomposer votre code en petites pièces gérables, même
+si vous ne les utilisez que vous-même.
+
+Vous pouvez imaginer que votre vous du futur et votre vous du passé sont deux
+autres développeurs de votre équipe. (Planifier des réunions est assez délicat.)
+
+Lancez `how-to-npm` pour aller à la prochaine aventure !

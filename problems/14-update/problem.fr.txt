@@ -1,0 +1,13 @@
+Il est bien, bien sûr, de vérifier explicitement si il y a des modules
+obsolètes, et ensuite lancez `npm install`.
+
+Cependant, si vous voulez être un peu plus paresseux à ce sujet,
+il y a une commande spécial npm qui mettra À JOUR tout les dépendances
+pour la version maximum que vous autorisez dans votre package.json.
+
+Pouvez-vous deviner quelle commande qui pourrait le faire ?
+(`npm help` pourrait vous aider)
+
+Mettez à jour tous vos dépendances à la dernière version possible, puis
+lancez `$ADVENTURE_COMMAND verify` pour obtenir votre magnifique bannière
+verte.

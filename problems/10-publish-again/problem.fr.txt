@@ -1,0 +1,19 @@
+Publishing something once is fine.  But healthy packages get
+published again and again with new and exciting bug fixes.
+
+You can't re-use the same version number again, because that's hella
+confusing for all the robots running the treadmills that power the npm
+registry.  But, now that we changed the version number in the last
+exercise, you can publish the package again.
+
+Publier quelque chose une fois est très bien. Mais les packages sains
+sont publiées encore et encore avec de nouvelles et passionnantes
+corrections de bugs.
+
+Vous ne pouvez pas réutiliser le même numéro de version à nouveau,
+parce que c'est embêtant pour tous les robots qui font tourner
+les tapis roulants qui alimentent le registre npm. Mais,
+maintenant que nous avons changé le numéro de version dans le dernier
+exercice, vous pouvez publier le paquet à nouveau.
+
+Compris ! Alors, obtenez votre prix avec `$ADVENTURE_COMMAND verify`

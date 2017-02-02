@@ -1,0 +1,21 @@
+Nous avons donc créé un fichier package.json, mais il manque quelques
+éléments que les gens attendent habituellement. Si vous tapez
+`npm install`, vous verrez quelque chose comme ça:
+
+    npm WARN package.json %ID% No description
+    npm WARN package.json %ID% No repository field.
+    npm WARN package.json %ID% No README data
+
+Avant de pouvoir partager cette œuvre d'art avec le monde, nous devons
+rendre cela un peu plus propre afin que les utilisateurs sachent comment
+l'utiliser.
+
+Premièrement, créez un fichier README.md, avec quelques mots à l'intérieur.
+
+Alors, ajouter un champ "repository" dans votre fichier package.json, avec
+une url où l'on peut accéder au code.
+
+Vous pouvez modifier votre fichier package.json à la main ou exécuter
+`npm init` à nouveau.
+
+Lancez `$ADVENTURE_COMMAND verify` quand vous aurez fini.

@@ -1,0 +1,5 @@
+Impressionnant ! Vous avez supprimé les packages de votre dossier node_modules,
+et également mis à jour votre fichier package.json pour refléter le fait
+que vous n'êtes plus dépendant d'eux.
+
+Bien joué.

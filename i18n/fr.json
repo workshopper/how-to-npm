@@ -22,7 +22,7 @@
   "start-a-project": {
     "no_package": "Aucun package.json trouvé.\nS'il vous plaît lancez `npm init` dans votre répertoire de travail.",
     "success": "Félicitations!\nVous avez créé un projet!  Consultez le fichier package.json pour voir cela.",
-    "extra_credit": "CREDIT EXTRA!  Bien exécuté."
+    "extra_credit": "BONUS!  Bien exécuté."
   },
   "install-a-module": {
     "error": "Uh oh!  Il semble que cela ne s'est pas installé correctement.\nL'erreur que j'ai eu: \n{{{error}}}\nAssurrez vous d'avoir exécuté la commande `npm install @linclark/pkg` \nafin d'installer le module `@linclark/pkg`.",
