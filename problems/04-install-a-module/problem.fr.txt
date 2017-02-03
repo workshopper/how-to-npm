@@ -1,7 +1,7 @@
 La première chose que la plupart des gens font avec npm est installer une
 dépendance.
 
-Les dépendances sont récupéré depuis le registre, et dépaqueter dans le
+Les dépendances sont récupérés depuis le registre, et dépaquetés dans le
 dossier `node_modules`.
 
 Pour installer une dépendance, utilisez la commande

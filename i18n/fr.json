@@ -12,12 +12,12 @@
     "err_workshopper": "Il semblerait que vous soyez dans la racine du workshopper.",
     "err_home": "Il semblerait que vous soyez dans votre répertoire personnel.",
     "hint": "Ce n'est pas bon. Créez, s'il vous plaît un nouveau dossier, et utilisez le.",
-    "no_package": "Il semblerait que le fichier `package.json` soir manquant. Avez-vous lancer `npm init`?"
+    "no_package": "Il semblerait que le fichier `package.json` soit manquant. Avez-vous lancer `npm init`?"
   },
   "login": {
-    "whoami_err": "Uh oh!\nIl semblerait que quelque chose se soit mal passé.",
+    "whoami_err": "Uh oh!\nIl semblerait que quelque chose ce soit mal passé.",
     "logged_out": "Hm... Je ne vois pas d'utilisateur ici\nAvez-vous lancer `npm adduser` pour créer le compte?",
-    "success": "Félicitations, {{user}}!\nVous êtes le fier propriétaire d'un nouveau compte npm imaginaire!\nFaites-en bon usage. Jamais dans la colère. Toujours pour le bien.\n\nAvec cette douce puissance vient beaucoup de responsabilité, ce qui est\nassez différent de celui de Spiderman de Marvel\nespérons qu'il ne nous poursuivrons pas.\n\nContinuons!"
+    "success": "Félicitations, {{user}}!\nVous êtes le fier propriétaire d'un nouveau compte npm imaginaire!\nFaites-en bon usage. Jamais dans la colère. Toujours pour le bien.\n\nAvec cette douce puissance vient beaucoup de responsabilité, ce qui est\nassez différent de celui de Spiderman de Marvel\nespérons qu'il ne nous poursuivra pas.\n\nContinuons!"
   },
   "start-a-project": {
     "no_package": "Aucun package.json trouvé.\nS'il vous plaît lancez `npm init` dans votre répertoire de travail.",
@@ -35,7 +35,7 @@
     "success": "Regardez, il semble que vous avez solutionné le problème.  Fantastique!\nNotez que `npm ls` est beaucoup plus calme maintenant."
   },
   "npm-test": {
-    "section_missing": "Oops!  Vous n'avez pas de séction `scripts.test` dans votre\nfichier package.json file.  Éditez le, et essayez à nouveau.",
+    "section_missing": "Oops!  Vous n'avez pas de section `scripts.test` dans votre\nfichier package.json file.  Éditez le, et essayez à nouveau.",
     "running": "Exécution de votre script de test...",
     "running_done": "...terminé!",
     "error": "Uh oh!  Le test a échoué!\nEssayez de créer un test qui fonctionne réellement.",
@@ -44,10 +44,10 @@
   "package-niceties": {
     "problem": "Pas assez!\nIl reste toujours un problème à résoudre.",
     "error": "Uh oh!\nIl semble que quelque chose se soit mal passé",
-    "success": "Regardez précisément!\nUn paquet sans fichier lisez-moi et certaines métadonnées est comme un\npaquet de JavaScript sans instructions ni liens à un dépôt git ."
+    "success": "Regardez précisément!\nUn paquet sans fichier lisez-moi et certaines métadonnées est comme un\npaquet de JavaScript sans instructions ni liens à un dépôt git."
   },
   "publish": {
-    "error": "Uh oh!\nIl semble que vous n'avez pas publié le\n  package {{name}}\n.  Try again!"
+    "error": "Uh oh!\nIl semble que vous n'avez pas publié le\n  package {{name}}\n.  Essayez encore !"
   },
   "version": {
     "invalid_semver": "On dirait que votre package.json a une version non valide !\nUtilisez `npm help semver` pour en savoir plus sur les numéros de version\nVotre version actuelle: {{version}}\n",
@@ -56,11 +56,11 @@
   },
   "publish-again": {
     "not_republished": "Oups !\nOn dirait que vous n'avez pas encore publié le package\nEssayez d'exécuter `npm publish` et ensuite vérifiez à nouveau.",
-    "current_missing": "Hmm... Je vois que vous avez publié plus d'une fois, mais\nla version actuelle ({{version}}) n'est pas comprise.\nVoici ce que je voix ici:\n{{{found}}}\nEssayez de plublier à nouveau !",
+    "current_missing": "Hmm... Je vois que vous avez publié plus d'une fois, mais\nla version actuelle ({{version}}) n'est pas comprise.\nVoici ce que je voix ici:\n{{{found}}}\nEssayez de publier à nouveau !",
     "success": "Wow! Vous êtes sur le bon chemin pour devenir un régulier\nTJames \"Substack\" Halidaychuk!  Rien ne vous arrêtes!\nLancez `how-to-npm` pour aller à la prochaine étape."
   },
   "dist-tag": {
-    "success": "Uh oh, il semblerait que vous avez seulement un simple dist-tag.\nUilisez `npm help dist-tag` pour apprendre comment en ajouter un autre."
+    "success": "Uh oh, il semblerait que vous avez seulement un simple dist-tag.\nUtilisez `npm help dist-tag` pour apprendre comment en ajouter un autre."
   },
   "dist-tag-removal": {
     "too_many": "Uh oh, il semblerait que vous avez quelque dist-tags supplémentaire ici.\nUtilisez `npm help dist-tag` pour apprendre comment les supprimer.",
@@ -105,7 +105,7 @@
     "16 Finale": "16 Conclusion"
   },
   "menu": {
-    "reset-registry": "RÉINITIALISATION DU RESISTRE"
+    "reset-registry": "RÉINITIALISATION DU REGISTRE"
   },
   "reset": "Réinitialisation exécuté avec succès"
 }

@@ -3,7 +3,7 @@ vous avez besoin de donner des détails à propos de votre projet à npm.
 Vous pouvez indiquer ces détails à npm votre projet dans un fichier
 appelé package.json.
 
-Lancez `npm init --scope=<username>`, et replacez <username> avec
+Lancez `npm init --scope=<username>`, et remplacez <username> avec
 l'utilisateur que vous avez créé dans la dernière leçon. Cela va
 créer un fichier package.json.
 (Pour le bonus, définissez également le projet avec un dépôt git.)

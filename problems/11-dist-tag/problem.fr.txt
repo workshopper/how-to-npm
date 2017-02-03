@@ -7,7 +7,7 @@ publiez, la version que vous publiez est marquée comme "latest".
 C'est génial, parce que la plupart du temps vous publiez des choses
 quand vous êtes prêt à ce que les utilisateurs les utilise.
 
-Cependant, si vous avez besoin de publier quelque chose, et *ne pas* f
+Cependant, si vous avez besoin de publier quelque chose, et *ne pas*
 en faire la version par défaut d'un package (par exemple, si c'est une version
 de sécurité pour une version héritée, ou quelque chose comme cela), vous pouvez
 gérer manuellement ces balises de distribution avec la fonction `dist-tag`.

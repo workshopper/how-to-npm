@@ -1,4 +1,4 @@
-npm est meilleur quand vous pouvez faire partie de celui-ci.
+npm est meilleur quand vous en faites partie.
 Cela commence par créer un compte.
 
 Parce que c'est juste un tutoriel, rappelez-vous, nous n'allons pas

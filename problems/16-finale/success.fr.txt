@@ -12,4 +12,4 @@ un module qui fait cela ..."
 
 Votre aventure vous attend sur https://www.npmjs.com/
 
-À plus tard sur internet !
+À plus tard sur l'internet !
