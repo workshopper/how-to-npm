@@ -22,5 +22,6 @@
 - [zkat](https://github.com/zkat)
 - [zucchinidev](https://github.com/zucchinidev)
 - [stefanmaric](https://github.com/stefanmaric)
+- [daudich](https://github.com/daudich)
 - [cedced19](https://github.com/cedced19)
 - [ungoldman](https://github.com/ungoldman)
