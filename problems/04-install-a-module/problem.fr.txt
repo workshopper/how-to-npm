@@ -1,0 +1,16 @@
+La première chose que la plupart des gens font avec npm est installer une
+dépendance.
+
+Les dépendances sont récupérés depuis le registre, et dépaquetés dans le
+dossier `node_modules`.
+
+Pour installer une dépendance, utilisez la commande
+`npm install <modulename>`.
+
+Le registre que nous sommes en train d'utiliser pour ce didactitiel est
+une version réduite de celui à l'adresse  https://registry.npmjs.org.
+Donc vous devriez penser qu'il y a seulement un petit nombre de choses.
+
+Commençons par installer le module "@linclark/pkg".
+
+Lancez `$ADVENTURE_COMMAND verify` une fois que vous avez fini.

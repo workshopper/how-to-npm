@@ -1,0 +1,15 @@
+npm est meilleur quand vous en faites partie.
+Cela commence par créer un compte.
+
+Parce que c'est juste un tutoriel, rappelez-vous, nous n'allons pas
+*réelement* créer un compte quelque part. Toutefois, lorsque vous
+faites cela dans le monde réel, il va créer un compte réel,
+avec une page sur npmjs.com et la possibilité de publier des
+packages réels dont les humains peuvent installer et profiter
+
+Pour voir en tant que qui vous êtes connecté, exécutez `npm whoami`
+
+Pour créer un compte, lancez `npm adduser`
+
+Essayez-le maintenant et ouvrez la porte à de plus en plus
+de module fun ! Ensuite, exécutez `$ADVENTURE_COMMAND verify`

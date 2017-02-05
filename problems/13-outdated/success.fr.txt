@@ -1,0 +1,5 @@
+C'est absolument juste!  Le package `@linclark/pkg` a eu une mise à jour
+alors que nous ne cherchions pas.
+
+Dans la leçon suivante, nous apprendrons comment mettre à jour les packages
+obselètes.

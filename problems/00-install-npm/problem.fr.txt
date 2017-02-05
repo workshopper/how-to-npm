@@ -1,0 +1,19 @@
+Bonjour, et bienvenue à l'atelier d'aventure npm! Je vais
+vous demander de faire des choses diverses avec npm afin
+que vous puissiez commencer à l'utiliser facilement.
+
+Quelques commandes utiles:
+
+npm help ............ Obtenir de l'aide avec npm
+how-to-npm print .... Rafficher l'exercice en cours
+how-to-npm verify ... Vérifier que vous avez terminé un exercice
+how-to-npm solution . Montrer la solution pour l'exercice en cours
+
+La première chose que nous allons faire est de s'assurer que
+votre version de npm est à jour.
+
+Exécutez `$ADVENTURE_COMMAND verify` une fois que c'est fait.
+
+(C'est la seule partie de l'atelier qui nécessite un accès internet.
+Si la connection est interrompu, et que vous souhaitez sauter celui-ci,
+vous pouvez exécuter `$ADVENTURE_COMMAND verify skip` pour passer cela.)

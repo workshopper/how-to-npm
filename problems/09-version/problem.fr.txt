@@ -1,0 +1,35 @@
+Chaque package dans npm a un numéro de version qui lui est associé.
+À mesure que vous publiez des mises à jour de votre package, ces
+mises à jour obtiennent un numéro de version mis à jour.
+
+Les numéros de version en npm suivent une norme appelée "SemVer".
+Cela signifie "Semantic Version". La spécification de cette norme
+peut être trouver sur http://semver.org.
+
+La version tl;dr est celle d'une version comme celle-ci:
+
+  1.2.3
+  ^ ^ ^
+  | | `-- Version patch. Mise à jour pour chaque changement.
+  | `---- Version mineur. Mise à jour pour les ajouts d'API.
+  `------ Version majeur. Mise à jour pour modifications API.
+
+npm a une commande spéciale appelée `npm version` qui mettra à jour votre
+fichier package.json pour vous, et également commit la modification à git
+si votre projet a un dépôt git. Vous pouvez en savoir plus sur
+`npm help version`.
+
+Ou, si vous ne faites pas confiance aux machines, vous pouvez ouvrir votre
+fichier package.json à la main, et mettre quelques nouveaux numéros dans le
+champ "version".
+
+Le registre npm ne vous permettra pas de publier une nouvelle version
+de votre package sans mettre à jour le numéro de version! Jamais! Alors,
+habituez-vous à l'idée de modifier la version à chaque fois que vous voulez
+publier, même si le changement est vraiment mineur.
+
+Ne vous inquiétez pas, il y a beaucoup d'entiers, nous n'en manquerons
+probablement pas.
+
+Mettez à jour votre numéro de version, puis lancez `$ADVENTURE_COMMAND verify`
+pour vérifier cela.

@@ -1,0 +1,11 @@
+Publier quelque chose une fois est très bien. Mais les packages sains
+sont publiées encore et encore avec de nouvelles et passionnantes
+corrections de bugs.
+
+Vous ne pouvez pas réutiliser le même numéro de version à nouveau,
+parce que c'est embêtant pour tous les robots qui font tourner
+les tapis roulants qui alimentent le registre npm. Mais,
+maintenant que nous avons changé le numéro de version dans le dernier
+exercice, vous pouvez publier le paquet à nouveau.
+
+Compris ! Alors, obtenez votre prix avec `$ADVENTURE_COMMAND verify`

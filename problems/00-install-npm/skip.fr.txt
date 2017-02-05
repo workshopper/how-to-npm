@@ -1,0 +1,5 @@
+Ok, si vous le dites...
+Vous pouvez toujours installer la dernière version ou une
+plus version supérieur de npm en utilisant
+`npm install npm -g`. Vous devrez peut-être exécuter cela
+avec `sudo` ou en tant que administrateur.

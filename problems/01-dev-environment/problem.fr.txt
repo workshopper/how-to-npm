@@ -1,0 +1,11 @@
+L'une des choses les plus importantes que npm fait est d'installer des
+paquets.
+
+Ensuite, lancez `npm init` pour créer un fichier package.json. Vous serez
+invité à répondre à un certain nombre de questions. Vous pouvez simplement
+appuyer sur la touche entrée pour accepter la valeur par défaut pour chaque
+question.
+
+Lancez `$ADVENTURE_COMMAND verify` une fois que vous avez terminé. Toutes
+les autres commandes que vous exécuterez dans ce tutoriel devrait être
+fait dans ce dossier.

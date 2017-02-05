@@ -1,0 +1,10 @@
+npm n'est pas seulement fait pour l'installation. Il vous montre
+également ce que vous avez installé (vos dépendances).
+
+Vous pouvez le faire en utilisant la commande `npm ls`.
+
+Exécutez cette commande dans votre répertoire de travail. S'il y a
+un problème npm vous alertera en retournant un message "! ERR".
+
+Si tout semble correct, exécutez  `$ADVENTURE_COMMAND verify OK`, ou
+`$ADVENTURE_COMMAND verify NOT OK` si npm signale un problème".

@@ -1,0 +1,17 @@
+À quoi bon un gestionnaire de paquets sans paquets?
+
+Pas grand chose.
+
+Heureusement, ce n'est pas un problème pour npm, parce que c'est
+très facile pour tous les utilisateurs de npm de publier leurs
+modules et les partager avec le monde entier.
+
+Les packages sont publiés dans le registre à l'aide de la commande `npm publish`.
+
+Essayez-le maintenant. Il n'y a pas grand-chose.
+
+(Assurez-vous que vous êtes toujours dans le bon répertoire de projets.
+Si vous publiez quelque chose par erreur, vous pouvez le supprimer,
+mais il n'y a aucune garantie que personne ne l'a vu dans l'intervalle.)
+
+Ensuite, lancez `$ ADVENTURE_COMMAND verify` lorsque vous avez terminé.

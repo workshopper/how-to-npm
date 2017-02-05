@@ -1,0 +1,8 @@
+Félicitation!
+Vous avez un environnement de développement.
+
+À partir de là, assurez-vous d'exécuter l'atelier dans ce répertoire
+
+Vous remarquerez peut-être qu'un fichier `.npmrc` apparaîtra.
+cvela ne serait normalement pas nécessaire, mais l'atelier l'utilise
+pour se passer des parties qui normalement utilise internet.

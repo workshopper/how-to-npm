@@ -1,0 +1,26 @@
+Chaque package publié sur npm possède une entrée `dist-tags` qui
+attribue des chaînes comme "latest" vers des numéros de version
+comme "1.2.48".
+
+Par défaut, la version "latest" est installée. Lorsque vous
+publiez, la version que vous publiez est marquée comme "latest".
+C'est génial, parce que la plupart du temps vous publiez des choses
+quand vous êtes prêt à ce que les utilisateurs les utilise.
+
+Cependant, si vous avez besoin de publier quelque chose, et *ne pas*
+en faire la version par défaut d'un package (par exemple, si c'est une version
+de sécurité pour une version héritée, ou quelque chose comme cela), vous pouvez
+gérer manuellement ces balises de distribution avec la fonction `dist-tag`.
+
+`npm dist-tag add <pkg>@<version> [<tag>]` ajoutera un nouveau tag.
+Pour connaître le nom de votre package/version actue,l tapez `npm ls`.
+La première ligne de la sortie sera le paquet et la version;
+par exemple pkg@1.0.1.
+Pour ajouter un tag replacez "tag" par le nom du tag.
+
+  npm dist-tag add pkg@1.0.1 beta
+
+Lancez `npm help dist-tag` pour en savoir plus.
+
+Ajoutons une dist-tag sur votre package, et en suite
+lancez `$ADVENTURE_COMMAND verify` pour vérifier cela.

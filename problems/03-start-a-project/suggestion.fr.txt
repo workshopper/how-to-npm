@@ -1,0 +1,6 @@
+Eh bien, vous avez tout sauf la partie git.
+La convention est un dépôt git par module, donc vous devez
+habituellement lancer `git init` à la base du projet.
+
+Supprimer le dossier .git de n'importe où où vous êtes,
+et lancez-y `git init`.

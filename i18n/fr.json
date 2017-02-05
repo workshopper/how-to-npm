@@ -1,0 +1,111 @@
+{
+  "install-npm": {
+    "verifying": "vérification de la bonne installation de npm...",
+    "missing": "Il semble que npm ne soit pas installé.",
+    "npm-problem": "Uh oh!  npm a un problème !",
+    "version-verified": "Vous avez la version {{version}} d'installé.  Bon!\nMaintenant regardons quelle est la dernière version... patientez...",
+    "latest-version": "La dernière version de npm est: {{version}}",
+    "upgrade": "Vous avez la version {{version}}, mais la dernière est {{latest}}\nLancez `npm install npm -g` pour le mettre à jour\n(Vous pouvez également passer cela si vous le souhaitez)",
+    "success": "Félicitations !\nVous avez une version récente de npm installé !"
+  },
+  "dev-environment": {
+    "err_workshopper": "Il semblerait que vous soyez dans la racine du workshopper.",
+    "err_home": "Il semblerait que vous soyez dans votre répertoire personnel.",
+    "hint": "Ce n'est pas bon. Créez, s'il vous plaît un nouveau dossier, et utilisez le.",
+    "no_package": "Il semblerait que le fichier `package.json` soit manquant. Avez-vous lancer `npm init`?"
+  },
+  "login": {
+    "whoami_err": "Uh oh!\nIl semblerait que quelque chose ce soit mal passé.",
+    "logged_out": "Hm... Je ne vois pas d'utilisateur ici\nAvez-vous lancer `npm adduser` pour créer le compte?",
+    "success": "Félicitations, {{user}}!\nVous êtes le fier propriétaire d'un nouveau compte npm imaginaire!\nFaites-en bon usage. Jamais dans la colère. Toujours pour le bien.\n\nAvec cette douce puissance vient beaucoup de responsabilité, ce qui est\nassez différent de celui de Spiderman de Marvel\nespérons qu'il ne nous poursuivra pas.\n\nContinuons!"
+  },
+  "start-a-project": {
+    "no_package": "Aucun package.json trouvé.\nS'il vous plaît lancez `npm init` dans votre répertoire de travail.",
+    "success": "Félicitations!\nVous avez créé un projet!  Consultez le fichier package.json pour voir cela.",
+    "extra_credit": "BONUS!  Bien exécuté."
+  },
+  "install-a-module": {
+    "error": "Uh oh!  Il semble que cela ne s'est pas installé correctement.\nL'erreur que j'ai eu: \n{{{error}}}\nAssurrez vous d'avoir exécuté la commande `npm install @linclark/pkg` \nafin d'installer le module `@linclark/pkg`.",
+    "success": "Félicitations! Vous avez installé cela."
+  },
+  "listing-dependencies": {
+    "usage": "S'il vous plaît exécutez:\n`how-to-npm verify OK` si tout est bon,\nou:\n`how-to-npm verify NOT OK` sinon.",
+    "ok_not": "Désolé, non.  Tout n'est pas bon !\nEssayez d'exécutez `npm ls` et regardez l'erreur.",
+    "not_ok_not": "Hmm...\nBon, il peut en effet y avoir beaucoup de mal avec le monde,\nmais votre fichier package.json et votre dossier node_modules sont bon.",
+    "success": "Regardez, il semble que vous avez solutionné le problème.  Fantastique!\nNotez que `npm ls` est beaucoup plus calme maintenant."
+  },
+  "npm-test": {
+    "section_missing": "Oops!  Vous n'avez pas de section `scripts.test` dans votre\nfichier package.json file.  Éditez le, et essayez à nouveau.",
+    "running": "Exécution de votre script de test...",
+    "running_done": "...terminé!",
+    "error": "Uh oh!  Le test a échoué!\nEssayez de créer un test qui fonctionne réellement.",
+    "success": "Félicitations! Vous avez écrit un test qui fonctionne!\nÉcrire un test qui est réellement BON reste à faire pour plus tard."
+  },
+  "package-niceties": {
+    "problem": "Pas assez!\nIl reste toujours un problème à résoudre.",
+    "error": "Uh oh!\nIl semble que quelque chose se soit mal passé",
+    "success": "Regardez précisément!\nUn paquet sans fichier lisez-moi et certaines métadonnées est comme un\npaquet de JavaScript sans instructions ni liens à un dépôt git."
+  },
+  "publish": {
+    "error": "Uh oh!\nIl semble que vous n'avez pas publié le\n  package {{name}}\n.  Essayez encore !"
+  },
+  "version": {
+    "invalid_semver": "On dirait que votre package.json a une version non valide !\nUtilisez `npm help semver` pour en savoir plus sur les numéros de version\nVotre version actuelle: {{version}}\n",
+    "old_version": "Uh oh!\nLa version est toujours {{version}}\nVerifiez `npm help version` pour un utilitaire pratique pour faire cela.",
+    "success": "Bon travail!\nLancez `how-to-npm` pour le prochain défi passionnant !"
+  },
+  "publish-again": {
+    "not_republished": "Oups !\nOn dirait que vous n'avez pas encore publié le package\nEssayez d'exécuter `npm publish` et ensuite vérifiez à nouveau.",
+    "current_missing": "Hmm... Je vois que vous avez publié plus d'une fois, mais\nla version actuelle ({{version}}) n'est pas comprise.\nVoici ce que je voix ici:\n{{{found}}}\nEssayez de publier à nouveau !",
+    "success": "Wow! Vous êtes sur le bon chemin pour devenir un régulier\nTJames \"Substack\" Halidaychuk!  Rien ne vous arrêtes!\nLancez `how-to-npm` pour aller à la prochaine étape."
+  },
+  "dist-tag": {
+    "success": "Uh oh, il semblerait que vous avez seulement un simple dist-tag.\nUtilisez `npm help dist-tag` pour apprendre comment en ajouter un autre."
+  },
+  "dist-tag-removal": {
+    "too_many": "Uh oh, il semblerait que vous avez quelque dist-tags supplémentaire ici.\nUtilisez `npm help dist-tag` pour apprendre comment les supprimer.",
+    "version_mismatch": "Oups!  Votre \"dernier\" tag pointe toujours à la plus récente\nparution, {{version}}.\nPointez cela ailleur, et relancez `how-to-npm verify`\n\nUtilisez `npm help dist-tag` pour apprendre comment faire cela."
+  },
+  "outdated": {
+    "no_package": "Lancez `how-to-npm verify PKG` mais remplacez `PKG` par le nom\ndu package qui est obselète",
+    "wrong_package": "Nan, ce n'est pas {{{pkg}}}.  Essayer encore !"
+  },
+  "update": {
+    "outdated": "Oups!  Vous utilisez toujours la version obselète !",
+    "success": "Impressionnant!  Vous êtes à jour!\nLancez `how-to-npm` pour passer à l'exercice suivant"
+  },
+  "rm": {
+    "dependencies_left": "On dirait qu'il y a des dépendances qui reste tout de même",
+    "package_json_left": "Vous avez supprimé les fichiers, mais pas les entrées dans package.json"
+  },
+  "finale": {
+    "todo": "On dirait que vous avez encore du travail à faire. Terminez les exercices suivants avant de commencer:"
+  },
+  "error": {
+    "not_setup": "On dirait que vous n'êtes pas encore prêt pour celui-ci !\nRetournez à la leçons `01 Environnement de développement` pour mettre en place\nvotre dossier de travail.",
+    "wrong_folder": "Uh oh!\nIl semble que vous êtes dans le mauvais dossier.\nS'il vous plaît faites un cd vers {{cwd}}\net puis essayer à nouveau'"
+  },
+  "exercise": {
+    "00 Install npm": "00 Installer npm",
+    "01 Dev Environment": "01 Environnement de développement",
+    "02 Login": "02 Identification",
+    "03 Start A Project": "03 Démarrer un projet",
+    "04 Install A Module": "04 Installer un module",
+    "05 Listing Dependencies": "05 Lister les dépendances",
+    "06 npm Test": "06 npm Test",
+    "07 Package Niceties": "07 Subtilités des packages",
+    "08 Publish": "08 Publier",
+    "09 Version": "09 Version",
+    "10 Publish Again": "10 Publier à nouveau",
+    "11 Dist Tag": "11 Dist Tag",
+    "12 Dist Tag Removal": "12 Supprimer un dist Tag",
+    "13 Outdated": "13 Packages obselètes",
+    "14 Update": "14 Mise à jour",
+    "15 Rm": "15 Suppréssion de packages",
+    "16 Finale": "16 Conclusion"
+  },
+  "menu": {
+    "reset-registry": "RÉINITIALISATION DU REGISTRE"
+  },
+  "reset": "Réinitialisation exécuté avec succès"
+}

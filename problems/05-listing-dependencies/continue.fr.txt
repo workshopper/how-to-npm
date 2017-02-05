@@ -1,0 +1,24 @@
+En effet, tout n'est pas bien ici dans le monde des dépendances.
+
+Vos dépendances doivent être répertoriées dans le fichier package.json
+dans un objet appelé «dependencies». Cependant, lorsque nous avons
+installé '@linclark/pkg', nous n'avons pas mis à jour le fichier package.json
+pour répertorier cette dépendance.
+
+Donc, il apparaît comme «extraneous», nous avertissant ainsi que nous avons
+quelque chose n'est pas répertorié comme une dépendance.
+
+La meilleure façon d'éviter cette situation est d'utiliser l'indicateur `--save`
+lors de l'installation des dépendances. Vous ne voudrez peut-être pas faire ça
+lorsque vous essayez seulement une dépendance, mais quand vous
+décidez d'en garder une, vous pouvez utiliser ce drapeau pour mettre à jour votre
+fichier package.json facilement.
+
+Essayez d'installer `npm install @linclark/pkg --save` pour installer le module,
+et dans le même temps mettez à jour votre fichier package.json.
+
+(Une autre option est de simplement éditer le package.json vous-même dans un
+éditeur de texte)
+
+Ensuite, exécutez `how-to-npm verify OK` une fois que vous avez réglé le
+problème.

@@ -1,0 +1,13 @@
+Maintenant que nous avons certaines dépendances, et vous avez appris que
+votre propre package peut être mis à jour à plusieurs reprises, la
+question évidente est: que faisons nous quand quelqu'un *d'autre*
+mets à jour *son* package ?
+
+La première étape consiste à détecter cela. En raison de la façon dont
+nous définissons nos dépendances avec une gamme de versions, et chaque
+version est une combinaison d'un nom et d'une version, nous pouvons
+détecter les versions compatibles automatiquement avec la commande
+`npm outdated`.
+
+Pour réussir ce défi, lancez `$ADVENTURE_COMMAND verify PKG` où `PKG`
+est le nom du package qui est obsolète.

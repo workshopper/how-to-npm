@@ -1,0 +1,15 @@
+Il y a TELLEMENT PLUS de choses que npm peut faire. Certaines des choses
+que nous n'avons pas eu le temps de couvrir dans ce modeste petit atelier
+comprennent:
+
+1. Diviser votre application en plusieurs modules
+2. Partage de code privé avec des coéquipiers en utilisant des modules "scoped"
+3. Autre fun avec des commandes npm, comme `edit` et `bugs` et `explore`!
+
+Vous pouvez toujours en savoir plus sur tout le plaisir que vous et npm
+pouvez avoir ensemble. Tout commence par la pensée: "Il devrait y avoir
+un module qui fait cela ..."
+
+Votre aventure vous attend sur https://www.npmjs.com/
+
+À plus tard sur l'internet !
