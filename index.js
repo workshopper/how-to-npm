@@ -1,4 +1,11 @@
 #!/usr/bin/env node
+var updateNotifier = require('update-notifier')
+var pkg = require('../package.json')
+
+updateNotifier({
+  packageName: pkg.name,
+  packageVersion: pkg.version
+}).notify()
 
 var adventure = require('workshopper-adventure/adventure')
 var shop = module.exports = adventure({
