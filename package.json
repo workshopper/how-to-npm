@@ -1,6 +1,6 @@
 {
   "name": "how-to-npm",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A module to teach you how to module.",
   "bin": "index.js",
   "repository": {
