@@ -26,3 +26,4 @@
 - [cedced19](https://github.com/cedced19)
 - [ungoldman](https://github.com/ungoldman)
 - [EmmaRamirez](https://github.com/EmmaRamirez)
+- [schellingerhout](https://github.com/schellingerhout)
