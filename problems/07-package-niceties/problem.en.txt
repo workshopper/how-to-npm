@@ -2,9 +2,9 @@ So, we've created a package.json file, but it's missing a few things
 that people usually expect.  If you type `npm install`, you'll see
 something like this:
 
-    npm WARN package.json %ID% No description
-    npm WARN package.json %ID% No repository field.
-    npm WARN package.json %ID% No README data
+    npm WARN %ID% No description
+    npm WARN %ID% No repository field.
+    npm WARN %ID% No README data
 
 Before we can share this work of art with the world, we need to make
 it a bit more polished so that people know how to use it.
