@@ -17,7 +17,7 @@ npm i -g how-to-npm
 how-to-npm
 ```
 
-![Workshopper screen](assets/images/Workshopper screen.png)
+![Workshopper screen](assets/images/Workshopper%20screen.png)
 
 This will walk you through the basics of setting up a working
 environment, installing dependencies, logging into npm, publishing a
