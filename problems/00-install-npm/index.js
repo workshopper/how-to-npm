@@ -50,7 +50,7 @@ exports.verify = function (args, cb) {
       }
 
       console.log(__('install-npm.latest-version', {version: latest}))
-      if (semver.gt(latest, v)) {
+      if (semver.lt(latest, v)) {
         console.log(__('install-npm.upgrade', {version: v, latest: latest}))
         return cb(false)
       }
