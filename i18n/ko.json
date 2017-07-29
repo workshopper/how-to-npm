@@ -5,14 +5,14 @@
     "npm-problem": "이런! npm명령어 실행 에러가 발생했습니다.",
     "version-verified": "현재 {{version}} 버전을 사용하고 있습니다. 멋져요!\n그럼 최신 버전을 확인해 보겠습니다. 잠시 기다려주세요...",
     "latest-version": "최신 버전은 {{version}}입니다.",
-    "upgrade": "현재 {{version}} 버전을 사용하고 있습니다만, 최신 버전은 {latest}}입니다.\n`npm install npm -g`을 실행해 최신 버전을 설치해주세요.\n(이 과제를 건너뛰고 싶으시면, `how-to-npm verify skip`을 실행해주세요.)",
+    "upgrade": "현재 {{version}} 버전을 사용하고 있습니다만, 최신 버전은 {{latest}}입니다.\n`npm install npm -g`을 실행해 최신 버전을 설치해주세요.\n(이 과제를 건너뛰고 싶으시면, `how-to-npm verify skip`을 실행해주세요.)",
     "success": "축하합니다!\n현재 최신 버전의 npm이 설치되어 있습니다."
   },
   "dev-environment": {
     "err_workshopper": "현재 workshopper의 루트 디렉터리에 있는 것 같습니다.",
     "err_home": "현재 홈 디렉터리에 있는 것 같습니다.",
     "hint": "여기서 작업하는 건 바람직하지 않습니다. 새로운 디렉터리를 만들어서 작업 해주세요.",
-    "no_package": "`package.json` 을 찾을 수 없습니다.\n`npm init`을 실행하셨나요?"
+    "no_package": "`package.json`을 찾을 수 없습니다.\n`npm init`을 실행하셨나요?"
   },
   "login": {
     "whoami_err": "이런!\n뭔가 잘못된 것 같습니다.",
@@ -25,11 +25,11 @@
     "extra_credit": "추가과제를 완료하였습니다. 멋져요!"
   },
   "install-a-module": {
-    "error": "이런, 모듈이 정상적으로 설치되어있지 않은 것 같습니다.\n발생한 에러：\n{{{error}}}\n`@linclark/pkg` 모듈을 설치하기 위해서,\n`npm install @linclark/pkg`라고 명령어를 입력했는지 확인해주세요.",
+    "error": "이런, 모듈이 정상적으로 설치되어있지 않은 것 같습니다.\n발생한 에러:\n{{{error}}}\n`@linclark/pkg` 모듈을 설치하기 위해서,\n`npm install @linclark/pkg`라고 명령어를 입력했는지 확인해주세요.",
     "success": "축하합니다! 설치를 완료하였습니다."
   },
   "listing-dependencies": {
-    "usage": "문제가 없다면:\n`how-to-npm verify OK`\n문제가 있다면：\n`how-to-npm verify NOT OK`\n을 실행해주세요.",
+    "usage": "문제가 없다면:\n`how-to-npm verify OK`\n문제가 있다면:\n`how-to-npm verify NOT OK`\n을 실행해주세요.",
     "ok_not": "유감이지만, 문제가 있는 것 같습니다.\n`npm ls`를 실행해서, 에러 내용을 확인해주세요.",
     "not_ok_not": "음...\n확실히, 세상엔 잘못된 것들이 많습니다만\n적어도 당신이 만든 package.json과 node_modules는 괜찮은 것 같군요.",
     "success": "문제가 해결된 것 같군요. 훌륭합니다!\n이제 `npm ls`가 얌전해지겠군요."
@@ -64,7 +64,7 @@
   },
   "dist-tag-removal": {
     "too_many": "아직 불필요한 배포용 태그가 존재합니다.\n`npm help dist-tag`를 실행하여 어떻게 태그를 지우는지 조사해보세요.",
-    "version_mismatch": "이런,\"latest\"가 아직 최신 릴리스를 가리키고 있습니다.\n 버전: {{version}}.\n'최신 릴리스 이외의 것을 지정한 뒤에 'how-to-npm verify`를 다시 실행해주세요.\n\n`npm help dist-tag`를 실행하면 태그의 삭제를 조사할 수 있습니다."
+    "version_mismatch": "이런,\"latest\"가 아직 최신 릴리스를 가리키고 있습니다.\n 버전: {{version}}.\n'최신 릴리스 이외의 것을 지정한 뒤에 'how-to-npm verify`를 다시 실행해주세요.\n\n`npm help dist-tag`를 실행하면 삭제할 태그를 조사할 수 있습니다."
   },
   "outdated": {
     "no_package": "`how-to-npm verify PKG`를 실행해주세요. 단 `PKG`를\n구식이 되어버린 패키지 이름과 치환해주세요.",
