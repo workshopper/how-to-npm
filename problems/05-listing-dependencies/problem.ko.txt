@@ -1,0 +1,10 @@
+npm이 단지 설치만을 위해 있는 건 아닙니다.
+설치 완료된 의존 패키지를 확인하는 것도 가능합니다.
+
+`npm ls`를 실행해보세요.
+
+만약 문제가 있다면 이 명령어 실행 시에 npm은 "!ERR"로 시작되는
+에러 메시지를 표시할 것입니다.
+
+문제없다면 `$ADVENTURE_COMMAND verify OK`를 실행해주세요.
+만약 문제가 있다면 `$ADVENTURE_COMMAND verify NOT OK`를 실행해주세요.

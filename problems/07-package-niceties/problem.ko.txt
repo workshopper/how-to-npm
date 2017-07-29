@@ -1,0 +1,20 @@
+자 이제 우리는 package.json을 만들었습니다. 하지만 그 파일은
+사용자가 요구하는 일반적인 항목들이 빠져 있습니다.
+`npm install`을 실행해보면, 다음과 같은 메시지가 표시될 것입니다.
+
+    npm WARN package.json %ID% No description
+    npm WARN package.json %ID% No repository field.
+    npm WARN package.json %ID% No README data
+
+당신이 만든 예술적인 작품을 세상에 내놓기 전에 조금 다듬어봅시다.
+사용자들이 어떻게 사용하는지 알 수 있게 말이죠.
+
+먼저 간단한 설명을 README.md라는 파일을 만들고 추가해봅시다.
+
+다음으로 `repository` 라는 필드를 package.json에 추가하고 사용자가
+코드를 확인할 수 있도록 URL을 지정해줍시다.
+
+수중에 있는 에디터로 package.json을 편집해도 좋고, `npm init`을 재실행해서
+필드의 정보를 갱신할 수 있습니다.
+
+완료했다면 `$ADVENTURE_COMMAND verify`를 실행해주세요.

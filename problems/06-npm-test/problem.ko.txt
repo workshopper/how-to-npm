@@ -1,0 +1,30 @@
+지금까지 모듈을 설치하고 `npm ls`를 실행하면 무슨 일이 일어나는지 확인했습니다.
+
+그런데 package.json 을 확인해보면 다음과 같은 기묘한 코드가 있는걸 확인할 수 있습니다.
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+npm은 이 "scripts" 속성을 이용해서 태스크 러너로도 활용할 수 있습니다.
+대부분 모듈이나 프로젝트는 동작 확인을 위한 테스트 스크립트가 있습니다.
+테스트를 잊어버리지 않도록 npm은 디폴트로 항상 실패하는 테스트 스크립트를 설정합니다.
+
+먼저 `test.js` 파일을 작성해봅시다. 이 워크숍의 과제로는 빈 파일이어도 괜찮습니다.
+이제 어디에 테스트를 작성하면 되는지 알게 되셨을 겁니다.
+(이 파일은 npm 클래스이며, 테스트용의 특별한 클래스가 아닙니다)
+테스트는 에러 없이 종료되어야 합니다. 그렇지 않으면 실패로 간주합니다.
+
+이제 직접 `package.json`을 다음과 같이 편집해봅시다.
+
+  "scripts": {
+    "test": "node test.js"
+  },
+
+완료했다면 `$ADVENTURE_COMMAND verify`를 실행해주세요.
+
+추가 정보: `package.json` 내의 "test" 속성의 `test.js`를 직접 실행하고 싶다면,
+`npm test`를 실행하세요.
+
+package.json의 "scripts"에 관한 상세한 정보는 다음 링크에서 확인할 수 있습니다.
+https://docs.npmjs.com/misc/scripts
