@@ -27,3 +27,7 @@
 - [ungoldman](https://github.com/ungoldman)
 - [EmmaRamirez](https://github.com/EmmaRamirez)
 - [schellingerhout](https://github.com/schellingerhout)
+- [eunsucking](https://github.com/eunsucking)
+- [yous](https://github.com/yous)
+- [marocchino](https://github.com/marocchino)
+- [MJayJang](https://github.com/MJayJang)
