@@ -1,0 +1,4 @@
+Ok, se dici questo...
+Puoi sempre installare l'ultimo e il migliore npm usando
+`npm install npm -g`.  Potresti aver bisogno di eseguirlo 
+con `sudo` o come Amministratore.
