@@ -50,62 +50,62 @@
     "error": "Oh oh!\nSembra che tu non abbia pubblicato con successo il pacchetto\n  {{name}}\n.  Prova di nuovo!"
   },
   "version": {
-    "invalid_semver": "Looks like your package.json has an invalid version!\nUse `npm help semver` to learn more about version numbers\nYour current version number is: {{version}}\n",
-    "old_version": "Uh oh!\nThe version is still {{version}}\nCheck `npm help version` for a handy util to do this.",
-    "success": "Great job!\nRun `how-to-npm` for the next exciting challenge!"
+    "invalid_semver": "Sembra che il tuo package.json abbia una version non valida!\nUsa `npm help semver` per apprendere di piu' sulla numerazione di versione\nIl numero di versione attuale e': {{version}}\n",
+    "old_version": "Oh oh!\nLa version e' ancora {{version}}\nControlla `npm help version` per una utilita' a portata di mano per farlo.",
+    "success": "Buon lavoro!\nEsegui `how-to-npm` per la prossima eccitante sfida!"
   },
   "publish-again": {
-    "not_republished": "Whoops!\nLooks like you did not publish the package again\nTry running `npm publish` and then verifying again.",
-    "current_missing": "Hmm... I see that you published more than once, but\nthe current version ({{version}}) is not in the set.\nHere's what I see in there:\n{{{found}}}\nTry publishing again!",
-    "success": "Wow!  You are well on your way to becoming a regular\nTJames \"Substack\" Halidaychuk!  There's no stopping you!\nRun `how-to-npm` to go to the next step."
+    "not_republished": "Hoops!\nSEmbra che tu non abbia pubblicato il pacchetto di nuovo\nProva ad eseguire `npm publish` e quindi verifica di nuovo.",
+    "current_missing": "Hmm... Vedo che hai pubblicato pie' di una volta, ma\nla versione corrente ({{version}}) non e' stata impostata.\nQuesto e' quello che vedo li':\n{{{found}}}\nProva a pubblicare di nuovo!",
+    "success": "Wow!  Sei sulla buona strada per diventare un normale \nTJames \"Substack\" Halidaychuk! Non c'e' niente che ti fermi!\nEsegui `how-to-npm` per andare al prossimo passo."
   },
   "dist-tag": {
-    "success": "Uh oh, looks like you still only have a single dist-tag.\nUse `npm help dist-tag` to learn how to add another one."
+    "success": "Oh oh, sembra che tu abbia ancora un solo dist-tag.\nUsa `npm help dist-tag` per apprendere come aggiungerne un altro."
   },
   "dist-tag-removal": {
-    "too_many": "Uh oh, looks like you have some extra dist-tags there.\nUse `npm help dist-tag` to learn how to remove them.",
-    "version_mismatch": "Oops!  Your \"latest\" tag still points at the most recent\nrelease, {{version}}.\nPoint that somewhere else, and re-run `how-to-npm verify`\n\nUse `npm help dist-tag` to learn more about how to do it."
+    "too_many": "Oh oh, sembra che tu abbia qualche extra dist-tags qui.\nUsa `npm help dist-tag` per apprendere come rimuoverlo.",
+    "version_mismatch": "Oops!  Il tuo \"ultimo\" tag punta ancora alla release \npiu' recente, {{version}}.\nPunta da un altra parte, e esegui nuovamente  `how-to-npm verify`\n\nUsa `npm help dist-tag` per apprendere di piu' su come farlo."
   },
   "outdated": {
-    "no_package": "Run `how-to-npm verify PKG` but replace `PKG` with the name\nof the package that is outdated",
-    "wrong_package": "Nope, it's not {{{pkg}}}.  Try again!"
+    "no_package": "Esegui `how-to-npm verify PKG` ma sostituisci `PKG` con il nome\ndel pacchetto che e' meno recente",
+    "wrong_package": "No, non e' {{{pkg}}}.  Prova di nuovo!"
   },
   "update": {
-    "outdated": "Oops!  You are still using the outdated version!",
-    "success": "Awesome!  You're up to date!\nRun `how-to-npm` to move on to the next exercise"
+    "outdated": "Oops!  Stai ancora usando la versione meno recente!",
+    "success": "Eccezionale!  Sei aggiornato!\nEsegui `how-to-npm` per andare al prossimo esercizio"
   },
   "rm": {
-    "dependencies_left": "Looks like there are some deps still hanging around",
-    "package_json_left": "You removed the files, but not the entries in package.json"
+    "dependencies_left": "Sembra che ci sia ancora qualche dipendenza in giro",
+    "package_json_left": "Hai rimosso i file, ma non le relative registrazioni in package.json"
   },
   "finale": {
-    "todo": "It looks like you still have more work to do. Finish\nthe following exercises before you can start this:"
+    "todo": "Sembra che tu abbia altro lavoro da fare. Finisci\ngli esercizi seguenti prima che tu possa iniziare questo:"
   },
   "error": {
-    "not_setup": "Looks like you are not ready for this one yet!\nGo back to the `01 Dev Environment` lesson to set up\nyour working directory.",
-    "wrong_folder": "Uh oh!\nIt looks like you are in the wrong folder.\nPlease cd into {{cwd}}\nand then try again'"
+    "not_setup": "Sembra che tu non sia ancora pronto per questo!\nTorna indietro alla lezione `01 Ambiente di Sviluppo` per impostare\nla tua directory di lavoro.",
+    "wrong_folder": "Oh oh!\nSembra he tu sia nella cartella sbagliata.\ncd in {{cwd}}\ne prova di nuovo"
   },
   "exercise": {
-    "00 Install npm": "00 Install npm",
-    "01 Dev Environment": "01 Dev Environment",
+    "00 Install npm": "00 Installa npm",
+    "01 Dev Environment": "01 Ambiente di sviluppo",
     "02 Login": "02 Login",
-    "03 Start A Project": "03 Start A Project",
-    "04 Install A Module": "04 Install A Module",
-    "05 Listing Dependencies": "05 Listing Dependencies",
-    "06 npm Test": "06 npm Test",
-    "07 Package Niceties": "07 Package Niceties",
-    "08 Publish": "08 Publish",
-    "09 Version": "09 Version",
-    "10 Publish Again": "10 Publish Again",
+    "03 Start A Project": "03 Inizia un Progetto",
+    "04 Install A Module": "04 Installa un Modulo",
+    "05 Listing Dependencies": "05 Lista delle Dipendenze",
+    "06 npm Test": "06 Test npm",
+    "07 Package Niceties": "07 Sottigliezze del Pacchetto",
+    "08 Publish": "08 Pubblica",
+    "09 Version": "09 Versione",
+    "10 Publish Again": "10 Pubblica di Nuovo",
     "11 Dist Tag": "11 Dist Tag",
-    "12 Dist Tag Removal": "12 Dist Tag Removal",
-    "13 Outdated": "13 Outdated",
-    "14 Update": "14 Update",
+    "12 Dist Tag Removal": "12 Rimozione dei Dist Tag",
+    "13 Outdated": "13 Meno Recente",
+    "14 Update": "14 Aggiorna",
     "15 Rm": "15 Rm",
     "16 Finale": "16 Finale"
   },
   "menu": {
-    "reset-registry": "RESET REGISTRY"
+    "reset-registry": "RESET DEL REGISTRO"
   },
-  "reset": "Successfully reset registry"
+  "reset": "Reset del registro terminato con successo"
 }
