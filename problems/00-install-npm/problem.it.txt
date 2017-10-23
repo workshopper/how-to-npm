@@ -1,19 +1,19 @@
-Ciao, e benvenuto al laboratorio di avventura su npm! Ti chiedero'
-di fare diverse cose con npm cosi' che tu possa iniziare con esso
+Ciao, e benvenuto al laboratorio di avventura su npm! Ti chiederò
+di fare diverse cose con npm affinchè tu possa iniziare con esso
 facilmente.
 
-Alcuni utili comandi:
+Alcuni comandi utili:
 
 npm help ............ Mostra l'aiuto di npm
 how-to-npm print .... Mostra nuovamente l'esercizio corrente
 how-to-npm verify ... Verifica che tu abbia finito un esercizio
 how-to-npm solution . Mostra la soluzione per l'esercizio corrente
 
-La prima cosa che faremo e' essere sicuri che la tua versione di npm
+La prima cosa che faremo è assicurarci che la tua versione di npm
 sia aggiornata.
 
 Esegui `$ADVENTURE_COMMAND verify` una volta che hai terminato.
 
-(Questa e' l'unica parte del laboratorio che richiede un accesso di rete.
-Se la rete non disponibile, e tu vuoi saltare questo passo, puoi eseguire 
-`$ADVENTURE_COMMAND verify skip` per saltarlo.)
+(Questa è l'unica parte del laboratorio che necessita un accesso di rete.
+Se la rete non è disponibile, e tu vuoi saltare questo passo, puoi eseguire 
+`$ADVENTURE_COMMAND verify skip` per farlo.)
