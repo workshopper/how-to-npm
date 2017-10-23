@@ -1,0 +1,15 @@
+npm è meglio quando fai parte di esso. Si può iniziare creando
+un account.
+
+Poichè questo è solo un tutorial avventura didattica, ricorda,
+non stiamo creando *effettivamente* nessun account. Tuttavia, quando
+si esegue questo nel Mondo Reale, si creerà un account reale, con una
+pagina su npmks.com e la capacità di pubblicare pacchetti che vivono
+realmente e che gli esseri umani possono installare e godere.
+
+Per vedere come ti sei loggato, esegui `npm whoami`
+
+Per creare il tuo account, esegui `npm adduser`
+
+Provalo ora, e apri la porta ai tempi sempre più divertenti!
+Quindi esegui `$ADVENTURE_COMMAND verify`
