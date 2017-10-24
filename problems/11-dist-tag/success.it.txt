@@ -1,0 +1,8 @@
+Congratulazioni!  Hai aggiunto un dist-tag!
+
+Questo è un metodo manuale per gestire i rilasci. Per esempio, lo stesso
+progetto npm pubblica ogni nuova versione come 'next' (anzichè 'latest')
+in modo che gli utenti delle beta possano testarle prima che diventino
+versioni di default.
+
+Esegui `how-to-npm` per andare al prossimo esercizio.
