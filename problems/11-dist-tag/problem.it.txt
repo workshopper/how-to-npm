@@ -1,10 +1,10 @@
-Ogni pacchetto pubblicato in npm ha in esso una registrazione `dist-tags`
-che mappa stringhe tipo "latest" a numeri di versione simili a "1.2.48".
+Ogni pacchetto pubblicato in npm continene una voce `dist-tags` che
+mappa stringhe simili a "latest" a numeri di versione simili a "1.2.48".
 
-Per default, la versione "latest" (ultima) è quella che abbiamo installato.
-Quando pubblichi, la versione che pubblichi viene taggata come "latest".
-Di solito questo va bene, perchè la maggior parte delle volte pubblichi
-cose quando sono pronte per essere usate dagli utenti.
+Per default, la versione "latest" (ultima) è quella che viene installata.
+Quando pubblichi, la versione corrente viene taggata come "latest".
+Solitamente questo va bene, perchè la maggior parte delle volte 
+pubblichi cose quando sono pronte per essere usate dagli utenti.
 
 Tuttavia, se hai bisogno di pubblicare qualcosa, e non renderla
 la versione di default di un pacchetto (per esempio se è una release
@@ -14,9 +14,9 @@ gestire manualmente questa distribuzione di tag con la funzione
 
 `npm dist-tag add <pkg>@<version> [<tag>]` aggiungerà un
 nuovo tag.
-Per scoprire il nome del tuo attuale pacchetto/versione scrivendo `npm ls`.
-La prima riga di output sarà il pacchetto e la versione; es. pkg@1.0.1.
-Per aggiungere un tag scrivi nel nome del tag.
+Per scoprire il nome del tuo attuale pacchetto/versione digita `npm ls`.
+La prima riga di output saranno il pacchetto e la versione; es. pkg@1.0.1.
+Per aggiungere un tag scrivi in nome del tag.
 
   npm dist-tag add pkg@1.0.1 beta
 
