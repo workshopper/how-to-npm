@@ -1,0 +1,3 @@
+Congratulazioni! Sei un professionista del dist-tagging!
+
+Esegui `how-to-npm` per andare al prossimo esericizio.
