@@ -1,0 +1,15 @@
+Se hai un modo per mettere le cose lì, naturalmente, avrai
+bisogno un giorno di un modo per cancellarle.
+
+Inserisci il comando `npm rm` (alias `npm uninstall` se preferisci
+digitare a lungo).
+
+Rimuovi tutte le dipendenze! Ma, assicurati di non tenere cose dipendendi da queste.
+
+Allo stesso modo in cui usi `--save` per installare i pacchetti, puoi anche
+usare `--save` quando li rimuovi, per eliminare anche queste dal 
+tuo file package.json
+
+Quando hai rimosso le tue dipendenze, digita `$ADVENTURE_COMMAND verify` per 
+passare avanti.
+
