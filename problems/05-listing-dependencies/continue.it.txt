@@ -1,0 +1,21 @@
+Infatti, non tutto va bene qui su dep-landia.
+
+Le tue dipendenze dovrebbero essere elencate nel file package.json
+in un oggetto chiamato 'dependecies'. Tuttavia, quando abbiamo installato
+'@linclark/pkg', non abbiamo aggiornato il file package.json per esporre
+questa dipendenza.
+
+Perciò, egli viene mostrato come 'estraneo', avvisandoti che abbiamo qualcosa
+qui che non abbiamo elencato nella lista delle dipendenze.
+
+La strada più semplice per evitare questa situazione è usare il 
+parametro `--save` quando installiamo le dipendeze. Potrestri non voler fare questo
+con cose che stai solo provando, ma quando hai preso una decisione,
+puoi usare questo parametro per aggiornare semplicemente il file package.json.
+
+Prova ad eseguire `npm install @linclark/pkg --save` per installare il modulo, e aggiornare
+contemporaneamente il tuo file package.json.
+
+(Un altra opzione è quella di modificare package.json con un editor di testi)
+
+Quindi esegui `how-to-npm verify OK` una volta che hai corretto il problema.

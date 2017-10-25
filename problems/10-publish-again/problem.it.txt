@@ -1,0 +1,10 @@
+Pubblicare qualcosa una volta va bene. Ma i pacchetti vitali
+devono essere pubblicati ancora e ancora con nuove e interessanti 
+correzioni.
+
+Non puoi usare nuovamente lo stesso numero di versione, perché così
+confondi tutti i robot che eseguono le routine che alimentano il 
+registro npm. Ora che abbiamo cambiato il numero della versione
+nell'ultimo esercizio, possiamo pubblicare nuovamente il pacchetto.
+
+Fallo! Quindi ottieni il tuo premio con `$ ADVENTURE_COMMAND verify`

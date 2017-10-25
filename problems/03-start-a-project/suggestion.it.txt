@@ -1,0 +1,5 @@
+Bene, hai tutto eccetto che la parte git.
+La convenzione è un repo git per modulo, quindi di solito
+dovresti eseguire `git init` nella root del tuo progetto.
+
+Rimuovi la cartella .git ovunque tu fossi, e esegui la `git init`

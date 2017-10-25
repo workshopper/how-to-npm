@@ -1,0 +1,13 @@
+Va bene, ovviamente, verificare esplicitamente i moduli scaduti,
+eseguendo poi `npm install` per tirarli dentro.
+
+Tuttavia, se vuoi essere un pò più raffinato su questo, c'è un
+comando npm speciale che aggiornerà tutte le tue dipendenze alla 
+versione maggiore che è disponibile nel tuo package.json.
+
+Indovini quale comando potrebbe essere? (`npm help` potrebbe aiutarti)
+
+Aggiorna tutte le tue dipendenze all'ultima versione possibile, quindi
+esegui `$ADVENTURE_COMMAND verify` per raccogliere la tua deliziosa
+bandiera verde.
+
