@@ -17,7 +17,7 @@
   "login": {
     "whoami_err": "Uh oh!\nIl semblerait que quelque chose ce soit mal passé.",
     "logged_out": "Hm... Je ne vois pas d'utilisateur ici\nAvez-vous lancer `npm adduser` pour créer le compte?",
-    "success": "Félicitations, {{user}}!\nVous êtes le fier propriétaire d'un nouveau compte npm imaginaire!\nFaites-en bon usage. Jamais dans la colère. Toujours pour le bien.\n\nAvec cette douce puissance vient beaucoup de responsabilité, ce qui est\nassez différent de celui de Spiderman de Marvel\nespérons qu'il ne nous poursuivra pas.\n\nContinuons!"
+    "success": "Félicitations, {{user}}!\nVous êtes le fier propriétaire d'un nouveau compte npm imaginaire!\nFaites-en bon usage. Jamais dans la colère. Toujours pour le bien.\n\nAvec cette douce puissance vient beaucoup de responsabilité, ce qui est\nsuffisamment différent de la devise de Spider-Man\n pour que nous puissions espérer que Marvel ne nous poursuive pas.\n\nContinuons!"
   },
   "start-a-project": {
     "no_package": "Aucun package.json trouvé.\nS'il vous plaît lancez `npm init` dans votre répertoire de travail.",
