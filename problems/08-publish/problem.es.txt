@@ -10,7 +10,7 @@ Los paquetes se envían al registro con el comando `npm publish`.
 
 Pruébalo! No es nada complicado.💚
 
-(¡Asegúrate que todavía estás en el directorio de tu proyecto! So publicas algo por accidente, lo puedes quitar,
+(¡Asegúrate que todavía estás en el directorio de tu proyecto! Si publicas algo por accidente, lo puedes quitar,
 pero no hay garantía que nadie lo haya visto en el proceso.)
 
 Entonces, haz `$ADVENTURE_COMMAND verify` y ya!
