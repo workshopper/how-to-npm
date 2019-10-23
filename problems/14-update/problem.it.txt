@@ -7,5 +7,5 @@ consentita nel package.json.
 
 Riesci a indovinare quale comando potrebbe essere? (`npm help` potrebbe aiutarti)
 
-Aggiorna tutti le tue dipendenze all'ultima versione possibile e quindi
+Aggiorna tutte le tue dipendenze all'ultima versione possibile e quindi
 esegui `$ADVENTURE_COMMAND verify` per ottenere il tuo delizioso banner verde.

@@ -1,10 +1,10 @@
 npm sarò migliore quando entrerai a farne parte. Per iniziare
 crea un account.
 
-Dato che questa è solo un tutorial, ricorda, non stiamo 
+Dato che questo è solo un tutorial, ricorda, non stiamo 
 *effettivamente* creando un account reale. Tuttavia, quando 
-proverai a crearne uno realmente, creerà un account reale, 
-con una pagina su npmjs.com e la possibilità di pubblicare 
+proverai a crearne uno realmente, oltre all'account avrai 
+una pagina su npmjs.com e la possibilità di pubblicare 
 pacchetti che possono essere installati e apprezzati da veri esseri umani.
 
 Per vedere l'account con cui ti sei loggato, esegui `npm whoami`

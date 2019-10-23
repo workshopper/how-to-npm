@@ -1,4 +1,4 @@
-Ora hai installato qualcosa e usato `npm ls` per mostrare cosa sta succedendo.
+Ora hai installato qualcosa e usato `npm ls` per mostrare la lista delle dipendenze installate.
 
 Se guardi il file package.json, contiene questo bit piuttosto strano:
 

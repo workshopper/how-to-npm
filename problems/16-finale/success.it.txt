@@ -1,11 +1,11 @@
 C'è MOLTO DI PIU' che npm può fare. Alcune delle cose che non abbiamo 
-avuto il tempo di affrontare in questo piccolo e modesto laboratorio includono:
+avuto il tempo di affrontare in questo piccolo e modesto workshop includono:
 
 1. Dividere la tua app in più moduli
 2. Condivisione di codice privato con compagni di squadra mediante moduli con ambiti
 3. Altri comandi divertenti di npm, come `edit`, ` bugs` ed `explore`!
 
-Puoi ancora imparare di più su tutto il divertimento che tu e npm potete avere insieme. 
+Puoi ancora imparare di più su tutto il ciò che tu e npm potete fare insieme. 
 Tutto inizia con il pensiero: "Dovrebbe esserci un modulo che faccia questo ..."
 
 La tua avventura ti sta aspettando https://www.npmjs.com/

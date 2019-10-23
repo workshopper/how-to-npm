@@ -11,4 +11,4 @@ richiesto di rispondere a una serie di domande. Puoi semplicemente
 premere Invio per accettare il valore predefinito per ogni domanda.
 
 Esegui `$ADVENTURE_COMMAND verify` una volta terminato. Tutti gli altri comandi 
-eseguiti in questa esercitazione devono essere eseguiti in quella cartella.
+eseguiti in questa esercitazione devono essere eseguiti in questa cartella.

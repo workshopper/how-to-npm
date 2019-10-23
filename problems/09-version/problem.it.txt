@@ -6,7 +6,7 @@ I numeri di versione in npm seguono uno standard chiamato "SemVer". Questo sta
 per "Versione semantica". Le specifiche per questo standard sono disponibili 
 all'indirizzo http://semver.org.
 
-The tl;dr version is that for a version like this:
+La versione tl;dr è una versione come questa:
 
   1.2.3
   ^ ^ ^

@@ -5,7 +5,7 @@
     "npm-problem": "Uh Oh! npm ha avuto un problema!",
     "version-verified": "Hai installato la versione {{version}}.  Grandioso!\nOra vediamo qual è l'ultima versione... aspetta...",
     "latest-version": "L'ultima verisone di npm è: {{version}}",
-    "upgrade": "Hai una versione {{version}}, ma l'ultima è {{latest}}\nEsegui `npm install npm -g` per aggiornarlo\n(Puoi anche saltare questo passaggio se vuoi)",
+    "upgrade": "Hai la versione {{version}}, ma l'ultima è {{latest}}\nEsegui `npm install npm -g` per aggiornarlo\n(Puoi anche saltare questo passaggio se vuoi)",
     "success": "Congratulazioni!\nHai installato una versione recente di npm!"
   },
   "dev-environment": {
@@ -21,7 +21,7 @@
   },
   "start-a-project": {
     "no_package": "Nessun package.json trovato.\nEsegui `npm init` nella directory di lavoro.",
-    "success": "Congratulazioni!\nHai creato un progetto! Visualizza il file package.json per vederlo.",
+    "success": "Congratulazioni!\nHai creato un progetto! Apri il file package.json per esaminarlo.",
     "extra_credit": "CREDITI EXTRA! Ben fatto."
   },
   "install-a-module": {
@@ -39,12 +39,12 @@
     "running": "Esecuzione dello script di test...",
     "running_done": "...fatto!",
     "error": "Uh oh!  Il test è fallito!\nProva a creare un test che funzioni davvero.",
-    "success": "Congratulazioni!  Hai scritto un test valido!\nScrivere un test che è effettivamente BUONO riduce il lavoro da fare in futuro."
+    "success": "Congratulazioni!  Hai scritto un test valido!\nScrivere un BUON test riduce il lavoro da fare in futuro."
   },
   "package-niceties": {
     "problem": "Non proprio!\nC'è ancora un problema da risolvere.",
     "error": "Uh oh!\nSembra che qualcosa sia andato storto",
-    "success": "Sembra nitido!\nUn package senza un file readme è come un\nmucchio di JavaScript senza istruzioni o link al repository git."
+    "success": "Sembra perfetto!\nUn package senza un file readme è come un\nmucchio di JavaScript senza istruzioni o link al repository git."
   },
   "publish": {
     "error": "Uh oh!\nSembra che tu non abbia pubblicato correttamente\n il package\n{{name}}.  Prova ancora!"
@@ -55,7 +55,7 @@
     "success": "Ottimo lavoro!\nEsegui `how-to-npm` per la prossima entusiasmante sfida!"
   },
   "publish-again": {
-    "not_republished": "Whoops!\nSembra che tu non abbia ripubblicato il package\nProva a eseguire `npm publishing` e quindi a riverificare.",
+    "not_republished": "Whoops!\nSembra che tu non abbia ripubblicato il package\nProva a eseguire `npm publish` e quindi a riverificare.",
     "current_missing": "Hmm... Vedo che hai pubblicato più di una volta, ma\nla versione attuale ({{version}}) non è nel set.\nEcco cosa vedo lì dentro:\n{{{found}}}\nProva a pubblicarlo di nuovo!",
     "success": "Wow!  Sei sulla buona strada per diventare un normale\nTJames \"Substack\" Halidaychuk!  Non puoi fermarti!\nEsegui `how-to-npm` per procedere allo step successivo."
   },
@@ -72,7 +72,7 @@
   },
   "update": {
     "outdated": "Oops!  Stai ancora usando la versione obsoleta!",
-    "success": "Eccezionale!  Sei aggiornato!\nEsegui `how-to-npm` per passare all'esercizio successivo"
+    "success": "Eccezionale!  È tutto aggiornato!\nEsegui `how-to-npm` per passare all'esercizio successivo"
   },
   "rm": {
     "dependencies_left": "Sembra che ci siano ancora alcune dipendenze in giro",

@@ -1,5 +1,4 @@
 
-It's almost time to say goodbye.  But don't worry!  This is just an
-introduction.  If you've finished all the other exercises, then run
-`$ADVENTURE_COMMAND verify` to learn about the next steps beyond this little
-workshop.
+È quasi ora di dirci addio. Ma non preoccuparti! Questa è solo un'introduzione. 
+Se hai terminato tutti gli altri esercizi, esegui `$ADVENTURE_COMMAND verify` 
+per conoscere i prossimi passi oltre questo piccolo workshop.

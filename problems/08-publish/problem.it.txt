@@ -13,4 +13,4 @@ Provalo ora. Non c'è molto da fare.
 qualcosa per errore, puoi rimuoverlo, ma non c'è garanzia 
 che nessuno lo abbia visto nel frattempo.)
 
-Ora esegui `$ADVENTURE_COMMAND verify` quando avrai fatto.
+Esegui `$ADVENTURE_COMMAND verify` quando avrai fatto.

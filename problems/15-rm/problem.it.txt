@@ -1,7 +1,7 @@
 Se hai un modo per mettere le cose lì, naturalmente, un 
 giorno avrai bisogno di un modo per eliminarle.
 
-Immettere il comando `npm rm` (alias` npm uninstall` se preferisci).
+Utilizza il comando `npm rm` (alias` npm uninstall` se preferisci).
 
 Rimuovi tutte le dipendenze! Ma assicurati di non continuare a dipendere da loro.
 

@@ -2,7 +2,7 @@ Per visualizzare il contenuto del pacchetto, ho appena eseguito questo comando:
 
   npm view %NAME%
 
-Esegui quel comando tu stesso per vedere cosa stampa.
+Esegui questo comando tu stesso per vedere cosa stampa.
 
 Il comando `npm view` è un ottimo modo per visualizzare i dettagli del pacchetto, 
 per vedere cosa hai appena pubblicato e per verificare se un nome è già stato utilizzato.
@@ -10,7 +10,7 @@ per vedere cosa hai appena pubblicato e per verificare se un nome è già stato 
 Ora che hai pubblicato il tuo primo pacchetto qui nel simulatore 
 del laboratorio npm, esci e scrivi qualcosa di reale da condividere con veri umani!
 
-Non devi solo condividere il codice per altre persone, però. Ci sono 
+Non devi solo condividere il codice per altre persone però. Ci sono 
 anche vantaggi nel suddividere il tuo codice in piccoli pezzi gestibili, 
 anche se li stai usando tutti da solo.
 

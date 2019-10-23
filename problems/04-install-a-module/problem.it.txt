@@ -7,7 +7,7 @@ Per installare un modulo, usa il comando `npm install <modulename>`.
 
 Il registro che stiamo usando per questo tutorial è una piccola versione di 
 quello presente su https://registry.npmjs.org. Quindi potresti scoprire 
-che ha solo un piccolo numero di cose.
+che ha solo un ristretto numero di moduli.
 
 Iniziamo installando il modulo "@linclark/pkg".
 

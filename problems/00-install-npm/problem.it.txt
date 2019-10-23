@@ -1,6 +1,6 @@
-Ciao e benvenuto all'avventurioso seminario su npm! Ti chiederò
+Ciao e benvenuto nell'avventurioso workshop su npm! Ti chiederò
 di fare varie cose con npm in modo da poter iniziare
-a prendere preatica.
+a fare preatica.
 
 Alcuni comandi utili:
 
@@ -10,10 +10,10 @@ how-to-npm verify ... Verifica di aver terminato un esercizio
 how-to-npm solution . Mostra la soluzione per l'esercizio corrente
 
 La prima cosa che faremo è assicurarci che la versione del tuo npm
-si aggiornata.
+sia aggiornata.
 
 Esegui `$ADVENTURE_COMMAND verify` una volta fatto.
 
-(Questa è l'unica parte del seminario che richiede l'accesso alla rete.
+(Questa è l'unica parte del workshop che richiede l'accesso alla rete.
 Se la rete è bloccata e si desidera saltare questo passaggio, è possibile eseguire
 `$ADVENTURE_COMMAND verify skip`.)
