@@ -1,0 +1,8 @@
+Congratulazioi!
+Hai un ambiente di sviluppo.
+
+Da qui in poi, assicurati di seguire il workshop utilizzando questa cartella
+
+Potresti notare apparire un file `.npmrc`.
+Ciò normalmente non sarebbe richiesto, ma il workshop lo utilizza
+per ingannare le parti che normalmente necessitano di Internet.
