@@ -1,0 +1,32 @@
+Ora hai installato qualcosa e usato `npm ls` per mostrare cosa sta succedendo.
+
+Se guardi il file package.json, contiene questo bit piuttosto strano:
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+npm può essere utilizzato come task runner con la sua proprietà "script". Quasi 
+ogni modulo e progetto avrà uno script di test che viene eseguito per assicurarsi 
+che tutto sia a posto. Per aiutarti a ricordare di farlo, npm 
+inserisce un test "sempre fallito" per impostazione predefinita.
+
+Innanzitutto, crea un file chiamato `test.js`. Ai fini di questo workshop 
+puoi lasciarlo in bianco, ma è qui che dovresti scrivere i tuoi 
+test (questa è la classe npm, non la classe test). Il test deve concludersi 
+senza generare un errore, altrimenti il test fallisce.
+
+Quindi, modifica il tuo file `package.json` per rendere la sezione dei tuoi script 
+simile a questa:
+
+  "scripts": {
+    "test": "node test.js"
+  },
+
+Una volta fatto, esegui `$ADVENTURE_COMMAND verify` per verificare il lavoro fatto.
+
+Informazioni aggiuntive: Se avresti voluto eseguire effettivamente dei test scritti in 
+`test.js` con lo script "test", avresti dovuto eseguire `npm test`.
+
+I documenti per la proprietà degli script di npm sono disponibili qui:
+https://docs.npmjs.com/misc/scripts
