@@ -1,0 +1,5 @@
+Eccezionale! Hai rimosso i pacchetti dalla cartella node_modules 
+e hai anche aggiornato il file package.json per ricordare che non sei 
+più dipendente da essi.
+
+Ben fatto.
