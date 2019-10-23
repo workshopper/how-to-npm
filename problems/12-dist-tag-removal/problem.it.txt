@@ -1,0 +1,12 @@
+Ora che hai aggiunto un dist-tag o due, chiariamo le cose.
+
+L'unico dist-tag che NON PUOI mai rimuovere è "latest". Questo perché 
+ogni pacchetto installa il suo tag "latest" per impostazione predefinita, 
+quindi quel tag ha una semantica speciale.
+
+È POSSIBILE puntare "latest" a una versione diversa o eliminare altri tag.
+
+Eliminiamo tutti i tag che possiamo e puntiamo "latest" a 
+qualcosa di diverso dalla versione più recente.
+
+Esegui `npm help dist-tag` per saperne di più sul comando.
