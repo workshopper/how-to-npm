@@ -1,0 +1,4 @@
+È assolutamente giusto! Il pacchetto `@linclark/pkg` ha avuto un aggiornamento mentre 
+non lo cercavamo.
+
+Nella prossima lezione impareremo come aggiornare i pacchetti obsoleti.
