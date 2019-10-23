@@ -1,0 +1,5 @@
+
+It's almost time to say goodbye.  But don't worry!  This is just an
+introduction.  If you've finished all the other exercises, then run
+`$ADVENTURE_COMMAND verify` to learn about the next steps beyond this little
+workshop.
