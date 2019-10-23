@@ -1,0 +1,6 @@
+Per avere punti extra, prova anche a impostare questa directory come repository git.
+
+La convenzione prevede di avere un singolo repository git per ciascun modulo o progetto.
+Usa il comando `git init` per impostare la tua directory di lavoro come progetto git.
+
+Quindi, esegui `how-to-npm verify extra credit`
