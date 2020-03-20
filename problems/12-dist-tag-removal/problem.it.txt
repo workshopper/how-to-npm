@@ -1,12 +1,12 @@
-Now that you've added a dist-tag or two, let's clean things up.
+Ora che hai aggiunto un dist-tag o due, puliamo le cose.
 
-The only dist-tag you CAN'T ever remove is "latest".  That's because
-every package installs its "latest" tag by default, so that tag has
-some special semantics.
+L'unico dist-tag che NON PUOI mai rimuovere è "latest" (ultimo o più recente). Questo perché
+ogni pacchetto installa per default il suo tag "latest", quindi questo tag ha
+qualche semantica speciale.
 
-You CAN point "latest" to a different version, or delete other tags.
+PUOI puntare "latest" a una versione diversa o eliminare altri tag.
 
-Let's delete all the tags that we can, and also point "latest" at
-something other than the most recent release.
+Eliminiamo tutti i tag che possiamo e puntiamo anche "latest" a
+qualcosa di diverso dalla versione più recente.
 
-Run `npm help dist-tag` to learn more about the command.
+Esegui `npm help dist-tag` per saperne di più sul comando.
