@@ -18,7 +18,7 @@ exports.verify = function (args, cb) {
 
   var __ = this.__
   var pkg = require(path.join(shop.cwd(), 'package.json'))
-  var data = require(path.join(shop.datadir, 'registry', pkg.name, 'body.json'))
+  var data = require(path.join(shop.datadir, 'registry', 'store', pkg.name, 'package.json'))
   var ver = semver.clean(pkg.version)
 
   // should be more than one entry in the time obj, and the current
