@@ -1,0 +1,10 @@
+npm non serve solo per l'installazione di moduli. Ti mostra anche cosa hai 
+già installato (le tue dipendenze).
+
+Puoi farlo usando il comando `npm ls`.
+
+Esegui questo comando nella tua directory di lavoro. Se ci dovessero essere 
+problemi npm ti avviserà restituendo un messaggio "!ERR".
+
+Se tutto ti sembra corretto, esegui `$ADVENTURE_COMMAND verify OK`, o
+`$ADVENTURE_COMMAND verify NOT OK` se npm segnala un problema".

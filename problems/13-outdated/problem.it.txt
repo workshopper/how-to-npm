@@ -1,0 +1,11 @@
+Ora che abbiamo alcune dipendenze e hai appreso che i tuoi pacchetti 
+possono essere aggiornati ripetutamente, la domanda ovvia è: 
+cosa facciamo quando qualcun altro *aggiorna* il *suo* pacchetto
+
+Il primo passo è rilevare questo aggiornamento. A causa del modo in cui definiamo 
+le nostre dipendenze con un intervallo di versioni e ogni versione 
+è una combinazione unica di un nome e una versione, possiamo rilevare 
+le versioni compatibili a livello di codice con il comando `npm outdated`.
+
+Per superare questa sfida, esegui `$ADVENTURE_COMMAND verify PKG` dove `PKG`
+è il nome del pacchetto non aggiornato.

@@ -1,0 +1,4 @@
+
+È quasi ora di dirci addio. Ma non preoccuparti! Questa è solo un'introduzione. 
+Se hai terminato tutti gli altri esercizi, esegui `$ADVENTURE_COMMAND verify` 
+per conoscere i prossimi passi oltre questo piccolo workshop.

@@ -1,0 +1,9 @@
+npm ti aiuta a costruire progetti, ma perché npm sia in grado di farlo, 
+devi dire a npm un po 'del tuo progetto. Puoi dire a npm del tuo 
+progetto in un file chiamato package.json.
+
+Esegui `npm init --scope=<username>`, e sostituiisci <username> con l'utente
+che hai creato nella lezione precendete. Questo creerà il file package.json.
+(Per ottenere crediti extra, imposta il progetto anche con un repository git.)
+
+Esegui `$ADVENTURE_COMMAND verify` una volta che hai finito.

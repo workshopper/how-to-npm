@@ -1,0 +1,11 @@
+Va bene, ovviamente, verificare esplicitamente la presenza di moduli obsoleti, 
+quindi eseguire `npm install` per estrarli.
+
+Tuttavia, se vuoi essere un po' più pigro al riguardo, c'è uno speciale 
+comando npm che AGGIORNERA' tutti le tue dipendenze alla versione massima 
+consentita nel package.json.
+
+Riesci a indovinare quale comando potrebbe essere? (`npm help` potrebbe aiutarti)
+
+Aggiorna tutte le tue dipendenze all'ultima versione possibile e quindi
+esegui `$ADVENTURE_COMMAND verify` per ottenere il tuo delizioso banner verde.

@@ -1,0 +1,16 @@
+A che serve un gestore di pacchetti senza pacchetti?
+
+Non va bene.
+
+Fortunatamente, questo non è un problema per npm, perché è molto facile per tutti 
+gli utenti di npm pubblicare i loro moduli e condividerli con il mondo.
+
+I pacchetti entrano nel registro usando il comando `npm publish`.
+
+Provalo ora. Non c'è molto da fare.
+
+(Assicurati di essere ancora nella giusta directory di progetto. Se pubblichi 
+qualcosa per errore, puoi rimuoverlo, ma non c'è garanzia 
+che nessuno lo abbia visto nel frattempo.)
+
+Esegui `$ADVENTURE_COMMAND verify` quando avrai fatto.

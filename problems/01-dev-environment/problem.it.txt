@@ -1,0 +1,14 @@
+Una delle cose più importanti che npm fa è installare i pacchetti.
+
+Tuttavia, per essere un buon workshop, non vogliamo sporcare 
+i file su tutto il computer, quindi prima di andare avanti, 
+creiamo un ambiente di sviluppo.
+
+Per prima cosa, crea una nuova directory e accedi ad essa con `cd`.
+
+Quindi, esegui `npm init` per creare un file package.json. Ti verrà 
+richiesto di rispondere a una serie di domande. Puoi semplicemente 
+premere Invio per accettare il valore predefinito per ogni domanda.
+
+Esegui `$ADVENTURE_COMMAND verify` una volta terminato. Tutti gli altri comandi 
+eseguiti in questa esercitazione devono essere eseguiti in questa cartella.
