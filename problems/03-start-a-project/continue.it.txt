@@ -1,0 +1,7 @@
+Per extra crediti, prova a impostare anche questa dir come repository git.
+
+La convenzione è di avere un singolo repo git per ciscun modulo o progetto.
+Usa il comando `git init` per impostare la tua cartella di lavoro come un 
+progetto git.
+
+Quindi, esegui `how-to-npm verify extra credit`

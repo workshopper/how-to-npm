@@ -1,0 +1,6 @@
+
+E' quasi il momento di salutarci. Ma non ti preoccupare! Questa è
+solo un'introduzione. Se hai finito tutti gli altri esercizi, esegui
+`$ADVENTURE_COMMAND verify` per imparare i prossimi passi al di là
+di questo piccolo laboratorio.
+

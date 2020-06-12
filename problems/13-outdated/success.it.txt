@@ -1,0 +1,9 @@
+Questo è assolutamente corretto! Il pacchetto `@linclark/pkg`
+ha avuto un aggiornamento nel frattempo che non stavamo
+guardando.
+That's absolutely right!  The `@linclark/pkg` package has had an update while 
+we weren't looking.
+
+Nella prossima lezione, impareremo come aggiornare i pacchetti
+che non lo sono.
+
