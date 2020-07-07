@@ -1,0 +1,8 @@
+npm 不仅是用来安装的。它还能显示您已经安装的软件包（您的依赖项）。
+
+您可以使用 "npm ls" 命令来实现。
+
+在您的工作目录中运行该命令。如果出现任何问题，npm 将返回一条以 "!ERR" 开头的错误信息。
+
+如果您发现一切 OK，则运行 "$ADVENTURE_COMMAND verify OK"，
+如果遇到任何问题，则运行 "$ADVENTURE_COMMAND verify NOT OK"。

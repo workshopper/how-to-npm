@@ -1,0 +1,16 @@
+虽然您创建了一个 package.json 文件，但是它还缺少一些人们通常期望的内容。
+如果您输入 "npm install"，您会看见大致如下的内容：
+
+    npm WARN package.json %ID% No description
+    npm WARN package.json %ID% No repository field
+    npm WARN package.json %ID% No README data
+
+在向世界分享您的工作成果之前，我们需要将其再完善一下，以便人们知道如何使用它。
+
+首先，创建一个 README.md 文件，里面只有少量的文字。
+
+然后，在 package.json 文件中添加名为 "repository" 的字段，并制定一个人们可以访问代码的网址。
+
+您能手动编辑您的 package.json 文件，或再次运行 "npm init"。
+
+当您完成后，运行 "$ADVENTURE_COMMAND verify"。

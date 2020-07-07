@@ -1,0 +1,21 @@
+现在您已经添加了一两个标签，让我们来清理一下吧。
+
+唯一不能删除的是 "latest" 标签。那是因为每个软件包都默认添加了 "latest" 标签，
+以使该标签具有特殊含义。
+
+您可以让 "latest" 标签指向不同的版本，或删除其他的标签。
+
+关于 dist-tag 的有关命令：
+    npm dist-tag add <pkg>@<version> [<tag>] . 添加标签
+    npm dist-tag rm <pkg> <tag> .............. 删除指定标签
+    npm dist-tag ls [<pkg>] .................. 列出指定软件包上的所有标签
+
+运行 "npm help dist-tag" 学习更过相关的命令。
+
+请删除所有您能删除的标签，并让 "latest" 标签指向最新发布以外的其他版本。
+(译者注：添加 "latest" 标签让它指向最新版本以外的其他版本)
+
+完成之后，运行 "$ADVENTURE_COMMAND verify" 进行验证。
+
+
+

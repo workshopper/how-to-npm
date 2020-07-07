@@ -1,5 +1,4 @@
 # Collaborators
-
 - [isaacs](https://github.com/isaacs)
 - [linclark](https://github.com/linclark)
 - [pathogen-](https://github.com/pathogen-)

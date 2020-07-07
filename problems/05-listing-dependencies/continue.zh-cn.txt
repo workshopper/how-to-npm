@@ -1,0 +1,15 @@
+如您所见，目前对依赖包的管理并不算好。
+
+依赖包必须添加到 package.json 内的 "dependencies" 字段中。
+然而，当我们安装 "@linclark/pkg" 模块时，我们并没有更新 package.json 文件中的依赖列表。
+
+所以，npm 会发出一个 'extraneous' 警告，告诉我们没有添加 'dependencies' 字段来管理依赖包。
+
+避免发生此情况的最简单的办法是，在安装依赖时追加 "--save" 标识。虽然在试用模块时，可能您并
+不希望这么做，但如果您决定将模块引入到当前项目中，则可以使用该标识更新 package.json。
+
+尝试运行 "npm install @linclark/pkg --save" 来安装模块，并更新 package.json 文件。
+
+（另一个方法是可以在文本编辑器中自己编辑 package.json 文件）
+
+如果解决了该问题，则运行 "how-to-npm verify OK"。

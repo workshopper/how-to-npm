@@ -1,0 +1,12 @@
+对于大多数人而言，使用 npm 做的第一件事是安装依赖的软件包。
+
+所有的依赖都从 registry 中获取，然后解压到 "node_modules" 文件夹中。
+
+安装一个模块，使用 "npm install <modulename>" 命令。
+
+我们使用的 registry 是 https://registry.npmjs.org 的一个很小的版本。因此您也许
+发现了，它只有一些少量的东西。
+
+请安装 "@linclark/pkg" 模块。
+
+完成所有工作后，运行 "$ADVENTURE_COMMAND verify"。

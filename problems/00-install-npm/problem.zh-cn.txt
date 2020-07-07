@@ -1,0 +1,16 @@
+您好，欢迎来到 npm 训练营！我将要求您做各种与 npm 相关的事情，这样您就可以很容
+易的开始用它了。
+
+一些有用命令列表：
+
+npm help ............ 可获得 npm 方面的帮助
+how-to-npm print .... 重新显示当前的练习
+how-to-npm verify ... 验证您是否完成了一项练习
+how-to npm solution . 展示当前练习的答案
+
+首先，请确认您是否安装了最新版的 npm。
+
+如果确认成功，请运行 "$ADVENTURE_COMMAND verify" 。
+
+（这是此训练营中唯一需要访问互联网的部分。如果您处于一个网络不通的状态，您可以运
+行 "$ADVENTURE_COMMAND verify skip" 跳过。）

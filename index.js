@@ -15,7 +15,7 @@ if (notifier.update) {
 var adventure = require('workshopper-adventure/adventure')
 var shop = module.exports = adventure({
   name: 'how-to-npm',
-  languages: ['en', 'es', 'ja', 'fr', 'ko'],
+  languages: ['en', 'es', 'ja', 'fr', 'ko', 'zh-cn'],
   appDir: __dirname,
   menu: {
     bg: 'white',
