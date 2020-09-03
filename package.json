@@ -1,6 +1,6 @@
 {
   "name": "how-to-npm",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "A module to teach you how to module.",
   "bin": "index.js",
   "repository": {
@@ -24,18 +24,18 @@
   },
   "bundleDependencies": [
     "workshopper-adventure",
-    "concat-stream",
     "mkdirp",
     "rimraf",
     "semver",
     "which"
   ],
   "dependencies": {
-    "concat-stream": "^1.4.7",
+    "js-yaml": "^3.13.1",
     "mkdirp": "^0.5.0",
     "rimraf": "^2.2.8",
     "semver": "^4.2.0",
     "update-notifier": "^1.0.3",
+    "verdaccio": "^4.6.2",
     "which": "^1.0.8",
     "workshopper-adventure": "^5.0.3"
   },

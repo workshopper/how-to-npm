@@ -8,9 +8,9 @@ exports.problem = {
 
 exports.init = function (workshopper) {
   this.__ = workshopper.i18n.__
-  var pkg = require(shop.datadir + '/registry/@linclark/pkg/body.json')
+  var pkg = require(shop.datadir + '/registry/store/@linclark/pkg/package.json')
+
   if (pkg['dist-tags'].latest === '1.0.2') {
-    // publish an update
     console.log(path.resolve(__dirname, '..', '..', 'assets', 'registry-update'))
     shop.cpr(path.resolve(__dirname, '..', '..', 'assets', 'registry-update'),
              path.resolve(shop.datadir, 'registry'))

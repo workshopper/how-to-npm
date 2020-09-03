@@ -19,7 +19,7 @@ exports.verify = function (args, cb) {
   var pkg = require(path.join(cwd, 'package.json'))
   var name = pkg.name
 
-  var body = require(path.join(shop.datadir, 'registry', name, 'body.json'))
+  var body = require(path.join(shop.datadir, 'registry', 'store', name, 'package.json'))
   var dt = body['dist-tags']
   var tags = Object.keys(dt)
   if (tags.length > 1) {

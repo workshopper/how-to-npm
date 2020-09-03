@@ -1,0 +1,7 @@
+npm 可以帮助您构建项目，但为了使 npm 做到这一点，您需要告诉 npm 关于项目的一点
+信息。您可以在 package.json 文件中，告诉 npm 您的项目信息。
+
+运行 "npm init --scope=<username>"，并且将 <username> 替换成您在上一节课创建的
+用户名。这将创建一个 package.json 文件。（额外的挑战，将此项目设为 Git 仓库。）
+
+当您完成上述工作后，运行 "$ADVENTURE_COMMAND verify"

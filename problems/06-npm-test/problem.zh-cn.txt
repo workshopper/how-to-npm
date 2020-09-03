@@ -1,0 +1,27 @@
+现在您已经安装了一些东西，使用 "npm ls" 可以显示正在发生的事情。
+
+如果您查看 package.json 文件，会发现在其中有如下奇怪的表述：
+
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+npm 可以使用 "scripts" 属性，来用作任务执行者。
+几乎每个模块和项目都会有一个测试脚本，以确保其正常运行。
+为避免忘记测试，默认情况下 npm 设置测试脚本为"始终失败"。
+
+首先，创建一个名叫 "test.js" 的文件。用于训练营的挑战，可以将其置为空，
+它将用来编写您的测试（这是 npm 类型，而不是测试类型）。
+此外，测试结束时不应出现错误，否则，测试将失败。
+
+然后，编写您的 "package.json" 文件，使您的脚本部分看起来像这样：
+
+  "scripts": {
+    "test": "node test.js"
+  },
+  
+一旦完成，运行 "$ADVENTURE_COMMAND verify" 来验证您的工作。
+
+其他提示：如果您确实想运行您在 "test.js" 中写的 "test" 脚本，请运行 "npm test"。
+
+npm 脚本属性的有关文档，可以在这里找到：https://docs.npmjs.com/misc/scripts

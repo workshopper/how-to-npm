@@ -1,0 +1,6 @@
+额外的挑战，尝试将此目录设置为 Git 仓库。
+
+按照惯例，为每个模块或项目单独设置一个 Git 仓库。使用 "git init" 命令将您的工作
+目录设置为一个 Git 仓库。
+
+然后，运行 "how-to-npm verify extra credit" 进行验证。
