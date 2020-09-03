@@ -1,0 +1,8 @@
+Congratulazioni!
+Hai un ambiente di sviluppo.
+
+Da qui in poi, assicurati di eseguire il laboratorio in questa dir
+
+Si potrebbe notare che un file `.npmrc` verrà visualizzato li.
+Normalmente non sarebbe richiesto, ma il laboratorio lo usa per
+modellare le parti che normalmente dovrebbero comunicare con internet.
